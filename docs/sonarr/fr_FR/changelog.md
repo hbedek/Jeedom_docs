@@ -1,6 +1,9 @@
 # Changelog plugin template
 
 
+# 08/06/2021
+
+- Possibilité de configurer le nombre de jours pour lesquels le plugin va récupérer les épisodes futures
 
 # 06/06/2021
 
