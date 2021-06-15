@@ -1,5 +1,10 @@
 # Changelog plugin template
 
+# 15/06/2021
+
+- Amélioration du système de notification
+- Ajout de la liste des séries monitorées pour Sonarr
+- Ajout de l'équipement Radarr
 
 # 08/06/2021
 
