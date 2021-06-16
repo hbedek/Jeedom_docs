@@ -26,7 +26,7 @@ Ainsi pour le 3e épisode de la saison 2 de la série GOT, le format est le suiv
 
 Le plugin est évolutif, suivant la demande il m'est possible de rajouter plus d'informations remontées par Sonarr, tout comme envoyer des commandes à Sonarr
 
-<img src="docs/sonarr/fr_FR/IMGS/commandes_sonarr.PNG" alt="hi" class="inline"/>
+<img src="IMGS/commandes_sonarr.PNG" alt="hi" class="inline"/>
 
 ### configuration de l'équipement
 Lorsque vous ajoutez un équipement (Un serveur Sonarr donc), vous devez au minimum fournir deux informations:
