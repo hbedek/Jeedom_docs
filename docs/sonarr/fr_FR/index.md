@@ -8,6 +8,9 @@ Résultat de la commande : The Seven Deadly Sins S4E23, Mixte S1E1, Mixte S1E2
 
 Vous pouvez dans les paramétrage de l'équipement définir le séparateur que vous souhaitez que l'équipement utilise
 
+<img src="IMGS/Capture_Equipements.PNG" alt="hi" class="inline"/>
+
+
 ## Sonarr
 
 ### Description de l'équipement
@@ -43,6 +46,8 @@ D'autres paramètres, optionnels, peuvent être ajoutés :
 Vous pourrez trouver la clef API dans la page /settings/general de votre Sonarr
 Par défaut l'équipement se ré-actualise toutes les 5 minutes. Vous pouvez modifier cela via l'outil cron actualisation dans la configuration de l'équipement
 
+<img src="IMGS/Capture_equipement_sonarr.PNG" alt="hi" class="inline"/>
+
 ### Notification à la réception d'un nouvel épisode
 
 Le plugin Sonarr est notifié lorsqu'un nouvel épisode est importé dans Sonarr.
@@ -72,6 +77,9 @@ Un serveur Radarr est représenté par un équipement et il est donc possible de
 
 Le plugin est évolutif, suivant la demande il m'est possible de rajouter plus d'informations remontées par Radarr, tout comme envoyer des commandes à Radarr
 
+<img src="IMGS/commandes_radarr.PNG" alt="hi" class="inline"/>
+
+
 ### configuration de l'équipement
 Lorsque vous ajoutez un équipement (Un serveur Radarr donc), vous devez au minimum fournir deux informations:
 - l'url de votre Radarr
@@ -84,6 +92,9 @@ D'autres paramètres, optionnels, peuvent être ajoutés :
 
 Vous pourrez trouver la clef API dans la page /settings/general de votre Radarr
 Par défaut l'équipement se ré-actualise toutes les 5 minutes. Vous pouvez modifier cela via l'outil cron actualisation dans la configuration de l'équipement
+
+<img src="IMGS/Capture_equipement_radarr.PNG" alt="hi" class="inline"/>
+
 
 ### Notification à la réception d'un nouvel épisode
 
