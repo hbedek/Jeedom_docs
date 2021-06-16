@@ -3,7 +3,9 @@
 Ce plugin permet à Jeedom de récupérer des informations de Sonarr et de Radarr
 
 Les différentes listes retournées par le plugin sont sous la forme: 
+
 Résultat de la commande : The Seven Deadly Sins S4E23, Mixte S1E1, Mixte S1E2
+
 Vous pouvez dans les paramétrage de l'équipement définir le séparateur que vous souhaitez que l'équipement utilise
 
 ## Sonarr
