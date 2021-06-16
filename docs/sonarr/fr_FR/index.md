@@ -2,6 +2,10 @@
 
 Ce plugin permet à Jeedom de récupérer des informations de Sonarr et de Radarr
 
+Les différentes listes retournées par le plugin sont sous la forme: 
+Résultat de la commande : The Seven Deadly Sins S4E23, Mixte S1E1, Mixte S1E2
+Vous pouvez dans les paramétrage de l'équipement définir le séparateur que vous souhaitez que l'équipement utilise
+
 ## Sonarr
 
 ### Description de l'équipement
@@ -21,6 +25,8 @@ Le nom des épisode est au format suivant: (NOM DE LA SERIE) S(NUMEROS DE LA SAI
 Ainsi pour le 3e épisode de la saison 2 de la série GOT, le format est le suivant: GOT S2E3
 
 Le plugin est évolutif, suivant la demande il m'est possible de rajouter plus d'informations remontées par Sonarr, tout comme envoyer des commandes à Sonarr
+
+<img src="docs/sonarr/fr_FR/IMGS/commandes_sonarr.PNG" alt="hi" class="inline"/>
 
 ### configuration de l'équipement
 Lorsque vous ajoutez un équipement (Un serveur Sonarr donc), vous devez au minimum fournir deux informations:
@@ -43,6 +49,10 @@ Si il y a plusieurs épisodes qui arrivent d'un coup (dépend du raffraîchissem
 Vous pouvez donc vous servir de cette commande pour créer un scénario de notification.
 
 La commande Notification fonctionne de la même manière mais fournit en plus l'artwork de la série
+
+### Widget
+
+Pour l'instant cet équipement ne possède pas de widget. Cette fonctionnalité devrait être ajouté dans le futur mais je n'ai pas encore de date d'implémentation.
 
 ## Radarr
 
@@ -81,6 +91,10 @@ Si il y a plusieurs films qui arrivent d'un coup (dépend du raffraîchissement 
 Vous pouvez donc vous servir de cette commande pour créer un scénario de notification.
 
 La commande Notification fonctionne de la même manière mais fournit en plus l'artwork du film
+
+### Widget
+
+Pour l'instant cet équipement ne possède pas de widget. Cette fonctionnalité devrait être ajouté dans le futur mais je n'ai pas encore de date d'implémentation.
 
 # Configuration du plugin
 
