@@ -1,5 +1,11 @@
 # Changelog plugin template
 
+# 23/06/2021
+
+- Ajout de notifications HTML pour Telegram
+- Ajout de règles conditionnels pour la récupération de films et série
+- Ajout de la possibilité du formatage du nom des épisodes
+
 # 15/06/2021
 
 - Amélioration du système de notification
