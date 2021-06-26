@@ -47,8 +47,8 @@ D'autres paramètres, optionnels, peuvent être ajoutés :
 Vous pourrez trouver la clef API dans la page /settings/general de votre Sonarr
 Par défaut l'équipement se ré-actualise toutes les 5 minutes. Vous pouvez modifier cela via l'outil cron actualisation dans la configuration de l'équipement
 
-<img src="IMGS/sonarr_config1.PNG" alt="hi" class="inline"/>
-<img src="IMGS/sonarr_config2.PNG" alt="hi" class="inline"/>
+<img src="IMGS/sonarr_config_1.PNG" alt="hi" class="inline"/>
+<img src="IMGS/sonarr_config_2.PNG" alt="hi" class="inline"/>
 
 ### Notification à la réception d'un nouvel épisode
 
@@ -102,8 +102,8 @@ Exemple: pour GOT Saison 3 épisode 2 -> Saison %s épisode %e
 Vous pourrez trouver la clef API dans la page /settings/general de votre Radarr
 Par défaut l'équipement se ré-actualise toutes les 5 minutes. Vous pouvez modifier cela via l'outil cron actualisation dans la configuration de l'équipement
 
-<img src="IMGS/radarr_config1.PNG" alt="hi" class="inline"/>
-<img src="IMGS/radarr_config2.PNG" alt="hi" class="inline"/>
+<img src="IMGS/radarr_config_1.PNG" alt="hi" class="inline"/>
+<img src="IMGS/radarr_config_2.PNG" alt="hi" class="inline"/>
 
 
 ### Notification à la réception d'un nouvel épisode
