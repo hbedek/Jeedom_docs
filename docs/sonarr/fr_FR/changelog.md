@@ -1,4 +1,4 @@
-# Changelog plugin template
+# Changelog plugin Sonarr & Radarr
 
 # 13/07/2021
 
