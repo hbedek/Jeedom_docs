@@ -1,5 +1,12 @@
 # Changelog plugin template
 
+# 13/07/2021
+
+- Ajout d'un widget pour Sonarr
+- Ajout d'un widget condensé pour Sonarr
+- Ajout d'un widget pour Radarr
+- Ajout d'un widget condensé pour Radarr
+
 # 23/06/2021
 
 - Ajout de notifications HTML pour Telegram

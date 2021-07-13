@@ -61,10 +61,6 @@ La commande Notification fonctionne de la même manière mais fournit en plus l'
 
 La commande notification HTML est faîte pour être utilisée avec Telegram
 
-### Widget
-
-Pour l'instant cet équipement ne possède pas de widget. Cette fonctionnalité devrait être ajouté dans le futur mais je n'ai pas encore de date d'implémentation / je ne m'engage pas sûr une date.
-
 ## Radarr
 
 ### Description de l'équipement
@@ -116,9 +112,31 @@ Vous pouvez donc vous servir de cette commande pour créer un scénario de notif
 La commande Notification fonctionne de la même manière mais fournit en plus l'artwork du film
 
 La commande notification HTML est faîte pour être utilisée avec Telegram
-### Widget
 
-Pour l'instant cet équipement ne possède pas de widget. Cette fonctionnalité devrait être ajouté dans le futur mais je n'ai pas encore de date d'implémentation / je ne m'engage pas sûr une date.
+
+# Widget
+
+Pour Sonarr et Radarr, deux widgets sont disponibles et reprennent les même informations pour les deux.
+
+## Widget - full
+
+<img src="IMGS/widget.PNG" alt="hi" class="inline" heigth="500"/>
+
+Le widget affiche les 3 premiers épisodes / films pour les 3 catégories:
+- à venir
+- téléchargés
+- manquants
+
+L'ordre des commandes ainsi que leur visibilité dépend de ce que vous avez définit dans les commandes de l'équipement.
+
+Pour les "téléchargés", si les informations sur la qualité et la taille sur le disque sont disponible, elles seront affichées
+
+## Widget - condensed
+
+<img src="IMGS/widget_condensed.PNG" alt="hi" class="inline" heigth="300"/>
+
+Le widget n'affiche plus qu'une seule catégorie: les films / épisodes à venir.
+Pour cette catégorie, si le film / épisode à été téléchargé alors le widget affiche un indicatif vert et les informations de téléchargement.
 
 # Configuration du plugin
 
