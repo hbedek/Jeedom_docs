@@ -1,5 +1,11 @@
 # Changelog plugin Sonarr & Radarr
 
+# 16/07/2021
+
+- Fix erreur titre des notifications
+- fix erreur taille des fichiers
+- fix erreur widget condensed
+
 # 13/07/2021
 
 - Ajout d'un widget pour Sonarr
