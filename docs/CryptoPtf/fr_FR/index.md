@@ -5,10 +5,9 @@ Actuellement disponible sur le plugin:
 - JustMining
 - Binance
 
-
 ## JustMining
 
-Un équipement JustMining vous permet de récupérer les information:
+Un équipement JustMining vous permet de récupérer les informations:
 - d'un stacking
 - d'un masternode
 - d'un wallet
@@ -57,12 +56,19 @@ Si la clef API et l'API Secret sont correctee, le plugin vous demandera alors de
 Paramètre optionnels:
 Vous pouvez indiquer le prix d'achat de vos tokens et le plugin calculera votre plus value.
 
-Attention: pour le moment le plugin ne renvoie que la conversion en EUR ce qui peux poser problème sur certaines monnaies n'ayant pas de conversion EUR (ex: BETH). Dans ces cas la le plugin ne calcule pas l'équivalent en EUR. Ceci sera Fix prochainement.
+
+## Configuration de la devise
+Il est possible pour tous les équipements de configurer la devise dans laquelle le plugin doit convertir la valeur des tokens.
+Pour cela il faut d'abord cocher l'option "Récupérer le cours sur Binance".
+De la vous avez le choix entre EUR et USDT.
+Le plugin tente de remonter la conversion pour les tokens en Stacking sur binance (préfixé par LD) ainsi que certains tokens propre à binance (BETH).
+Dans le cas ou le plugin ne remonte pas, ou la mauvaise conversion, vous pouvez sélectionner un autre token de référence.
+Pour cela cochez la case "Saisir à la main le symbole", et saisissez le bon symbole dans le champ qui s'affiche.
+EX: Pour la monnaie LDXRP, le plugin va bien aller récupérer la device de XRP. Dans le cas ou cela ne fonctionnerait pas, il faudrait alors cocher la case "Saisir à la main le symbole" et saisir "XRP" dans le champ qui s'affiche.
 
 ## A venir
 
 Attention, je ne m'engage sur aucune date / implémentation mais voici les projets en cours:
-- Ajout du choix de la monnaie de conversion EUR / USD
 - Intégration de Binance Saving
 - Intégration des portefeuille ERC20
 - Ajout d'un équipement génériques regroupant les informations de tous les porteuilles
