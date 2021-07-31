@@ -39,7 +39,8 @@ Pour cela il vous suffit de vous connecter au site de Just Mining et d'aller dan
 Mon Compte -> Paramètres -> API.
 
 Copiez coller la clef que vous trouverez dans le champ API KEY de la configuration du plugin
-L'API de Just Mining ne donne que des accès de lecture à votre compte, pour plus d'informations: https://docs.just-mining.com/
+L'API de Just Mining ne donne que des accès de lecture à votre compte, pour plus d'informations:
+<a href="https://docs.just-mining.com/">Documentation API Just Mining</a>
 
 Maintenant que vous avez saisit votre clef API, vous pouvez choisir le type de contrat dans la liste:
 - Stacking
@@ -139,14 +140,15 @@ Ensuite dans le Portefeuille Crypto, choisissez Wallet Ethereum
 Une nouvelle catégorie apparaît et vous permez de configurer votre wallet Ethereum.
 
 Pour ce type d'équipements, vous devez fournir une clef API de Infura:
-https://infura.io/dashboard/ethereum
+<a href="https://infura.io/dashboard/ethereum">Création clef Infura.io</a>
 
 Vous pouvez créer une clef API gratuitement qui vous donnera accès à 100 000 requêtes par jours.
 ATTENTION la clef API correspon au PROJECT ID
 
 Renseignez la clef API dans la configuration du plugin.
 Saisissez ensuite l'adresse de votre wallet Ethereum ainsi que la contract adress du token que vous souhaitez récupérer.
-Exemple: pour le token MTO, vous retrouverez la contract adress sur Etherscan: https://etherscan.io/token/0xe66b3aa360bb78468c00bebe163630269db3324f
+Exemple: pour le token MTO, vous retrouverez la contract adress sur Etherscan:
+<a href="https://etherscan.io/token/0xe66b3aa360bb78468c00bebe163630269db3324f">MTO Contract Adress</a>
 
 Si la clef API et l'API Secret sont correctee, le plugin vous demandera alors de choisir une des cryptomonnaies de votre portefeuille SPOT. Choisissez la cryptomonnaie et sauvegarder pour créer les commandes.
 
