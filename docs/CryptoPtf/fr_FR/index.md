@@ -20,9 +20,13 @@ Un équipement JustMining vous permet de récupérer les informations:
 
 ### Description de l'équipement
 Le plugin retourne le nombre de tokens de votre contrat ainsi que le nombre de récompenses de votre contrat de Stacking / Masternode.
+Le plugin peut remonter l'évaluation de votre portefeuille en EUR ou USDT au choix. Le plugin calculera alors les performances de votre portefeuille pour 4 périodes de temps:
+- 24h
+- 1 semaine
+- 1 mois
+- 1 an
 
-c
-
+Enfin si vous renseignez le montant d'achat de vos tokens, le plugin vous indiquera la plus value.
 <img src="IMGS/equipement_justmining1.PNG" alt="hi" class="inline"/>
 <img src="IMGS/equipement_justmining2.PNG" alt="hi" class="inline"/>
 
@@ -70,13 +74,13 @@ Un équipement Binance permet de récupérer les informations d'un portefeuille 
 ### Description de l'équipement
 Le plugin retourne le nombre de tokens disponibles et bloqués pour une cryptomonnaie de votre portefeuille Spot.
 Le plugin crée une commande portefeuille correspondant au nombre de tokens disponible + nombre de tokens bloqués.
-Pour disponible / bloqués / portefeuille le plugin retourne la conversion en EUR.
-Le plugin calcule les performances de votre cryptomonnaie pour plusieurs périodes de temps:
+Le plugin peut remonter l'évaluation de votre portefeuille en EUR ou USDT au choix. Le plugin calculera alors les performances de votre portefeuille pour 4 périodes de temps:
 - 24h
 - 1 semaine
 - 1 mois
 - 1 an
-Si jamais vous renseignez en plus le coût d'achat de vos tokens, le plugin calculera les plus values. 
+
+Enfin si vous renseignez le montant d'achat de vos tokens, le plugin vous indiquera la plus value.
 
 <img src="IMGS/equipement_binance1.PNG" alt="hi" class="inline"/>
 <img src="IMGS/equipement_binance2.PNG" alt="hi" class="inline"/>
@@ -99,7 +103,7 @@ ATTENTION: par mesure de sécurité, veillez bien à créer une clef API distinc
 Une fois la clef API et l'API secret saisis, vous pouvez choisir un type de portefeuille:
 - Spot
 
-Si la clef API et l'API Secret sont correctes, le plugin vous demandera alors de choisir une des cryptomonnaies de votre portefeuille SPOT. Choisissez la cryptomonnaie et sauvegardez pour créer les commandes.
+Si la clef API et l'API Secret sont correctes, le plugin vous demandera alors de choisir une des cryptomonnaies de votre portefeuille SPOT.
 
 <img src="IMGS/config_binance_config.PNG" alt="hi" class="inline"/>
 
@@ -142,14 +146,12 @@ Pour ce type d'équipements, vous devez fournir une clef API de Infura:
 <a href="https://infura.io/dashboard/ethereum">Création clef Infura.io</a>
 
 Vous pouvez créer une clef API gratuitement qui vous donnera accès à 100 000 requêtes par jours.
-ATTENTION la clef API correspon au PROJECT ID
+ATTENTION la clef API correspond au PROJECT ID
 
 Renseignez la clef API dans la configuration du plugin.
 Saisissez ensuite l'adresse de votre wallet Ethereum ainsi que la contract adress du token que vous souhaitez récupérer.
 Exemple: pour le token MTO, vous retrouverez la contract adress sur Etherscan:
 <a href="https://etherscan.io/token/0xe66b3aa360bb78468c00bebe163630269db3324f">MTO Contract Adress</a>
-
-Si la clef API et l'API Secret sont correctes, le plugin vous demandera alors de choisir une des cryptomonnaies de votre portefeuille SPOT. Choisissez la cryptomonnaie et sauvegardez pour créer les commandes.
 
 <img src="IMGS/config_etherwallet_config.PNG" alt="hi" class="inline"/>
 
