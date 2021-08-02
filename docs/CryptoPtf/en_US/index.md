@@ -132,6 +132,30 @@ You can also:
 
 SAVE to create all the commands
 
+## Equipments datas aggregation
+You can aggregagte the datas from the other equipments of Crypto Portfolio with the Wallet Aggregator.
+
+### Equipment description
+This equipment returns the following datas:
+- valuation of the wallet
+- capital gain of the wallet
+- rentability of the wallet
+- performance for the 4 time range
+
+### Equipment setting
+First you will have to define the refresh rate. Without it the equipment commands will not e refreshed
+
+In the wallet dropdown, choose Wallet Aggregator.
+
+The plugin will ask you to choose which wallet you want to aggregate
+
+WARNING: Currently the plugin aggregate the datas and doesn't care about the rate currency (EUR / USD). Be sure to aggregate wallet with the same currency (EUR / USD)
+
+You can also give the plugin the number of decimals it has to use to calculate the price valuation.
+
+SAVE to create all the commands
+
+
 ## Currency rate settings
 For all the equipment you can configure the currency to convert the token value.
 You will have to check the correct option during the configuration and set the currency (EUR, USDT)
