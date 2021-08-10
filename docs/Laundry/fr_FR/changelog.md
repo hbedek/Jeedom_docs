@@ -1,14 +1,10 @@
 # Changelog plugin Sonarr & Radarr
 
-# 10/08/2021
-
-- Fix erreur sur notification qualité / poids
-
 # 09/08/2021
 
 - Ajout de la possibilité de regrouper les épisodes téléchargés
 - Ajout des commandes bruts renvoyant des informations sous format JSON
-- Création des commandes automatiquement à la MAJ du plugin
+
 
 # 16/07/2021
 

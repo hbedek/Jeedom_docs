@@ -50,6 +50,9 @@ Par défaut l'équipement se ré-actualise toutes les 5 minutes. Vous pouvez mod
 <img src="IMGS/sonarr_config_1.PNG" alt="hi" class="inline"/>
 <img src="IMGS/sonarr_config_2.PNG" alt="hi" class="inline"/>
 
+Il est possible de regrouper les épisodes téléchargés d'une même série / même saison en cochant le paramètre associé. Le plugin vous demandera alors de saisir un séparateur qui par défaut est ", ".
+Exemple, le plugin vous remontera GOT Saison 2 episode 1, 2, 3, 4
+
 ### Notification à la réception d'un nouvel épisode
 
 Le plugin Sonarr est notifié lorsqu'un nouvel épisode est importé dans Sonarr.
