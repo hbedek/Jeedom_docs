@@ -28,7 +28,7 @@ Le plugin peut remonter 4 états:
 <img src="IMGS/cmds.PNG" alt="hi" class="inline"/>
 
 Le widget de l'équipement remonte ces 4 états sous la forme d'icônes:
-<img src="IMGS/laundry_opened.PNG" alt="hi" class="inline"/>
-<img src="IMGS/laundry_closed.PNG" alt="hi" class="inline"/>
-<img src="IMGS/laundry_running.PNG" alt="hi" class="inline"/>
-<img src="IMGS/laundry_finished.PNG" alt="hi" class="inline"/>
+<img src="IMGS/laundry_opened.png" alt="hi" class="inline"/>
+<img src="IMGS/laundry_closed.png" alt="hi" class="inline"/>
+<img src="IMGS/laundry_running.png" alt="hi" class="inline"/>
+<img src="IMGS/laundry_finished.png" alt="hi" class="inline"/>
