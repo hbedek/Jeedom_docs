@@ -88,6 +88,8 @@ Bien sûr le plus précis reste la consommation cumulée en kWh.
 Dans la configuration, choisissez "Equipement" et la période de raffraîchissement:
 <img src="IMGS/config_eq_1.PNG" alt="hi" class="inline"/>
 
+Les trois types d'équipements renvoient les mêmes commandes que le Compteur.
+
 ### Configuration d'un équipement suivant sa consommation cumulée kWh
 
 Cette configuration est la plus précise.
@@ -113,6 +115,7 @@ ATTENTION: cette commande doit être historisée, suivant la période de rafraî
 Renseignez la puissance que consomme cet équipement allumé et la puissance que consomme cet équipement éteint.
 
 Renseignez l'unité des puissances que vous avez renseigné.
+
 
 ## Lier un équipement à un compteur
 
