@@ -32,3 +32,9 @@ Le widget de l'équipement remonte ces 4 états sous la forme d'icônes:
 <img src="IMGS/laundry_closed.png" alt="hi" class="inline"/>
 <img src="IMGS/laundry_running.png" alt="hi" class="inline"/>
 <img src="IMGS/laundry_finished.png" alt="hi" class="inline"/>
+
+## Compatibilité Electricity Cost
+
+Ce plugin est compatible avec Electricity Cost.
+Vous pourrez ainsi profiter de toutes les fonctionalités d'Electricity Cost sans avoir à créer de nouvel équipement.
+Voici la documentation du plugin: https://hbedek.github.io/Jeedom_docs/docs/ElectricityCost/fr_FR/
