@@ -37,4 +37,5 @@ Le widget de l'équipement remonte ces 4 états sous la forme d'icônes:
 
 Ce plugin est compatible avec Electricity Cost.
 Vous pourrez ainsi profiter de toutes les fonctionalités d'Electricity Cost sans avoir à créer de nouvel équipement.
-Voici la documentation du plugin: https://hbedek.github.io/Jeedom_docs/docs/ElectricityCost/fr_FR/
+Voici la documentation du plugin: 
+<a href="https://hbedek.github.io/Jeedom_docs/docs/ElectricityCost/fr_FR/">ICI</a>

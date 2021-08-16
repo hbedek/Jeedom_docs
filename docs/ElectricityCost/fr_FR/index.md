@@ -133,6 +133,7 @@ ATTENTION: Le pourcentage se basant sur le coût mensuel, les pourcentages ne so
 Ce plugin est compatible avec le plugin Laundry.
 Si vous créé un équipement sur le plugin Laundry et qu'Electricity Cost est installé sur votre Jeedom, Laundry vous proposera de configurer votre équipement avec les mêmes paramètres que les équipements d'Electricit Cost.
 
-Voici la documentation du plugin: https://hbedek.github.io/Jeedom_docs/docs/Laundry/fr_FR/
+Voici la documentation du plugin:
+<a href="https://hbedek.github.io/Jeedom_docs/docs/Laundry/fr_FR/">ICI</a>
 
 
