@@ -1,5 +1,9 @@
 # Changelog plugin Laundry
 
+# 16/08/2021
+
+Fix erreur refresh widget si aucune cmd
+
 # 15/08/2021
 
 Amélioration de la compatibilité à Electricity Cost

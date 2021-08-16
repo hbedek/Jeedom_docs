@@ -1,5 +1,11 @@
 # Changelog plugin Crypto Portfolio
 
+# 16/08/2021
+Mauvais calcul de la rentabilité: Correction
+
+# 15/08/2021
+Changement icône plugin
+
 # 02/08/2021
 Ajout de l'équipement Wallet Aggregatot permettant d'aggréger les données des autres équipements du widget
 
