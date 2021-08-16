@@ -3,6 +3,7 @@
 # 16/08/2021
 
 Fix erreur refresh widget si aucune cmd
+Nouvelle version du widget
 
 # 15/08/2021
 
