@@ -1,5 +1,9 @@
 # Changelog plugin Electricity Cost
 
+# 19/08/2021
+
+Fix problème du calcul du pourcentage si l'équipement est lié à un contrat
+
 # 16/08/2021
 
 Fix refresh des équipements puissance
