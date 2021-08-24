@@ -9,6 +9,9 @@ Changement icône plugin
 # 02/08/2021
 Ajout de l'équipement Wallet Aggregatot permettant d'aggréger les données des autres équipements du widget
 
+# 23/08/2021
+Fix raffraîchissement wallet just mining
+
 # 31/07/2021
 Mise à jour de la documentation FR
 

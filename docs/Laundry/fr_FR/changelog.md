@@ -1,5 +1,9 @@
 # Changelog plugin Laundry
 
+# 23/08/2021 [Beta]
+
+Ajout du mode ECO
+
 # 16/08/2021
 
 Fix erreur refresh widget si aucune cmd

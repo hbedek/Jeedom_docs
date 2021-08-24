@@ -1,5 +1,12 @@
 # Changelog plugin Electricity Cost
 
+# 23/08/2021 [Beta]
+
+- Ajout du calcul du pourcentge de heures creuses
+- Ajout calcul économies si heures creuses
+- Refonte de l'interface
+- Ajout de la budgétisation
+
 # 20/08/2021
 
 - Ajout d'une information sur la nécessité d'historisation des cmds dans la configuration d'un équipement.
