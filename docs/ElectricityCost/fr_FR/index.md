@@ -46,7 +46,7 @@ Pour configurer un compteur:
 
 2) Choisissez une période de raffraîchissement pour cet équipement. Le plugin ne va pas récupérer les informations en temps réel et son raffraîchissement n'aura lieu que si vous remplissez cette commande.
 
-3) Sélectionnez l'information que le plugin va utiliser pour calculer la consommationen kWh cumulée. Si votre compteur est un compteur ENEDIS, je vous conseille de prendre la puissance horaire de votre compteur (appelée consommation horaire sur le plugin ENEDIS):
+3) Sélectionnez l'information que le plugin va utiliser pour calculer la consommationen kWh cumulée. Si votre compteur est un compteur ENEDIS, je vous conseille de prendre la puissance moyenne horaire de votre compteur (appelée consommation horaire sur le plugin ENEDIS):
 <img src="IMGS/config_compteur.PNG" alt="hi" class="inline"/>
 
 4) Sélectionnez la commande remontant la puissance horaire du compteur
@@ -71,6 +71,9 @@ Cet équipement vous remontera les informations suivantes:
 - Coût toutes périodes confondues (si vous avez lié un contrat)
 - Equipements liés (renvoie tous les équipements qui sont liés au compteurs, voir la catégorie autres équipements)
 - Le pourcentage cumulé du coût mensuel de tous les équipements liés a compteur par rapport à ce dernier
+- Le dépassement d'un budget pré-définit [BETA]
+- Le pourcentage de consommation en heures creuses [BETA]
+- L'économie réalisée si l'équipement fonctionnait uniquement en heures creuses [BETA]
 
 La commande pourcentage cumulé vous permet de mieux comprendre la consommation de votre logement.
 
@@ -96,13 +99,18 @@ Cette configuration est la plus précise.
 Choisissez la commande qui va renvoyer la consommation cumulée pour cet équipement.
 ATTENTION: cette commande doit être historisée, suivant la période de rafraîchissement sélectionnée, le plugin peut être amené à récupérer des informations historisées.
 
-### Configuration d'un équipement suivant sa puissance
+### Configuration d'un équipement suivant sa puissance instantanée
 
-Cette configuration est moins précise que la consommation.
-Choisissez la commande qui va renvoyer la puissance pour cet équipement.
+Choisissez la commande qui va renvoyer la puissance  instantanée pour cet équipement.
 ATTENTION: cette commande doit être historisée, suivant la période de rafraîchissement sélectionnée, le plugin peut être amené à récupérer des informations historisées.
 
 Choisissez ensuite l'unité de la puissance renvoyée par la commande que vous avez saisit.
+
+### Configuration d'un équipement suivant sa puissance moyenne [BETA]
+
+Cette configuration diffère de la puissance instanée, ici la commande que vous allez saisir renvoie une moyenne de puissance sur une plage de temps. Le compteur électrique du plugin ENEDIS par exemple renvoie la puissance moyenne par demi heure.
+ATTENTION: cette commande doit être historisée, suivant la période de rafraîchissement sélectionnée, le plugin peut être amené à récupérer des informations historisées.
+
 
 ### Configuration d'un équipement suivant son état
 
@@ -128,6 +136,27 @@ En liant un équipement à un compteur, l'équipement récupère le contrat lié
 
 ATTENTION: Le pourcentage se basant sur le coût mensuel, les pourcentages ne sont vraiment exploitable que passé un mois.
 
+## Calcul du coût pour les équipements Etat / Puissance instantanée
+
+Prenons un exemple pour expliquer le fonctionnement:
+Je possède un téléviseur qui est soit allumé (état 1), soit éteint (état 0).
+Lorsque que mon téléviseur est allumé, sa puissance est de 100 W, lorsqu'il est éteint sa puissance est de 0,3W.
+Je possède un contrat Heures creuses / Heures pleines avec le début des heures creuses à 22h04.
+
+Afin de calculer les coûts, le plugin se base sur l'historique de l'état de l'équipement.
+Si j'allume ma télévision à 21h, et que je l'éteint à 23h, le plugin devrait calculer que j'ai consommé 100W pendant 2h. Cette consommation chevauche une période heures creuses / heures pleines. Le plugin décomposera alors la consommation pour établir la consommation avant le début des heures creuses et après le début des heures creuses.
+
+En image:
+<img src="IMGS/etat_elec.PNG" alt="hi" class="inline"/>
+Ici l'état de ma télévision
+
+<img src="IMGS/puissance_elec.PNG" alt="hi" class="inline"/>
+Ici la puissance de ma télévision en ayant décomposé début heures creuses / fin heures creuses
+
+<img src="IMGS/consommation_elec.PNG" alt="hi" class="inline"/>
+Ici la consommation de ma télévision qui prends bien en compte le début de l'heure creuse
+
+
 ## Compatibilité des plugins
 
 Ce plugin est compatible avec le plugin Laundry.
@@ -136,4 +165,8 @@ Si vous créé un équipement sur le plugin Laundry et qu'Electricity Cost est i
 Voici la documentation du plugin:
 <a href="https://hbedek.github.io/Jeedom_docs/docs/Laundry/fr_FR/">ICI</a>
 
+## Que faire si le plugin ne renvoie pas les informations:
+1) Vérifier que la configuration de l'équipement est bien complète
+2) Vérifier que les commandes que l'on a saisit dans la configuration de l'équipement soient bien historisés
+3) Vérifier que les commandes Etat / Puissance / Consommation / Coût total soient bien historisées pour cet équipement
 

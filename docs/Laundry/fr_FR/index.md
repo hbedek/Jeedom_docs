@@ -28,10 +28,47 @@ Le plugin peut remonter 4 états:
 <img src="IMGS/cmds.PNG" alt="hi" class="inline"/>
 
 Le widget de l'équipement remonte ces 4 états sous la forme d'icônes:
-<img src="IMGS/laundry_opened.png" alt="hi" class="inline"/>
-<img src="IMGS/laundry_closed.png" alt="hi" class="inline"/>
-<img src="IMGS/laundry_running.png" alt="hi" class="inline"/>
-<img src="IMGS/laundry_finished.png" alt="hi" class="inline"/>
+<img src="IMGS/laundry_opened.png" alt="hi" class="inline" height="100px" width="auto"/>
+<img src="IMGS/laundry_closed.png" alt="hi" class="inline" height="100px" width="auto"/>
+<img src="IMGS/laundry_running.png" alt="hi" class="inline" height="100px" width="auto"/>
+<img src="IMGS/laundry_finished.png" alt="hi" class="inline" height="100px" width="auto"/>
+
+## Mode ECO [BETA]
+
+Le plugin est en capacité d'éteindre votre machine lorsque celle ci ne tourne pas.
+Ce mode eco vous permet d'économiser la consommation du mode veille de votre machine.
+
+### Configuration du mode ECO [BETA]
+
+Pour que le mode ECO puisse s'enclencher, il faut d'abord configurer l'équipement
+<img src="IMGS/eco_config.png" alt="hi" class="inline"/>
+
+### Apprentissage du mode ECO [BETA]
+
+Le mode ECO nécessite un apprentissage avant de pouvoir s'activer. Cet apprentissage permet au plugin d'estimer la puissance que consomme votre machine en veille et donc ce que fait économiser le mode ECO à votre machine.
+
+Une fois cette puissance acquise, le mode ECO peut s'activer tout seul.
+L'activation du mode ECO est symbolisé par:
+<img src="IMGS/laundry_eco.png" alt="hi" class="inline" height="100px" width="auto"/>
+
+
+### Les règles du mode ECO [BETA]
+
+Le mode ECO ne s'active que si:
+- la machine ne tourne pas.
+- la porte de la machine est fermée.
+- le mode ECO n'a pas déjà été activé depuis la fin du dernier cycle.
+- les 3 conditions ci-dessus sont restées inchangées depuis 10 minutes.
+
+Le mode ECO se désactive si:
+- la porte de la machine s'ouvre
+
+Le mode ECO ne peux ainsi s'activer qu'une fois entre deux cycle.
+
+### Mode ECO et lancement des machines en décalé. [BETA]
+
+Attention, si vous avez pour habitude de lancer vos machines avec retardateur, le mode ECO n'est peut être pas fait pour vous.
+Si vous souhaitez utiliser les deux fonctionnalités en parallèle, le mode ECO ne peut se lancer qu'une seule fois entre deux cycle
 
 ## Compatibilité Electricity Cost
 
