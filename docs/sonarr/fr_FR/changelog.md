@@ -1,5 +1,10 @@
 # Changelog plugin Sonarr & Radarr
 
+
+# 26/08/2021 [Beta]
+
+- Ajout du board publique de fonctionnalités
+
 # 10/08/2021
 
 - Fix erreur sur notification qualité / poids
