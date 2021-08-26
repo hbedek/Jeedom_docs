@@ -150,10 +150,10 @@ En image:
 <img src="IMGS/etat_elec.PNG" alt="hi" class="inline"/>
 Ici l'état de ma télévision
 
-<img src="IMGS/puissance_elec.PNG" alt="hi" class="inline"/>
+<img src="IMGS/puissance_elec.png" alt="hi" class="inline"/>
 Ici la puissance de ma télévision en ayant décomposé début heures creuses / fin heures creuses
 
-<img src="IMGS/consommation_elec.PNG" alt="hi" class="inline"/>
+<img src="IMGS/consommation_elec.png" alt="hi" class="inline"/>
 Ici la consommation de ma télévision qui prends bien en compte le début de l'heure creuse
 
 
