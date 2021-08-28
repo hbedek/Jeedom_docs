@@ -1,5 +1,11 @@
 # Changelog plugin Crypto Portfolio
 
+# 28/08/2021 [Beta]
+Ajout de l'API CoinGecko
+
+# 25/08/2021 [Beta]
+Ajout du board publique des fonctionnalités
+
 # 16/08/2021
 Mauvais calcul de la rentabilité: Correction
 
