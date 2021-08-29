@@ -206,7 +206,3 @@ Dans le cas où le plugin ne remonte pas, ou en cas de mauvaise conversion, vous
 Pour cela cochez la case "Saisir à la main le symbole", et saisissez le bon symbole dans le champ qui s'affiche.
 EX: Pour la monnaie LDXRP, le plugin va bien aller récupérer la device de XRP. Dans le cas où cela ne fonctionnerait pas, il faudrait alors cocher la case "Saisir à la main le symbole" et saisir "XRP" dans le champ qui s'affiche.
 
-## A venir
-Attention, je ne m'engage sur aucune date / implémentation mais voici les projets en cours:
-- Intégration de Binance Saving
-- Ajout de widgets
