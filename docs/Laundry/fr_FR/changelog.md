@@ -1,11 +1,11 @@
 # Changelog plugin Laundry
 
-# 30/08/2021 [Beta]
+# 30/08/2021
 
 Fix activation ECO
 Modification interface Electricity Cost
 
-# 23/08/2021 [Beta]
+# 23/08/2021
 
 Ajout du mode ECO
 

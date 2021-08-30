@@ -1,6 +1,6 @@
 # Changelog plugin Electricity Cost
 
-# 23/08/2021 [Beta]
+# 23/08/2021
 
 - Ajout du calcul du pourcentge de heures creuses
 - Ajout calcul économies si heures creuses

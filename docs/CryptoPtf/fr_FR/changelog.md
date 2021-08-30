@@ -1,15 +1,15 @@
 # Changelog plugin Crypto Portfolio
 
-# 30/08/2021 [Beta]
+# 30/08/2021
 Fix Just Mining 404 error
 
-# 29/08/2021 [Beta]
+# 29/08/2021
 Ajout de Just Mining LENDING
 
-# 28/08/2021 [Beta]
+# 28/08/2021
 Ajout de l'API CoinGecko
 
-# 25/08/2021 [Beta]
+# 25/08/2021
 Ajout du board publique des fonctionnalités
 
 # 16/08/2021
