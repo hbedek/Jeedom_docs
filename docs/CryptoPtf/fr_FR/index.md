@@ -19,7 +19,7 @@ Un équipement JustMining vous permet de récupérer les informations:
 - d'un stacking
 - d'un masternode
 - d'un wallet
-- d'un contrat lending [Beta]
+- d'un contrat lending
 
 ### Description de l'équipement
 Le plugin retourne le nombre de tokens de votre contrat ainsi que le nombre de récompenses de votre contrat de Stacking / Masternode / Lending.

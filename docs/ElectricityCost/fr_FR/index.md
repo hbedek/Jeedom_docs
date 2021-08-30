@@ -71,9 +71,9 @@ Cet équipement vous remontera les informations suivantes:
 - Coût toutes périodes confondues (si vous avez lié un contrat)
 - Equipements liés (renvoie tous les équipements qui sont liés au compteurs, voir la catégorie autres équipements)
 - Le pourcentage cumulé du coût mensuel de tous les équipements liés a compteur par rapport à ce dernier
-- Le dépassement d'un budget pré-définit [BETA]
-- Le pourcentage de consommation en heures creuses [BETA]
-- L'économie réalisée si l'équipement fonctionnait uniquement en heures creuses [BETA]
+- Le dépassement d'un budget pré-définit
+- Le pourcentage de consommation en heures creuses
+- L'économie réalisée si l'équipement fonctionnait uniquement en heures creuses
 
 La commande pourcentage cumulé vous permet de mieux comprendre la consommation de votre logement.
 
@@ -106,7 +106,7 @@ ATTENTION: cette commande doit être historisée, suivant la période de rafraî
 
 Choisissez ensuite l'unité de la puissance renvoyée par la commande que vous avez saisit.
 
-### Configuration d'un équipement suivant sa puissance moyenne [BETA]
+### Configuration d'un équipement suivant sa puissance moyenne
 
 Cette configuration diffère de la puissance instanée, ici la commande que vous allez saisir renvoie une moyenne de puissance sur une plage de temps. Le compteur électrique du plugin ENEDIS par exemple renvoie la puissance moyenne par demi heure.
 ATTENTION: cette commande doit être historisée, suivant la période de rafraîchissement sélectionnée, le plugin peut être amené à récupérer des informations historisées.
