@@ -1,6 +1,9 @@
 # Changelog plugin Crypto Portfolio
 
 # 29/08/2021 [Beta]
+Fix Just Mining 404 error
+
+# 29/08/2021 [Beta]
 Ajout de Just Mining LENDING
 
 # 28/08/2021 [Beta]
