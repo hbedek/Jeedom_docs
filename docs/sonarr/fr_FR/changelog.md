@@ -1,5 +1,9 @@
 # Changelog plugin Sonarr & Radarr
 
+# 01/09/2021
+
+- Fix ouverture de Radarr lors du clic sur widget [Beta]
+
 # 28/08/2021
 
 - Ouvre interface web de Sonarr Radarr lorsque clic sur widget
