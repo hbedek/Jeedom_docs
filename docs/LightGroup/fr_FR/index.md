@@ -98,6 +98,9 @@ Pour configurer le groupe de lumière, vous devez sélectionner les lumières qu
 <img src="IMGS/config_groupe_lumiere.PNG" alt="hi" class="inline"/>
 
 Un groupe de lumières peut être composé de groupes de lumières 
+Un groupe de lumières est considéré comme allumé dès lors qu'une seule lumière du groupe est allumée.
+La luminosité d'un groupe représente la luminosité moyenne de toutes les lumière du groupe. Une lumière sans luminosité mais allumé compte pour 100 % de luminosité.
+Une lumière éteinte compte pour 0%
 
 Le groupe de lumière est représenté sour forme de widget de la même manière que la lumière seule mais possède 3 ampoules:
 <img src="IMGS/light_group_on_100.svg" alt="hi" class="inline" height="100px" width="100px"/>
