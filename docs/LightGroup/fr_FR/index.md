@@ -55,18 +55,25 @@ Le plugin remontera un pourcentage de luminosité et se basera sur ce maximum at
 Saisissez la commande permettant de modifier la luminosité de votre lumière.
 
 Le plugin vous remontera les informations suivantes:
+
 Allumé 100 % luminosité
 <img src="IMGS/light_on_100.svg" alt="hi" class="inline" height="100px" width="100px"/>
+
 Allumé entre 75 et 100 % luminosité
 <img src="IMGS/light_on_75.svg" alt="hi" class="inline" height="100px" width="100px"/>
+
 Allumé entre 50 et 75 % luminosité
 <img src="IMGS/light_on_50.svg" alt="hi" class="inline" height="100px" width="100px"/>
+
 Allumé entre 25 et 50 % luminosité
 <img src="IMGS/light_on_25.svg" alt="hi" class="inline" height="100px" width="100px"/>
+
 Allumé entre +0 et 25 % luminosité
 <img src="IMGS/light_on_0.svg" alt="hi" class="inline" height="100px" width="100px"/>
+
 Allumé 0 % luminosité
 <img src="IMGS/light_on_00.svg" alt="hi" class="inline" height="100px" width="100px"/>
+
 Eteint
 <img src="IMGS/light_off.svg" alt="hi" class="inline" height="100px" width="100px"/>
 
