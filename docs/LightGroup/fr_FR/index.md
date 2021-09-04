@@ -4,7 +4,7 @@ Ce plugin permet de créer des groupes de lumières et de controler l'état, la 
 Le plugin permet d'uniformiser toutes vos lumières dans un seul et unique format.
 
 
-## Configuration de l'équipement
+# Configuration de l'équipement
 
 Il est possible de configurer deux types de lumières différentes:
 - une lumière seule
@@ -15,12 +15,12 @@ Avant de commencer à regrouper vos lumière dans un groupe, vous devez au préa
 Choisissez dans la sélection le type de lumière que vous souhaitez créer:
 <img src="IMGS/type_lumieres.PNG" alt="hi" class="inline"/>
 
-### Configuration d'une lumière seule
+## Configuration d'une lumière seule
 
 Une lumière est composé au minimum d'un état Allumé / Eteint.
 Vous pouvez également configurer la luminosité et la couleur.
 
-#### Etat de la lumière
+### Etat de la lumière
 
 <img src="IMGS/config_lumiere_etat.PNG" alt="hi" class="inline"/>
 
@@ -40,7 +40,7 @@ Eteint
 <img src="IMGS/light_off.svg" alt="hi" class="inline" height="100px" width="100px"/>
 
 
-#### Luminosité de la lumière
+### Luminosité de la lumière
 
 Pour configurer la luminosité, cochez "La luminosité est-elle configurable ?"
 <img src="IMGS/config_lumiere_lumen.PNG" alt="hi" class="inline"/>
@@ -77,7 +77,7 @@ Allumé 0 % luminosité
 Eteint
 <img src="IMGS/light_off.svg" alt="hi" class="inline" height="100px" width="100px"/>
 
-#### Couleur de la lumière
+### Couleur de la lumière
 
 Pour configurer la couleur, cochez "La couleur est-elle configurable ?"
 <img src="IMGS/config_lumiere_couleur.PNG" alt="hi" class="inline"/>
@@ -86,9 +86,16 @@ Saisissez la commande remontant la couleur de votre lumière. La couleur doit ê
 
 Saisissez la commande permettant de modifier la couleur de votre lumière. De même le plugin interrogera votre lumière avec une couleur au format #FFFFFF
 
-## Compatibilité Electricity Cost
+## Configuration d'un groupe de lumières
 
-Ce plugin est compatible avec Electricity Cost.
-Vous pourrez ainsi profiter de toutes les fonctionalités d'Electricity Cost sans avoir à créer de nouvel équipement.
-Voici la documentation du plugin: 
-<a href="https://hbedek.github.io/Jeedom_docs/docs/ElectricityCost/fr_FR/">ICI</a>
+Avec le groupe de lumières, vous pouvez d'un clic:
+- Allumer toutes les lumières
+- Eteindre toutes les lumières
+- Modifier la luminosité de toutes les lumières compatibles du groupe
+- Modifier la couleur de toutes les lumières compatibles du groupe
+
+Pour configurer le groupe de lumière, vous devez sélectionner les lumières qui le composent
+<img src="IMGS/config_groupe_lumiere.PNG" alt="hi" class="inline"/>
+
+Le groupe de lumière est représenté sour forme de widget de la même manière que la lumière seule mais possède 3 ampoules:
+<img src="IMGS/light_group_on_100.svg" alt="hi" class="inline" height="100px" width="100px"/>
