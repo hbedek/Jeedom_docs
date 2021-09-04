@@ -97,5 +97,7 @@ Avec le groupe de lumières, vous pouvez d'un clic:
 Pour configurer le groupe de lumière, vous devez sélectionner les lumières qui le composent
 <img src="IMGS/config_groupe_lumiere.PNG" alt="hi" class="inline"/>
 
+Un groupe de lumières peut être composé de groupes de lumières 
+
 Le groupe de lumière est représenté sour forme de widget de la même manière que la lumière seule mais possède 3 ampoules:
 <img src="IMGS/light_group_on_100.svg" alt="hi" class="inline" height="100px" width="100px"/>
