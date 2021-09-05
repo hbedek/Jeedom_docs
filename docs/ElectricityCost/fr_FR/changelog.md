@@ -1,5 +1,10 @@
 # Changelog plugin Electricity Cost
 
+# 05/09/2021 [Beta]
+
+- Ajout des équipements compatibles avec Electricity Cost dans l'interface du plugin
+- La création des commandes ne s'effectue que si le type est sélectionné
+
 # 23/08/2021
 
 - Ajout du calcul du pourcentge de heures creuses

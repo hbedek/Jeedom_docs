@@ -103,3 +103,10 @@ Une lumière éteinte compte pour 0%
 
 Le groupe de lumière est représenté sour forme de widget de la même manière que la lumière seule mais possède 3 ampoules:
 <img src="IMGS/light_group_on_100.svg" alt="hi" class="inline" height="100px" width="100px"/>
+
+## Compatibilité Electricity Cost
+
+Ce plugin est compatible avec Electricity Cost.
+Vous pourrez ainsi profiter de toutes les fonctionalités d'Electricity Cost sans avoir à créer de nouvel équipement.
+Voici la documentation du plugin: 
+<a href="https://hbedek.github.io/Jeedom_docs/docs/ElectricityCost/fr_FR/">ICI</a>
