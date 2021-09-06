@@ -1,5 +1,9 @@
 # Changelog plugin Light Group
 
+# 06/09/2021
+
+Fix problème affichage des équipements aggrégées pour les groupes
+
 # 05/09/2021
 
 Ajout compatibilité avec Electricity Cost
