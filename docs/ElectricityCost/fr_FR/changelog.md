@@ -1,5 +1,9 @@
 # Changelog plugin Electricity Cost
 
+# 07/09/2021 [Beta]
+
+- Ajout d'un lien vers le market si aucune équipement de Laundry ou Light Group n'est configuré
+
 # 05/09/2021 [Beta]
 
 - Ajout des équipements compatibles avec Electricity Cost dans l'interface du plugin
