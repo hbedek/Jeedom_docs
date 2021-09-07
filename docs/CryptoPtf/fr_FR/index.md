@@ -207,3 +207,10 @@ Dans le cas où le plugin ne remonte pas, ou en cas de mauvaise conversion, vous
 Pour cela cochez la case "Saisir à la main le symbole", et saisissez le bon symbole dans le champ qui s'affiche.
 EX: Pour la monnaie LDXRP, le plugin va bien aller récupérer la device de XRP. Dans le cas où cela ne fonctionnerait pas, il faudrait alors cocher la case "Saisir à la main le symbole" et saisir "XRP" dans le champ qui s'affiche.
 
+## Notification HTML [Beta]
+L'ensemble des équipements Crypto Portfolio génèrent des messages HTML tous les jours à 00h00.
+Ce message HTML peut être utilisé pour des notifications notamment avec le plugin Telegram.
+Ce message résume l'activité du portefeuille de la journée de la veille.
+
+Exemple:
+<img src="IMGS/notificationHTML.PNG" alt="hi" class="inline"/>

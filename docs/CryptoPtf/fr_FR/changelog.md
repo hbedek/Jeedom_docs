@@ -1,5 +1,8 @@
 # Changelog plugin Crypto Portfolio
 
+# 07/09/2021 [Beta]
+Ajout de notification journalière HTML
+
 # 30/08/2021
 Fix Just Mining 404 error
 
