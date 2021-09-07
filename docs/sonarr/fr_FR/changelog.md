@@ -1,8 +1,12 @@
 # Changelog plugin Sonarr & Radarr
 
+# 07/09/2021
+
+- Fix notifications groupés n'ayant plus la qualité ni le poids si il n'y avait qu'un seul épisode
+
 # 01/09/2021
 
-- Fix ouverture de Radarr lors du clic sur widget [Beta]
+- Fix ouverture de Radarr lors du clic sur widget
 
 # 28/08/2021
 
