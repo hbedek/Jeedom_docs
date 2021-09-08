@@ -64,7 +64,7 @@ La commande Notification fonctionne de la même manière mais fournit en plus l'
 
 La commande notification HTML est faîte pour être utilisée avec Telegram
 
-### Ajouter une nouvelle série à Sonarr
+### Ajouter une nouvelle série à Sonarr [Beta]
 
 Pour ajouter une nouvelle série à Sonarr il vous faut au préalable:
 - le titre de la série
