@@ -1,5 +1,13 @@
 # Changelog plugin Sonarr & Radarr
 
+# 08/09/2021 [Beta]
+
+- Possibilité de faire une recherche sur Sonarr
+- Possibilité d'ajouter une série sur Sonarr
+- Possibilité de récupérer la liste des profiles sur Sonarr
+- Possibilité de récupérer la liste des dossiers sur Sonarr
+
+
 # 07/09/2021
 
 - Fix notifications groupés n'ayant plus la qualité ni le poids si il n'y avait qu'un seul épisode

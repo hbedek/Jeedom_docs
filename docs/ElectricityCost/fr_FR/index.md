@@ -170,3 +170,7 @@ Voici la documentation du plugin:
 2) Vérifier que les commandes que l'on a saisit dans la configuration de l'équipement soient bien historisés
 3) Vérifier que les commandes Etat / Puissance / Consommation / Coût total soient bien historisées pour cet équipement
 
+## FAQ
+Le pourcentage que me remonte le plugin n'est pas cohérent:
+-> Le pourcentage calculé par le plugin dépend des données d'historisation des commandes. Si vous venez d'ajouter l'historisation à vos commandes, le pourcentage ne deviendra cohérent qu'au mois suivant
+

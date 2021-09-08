@@ -64,6 +64,59 @@ La commande Notification fonctionne de la même manière mais fournit en plus l'
 
 La commande notification HTML est faîte pour être utilisée avec Telegram
 
+### Ajouter une nouvelle série à Sonarr
+
+Pour ajouter une nouvelle série à Sonarr il vous faut au préalable:
+- le titre de la série
+- le profile à appliquer
+- le chemin ou déposer la série
+
+Ces trois informations peuvent être retrouvés par des commandes du plugin
+
+#### Lancer une recherche
+
+Pour lancer une recherche, éxecuter la commande: 'Recherche'
+Cette commande est de type message, il faut donc passer en paramètre les types de la recherche.
+
+Cette commande action viendra mettre à jour deux commandes info:
+- Résultats de la recherche, à utiliser pour de la synthèse vocale
+- Résultats de la recherche raw, qui contient toutes les données bruts de la recherche
+
+#### Récupérer la liste des profils
+
+Pour lancer une recherche, éxecuter la commande: 'Récupération des profils'
+
+Cette commande action viendra mettre à jour deux commandes info:
+- Liste des profils, à utiliser pour de la synthèse vocale
+- Liste des profils raw, qui contient toutes les données bruts des profils
+
+#### Récupérer la liste des dossiers de téléchargements
+
+Pour lancer une recherche, éxecuter la commande: 'Récupération des dossiers'
+
+Cette commande action viendra mettre à jour deux commandes info:
+- Liste des dossiers, à utiliser pour de la synthèse vocale
+- Liste des dossiers raw, qui contient toutes les données bruts des chemins des dossiers
+
+#### Ajouter une série
+
+Une fois les trois commandes ci dessus effectuées, vous pouvez ajouter une série à Sonarr via la commande: 'Ajout dune série'
+
+Cette commande est de type message et prend en paramètre un JSON.
+Le JSON doit contenir le titre EXACT de la série, le nom EXACT du profil, le chemin EXACT ou déposer la série.
+exemple:
+`$data = array(
+            'serie' => "The Little History of France",
+            'profile' => "Any",
+            'path' => "/series"
+);
+$dataJson = json_encode($data);
+$options = array('title'=>'', 'message'=> $dataJson);
+cmd::byString('#[Appartement][Sonarr][Ajout dune série]#')->execCmd($options, $cache=0);`
+
+Le plugin ne prends pas encore en compte l'ajout de séries en doublons, mais si le besoin se fait sentir, je pourrais rajouter cette commande.
+
+
 ## Radarr
 
 ### Description de l'équipement
