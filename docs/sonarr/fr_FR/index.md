@@ -109,7 +109,7 @@ Exemple:
 <body>
     <pre>
         <code>
-        $data = array('serie' => "The Little History of France", 'profile' => "Any",;'path' => "/series");
+        $data = array('serie' => 'The Little History of France', 'profile' => "Any", 'path' => '/series');
         $dataJson = json_encode($data);
         $options = array('title'=>'', 'message'=> $dataJson);
         cmd::byString('#[Appartement][Sonarr][Ajout dune série]#')->execCmd($options, $cache=0);
