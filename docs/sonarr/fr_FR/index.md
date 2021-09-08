@@ -108,11 +108,8 @@ Le JSON doit contenir le titre EXACT de la série, le nom EXACT du profil, le ch
 Exemple:
 <code>
 $data = array('serie' => "The Little History of France", 'profile' => "Any",;'path' => "/series");
-            
 $dataJson = json_encode($data);
-            
 $options = array('title'=>'', 'message'=> $dataJson);
-            
 cmd::byString('#[Appartement][Sonarr][Ajout dune série]#')->execCmd($options, $cache=0);
 </code>
 
