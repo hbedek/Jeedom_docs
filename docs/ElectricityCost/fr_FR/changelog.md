@@ -1,5 +1,9 @@
 # Changelog plugin Electricity Cost
 
+# 08/09/2021 [Beta]
+
+- Fix création commandes pour un contrat
+
 # 07/09/2021 [Beta]
 
 - Ajout d'un lien vers le market si aucune équipement de Laundry ou Light Group n'est configuré
