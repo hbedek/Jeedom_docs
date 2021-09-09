@@ -1,6 +1,6 @@
 # Changelog plugin Sonarr & Radarr
 
-# 10/09/2021 [Beta]
+# 9/09/2021 [Beta]
 
 - Possibilité de rechercher les épisodes manquants
 - Possibilité de récupérer les tags
