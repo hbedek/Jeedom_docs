@@ -116,6 +116,42 @@ cmd::byString('#[Appartement][Sonarr][Ajout dune série]#')->execCmd($options, $
 
 Le plugin ne prends pas encore en compte l'ajout de séries en doublons, mais si le besoin se fait sentir, je pourrais rajouter cette commande.
 
+Paramètres optionnels:
+Il est possible lorsque l'on ajoute une série de configurer:
+- les tags à ajouter
+- le type de série
+- le type de monitoring
+
+##### Tags
+Pour récupérer les tags, éxecuter la commande: 'Récupération des tags'
+
+Cette commande action viendra mettre à jour deux commandes info:
+- Liste des tags, à utiliser pour de la synthèse vocale
+- Liste des tags raw, qui contient toutes les données bruts des tags
+
+##### Type de série
+
+Les types de séries possible sont:
+- standard
+- daily
+- anime
+
+##### Type de monitoring
+
+Les types de monitoring possible sont:
+- all
+- future
+- missing
+- existing
+- pilot
+- firstSeason
+- none
+- latestSeason
+
+##### Ajouter une série avec paramètres optionnels
+
+
+
 
 ## Radarr
 
