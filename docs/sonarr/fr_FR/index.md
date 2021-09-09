@@ -104,15 +104,19 @@ Une fois les trois commandes ci dessus effectuées, vous pouvez ajouter une sér
 
 Cette commande est de type message et prend en paramètre un JSON.
 Le JSON doit contenir le titre EXACT de la série, le nom EXACT du profil, le chemin EXACT ou déposer la série.
-exemple:
-`$data = array(
-            'serie' => "The Little History of France",
-            'profile' => "Any",
-            'path' => "/series"
-);
-$dataJson = json_encode($data);
-$options = array('title'=>'', 'message'=> $dataJson);
-cmd::byString('#[Appartement][Sonarr][Ajout dune série]#')->execCmd($options, $cache=0);`
+
+Exemple:
+<body>
+    <pre>
+        <code>
+        $data = array('serie' => 'The Little History of France', 'profile' => "Any", 'path' => '/series');
+        $dataJson = json_encode($data);
+        $options = array('title'=>'', 'message'=> $dataJson);
+        cmd::byString('#[Appartement][Sonarr][Ajout dune série]#')->execCmd($options, $cache=0);
+        </code>
+     </pre>
+</body>
+
 
 Le plugin ne prends pas encore en compte l'ajout de séries en doublons, mais si le besoin se fait sentir, je pourrais rajouter cette commande.
 
