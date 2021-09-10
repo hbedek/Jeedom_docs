@@ -1,5 +1,9 @@
 # Changelog plugin Electricity Cost
 
+# 10/09/2021 [Beta]
+
+- Revisite de l'interface
+
 # 08/09/2021 [Beta]
 
 - Fix création commandes pour un contrat
