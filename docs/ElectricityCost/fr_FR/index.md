@@ -125,10 +125,14 @@ Renseignez la puissance que consomme cet équipement allumé et la puissance que
 Renseignez l'unité des puissances que vous avez renseigné.
 
 
-## Lier un équipement à un compteur
+## Lier un équipement à un contrat ou un compteur
 
-Vous pouvez lier tous les équipements que vous avez créé sur ce plugin ou les plugins compatibles à Electricity Cost à un compteur.
+Vous avez la possibilité de lier un équipement d'Electricity Cost à:
+- Aucun autre équipement, le plugin calculera alors la consommation de votre équipement par rapport aux données en sa possession
+- Un contrat, le plugin calculera les coût de votre équipement en fonction de sa consommation et des données que vous avez saisit dans votre contrat
+- Un compteur, le plugin ira récupérer le contrat de votre compteur (votre compteur doit donc être lié à un contrat) et calculera les coûts de votre équipement par rapport à ce contrat. En plus le plugin calculera le pourcentage du coût de votre équipement par rapport à celui du compteur.
 
+INFORMATIONS SUPPLEMENTAIRES COMPTEUR:
 En liant un équipement à un compteur, l'équipement récupère le contrat lié au compteur mais permet également d'obtenir plus d'informations:
 - Chaque équipement lié vous renverra alors le pourcentage que représente le coût mensuel de l'équipement par rapport au coût mensuel du compteur.
 - Le compteur vous renverra les équipements qui lui sont associés.
