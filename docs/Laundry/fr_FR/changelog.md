@@ -1,5 +1,9 @@
 # Changelog plugin Laundry
 
+# 10/09/2021 [Beta]
+
+Ajout notifications HTML fin de cycle
+
 # 30/08/2021 [Beta]
 
 Retirer information présence mode ECO sur interface du plugin
