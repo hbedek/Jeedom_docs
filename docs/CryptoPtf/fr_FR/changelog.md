@@ -1,5 +1,9 @@
 # Changelog plugin Crypto Portfolio
 
+# 11/09/2021 [Beta]
+Nouvelle interface de visualisation des commandes
+Correction notification journalière
+
 # 07/09/2021 [Beta]
 Ajout de notification journalière HTML
 
