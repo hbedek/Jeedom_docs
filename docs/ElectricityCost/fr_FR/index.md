@@ -60,7 +60,7 @@ Pour configurer un compteur:
 5) Sélectionnez l'unité de la puissance (ENEDIS: kW)
 
 L'équipement est configuré mais tel quel, il ne remontera pas les coûts associés. Pour cela vous devez lier cet équipement à un contrat:
-<img src="IMGS/config_linked_contrat.PNG" alt="hi" class="inline"/>
+<img src="IMGS/config_linked_contract.PNG" alt="hi" class="inline"/>
 
 Sélectionnez dans le champ qui apparaît en dessous le Contrat auquel le plugin doit lier cet équipement.
 
