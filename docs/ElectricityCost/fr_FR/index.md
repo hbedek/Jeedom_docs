@@ -183,8 +183,18 @@ Voici la documentation du plugin:
 
 ## Que faire si le plugin ne renvoie pas les informations:
 1) Vérifier que la configuration de l'équipement est bien complète
+<br>
 2) Vérifier que les commandes que l'on a saisit dans la configuration de l'équipement soient bien historisés
+<br>
 3) Vérifier que les commandes Etat / Puissance / Consommation / Coût total soient bien historisées pour cet équipement
+<br>
+3) Vérifier que vous avez bien remplit la configuration d'auto raffraîchissement du plugin
+<br>
+4) Vérifier si vous n'avez pas une erreur dans les messages de Jeedom. Si votre erreur est MISSING CMDs, tentez de re-sauvegarder l'équipement. La commande manquant doit alors apparaître dans la liste des commandes. Si la commande n'apparaît pas, vérifiez la configuration de l'équipement.
+<br>
+5) Vérifier si vous n'avez pas une erreur dans les messages de Jeedom. Si votre erreur est BAD CONFIGURATION vérifiez la configuration de l'équipement.
+<br>
+6) Basculez le niveau de log du plugin en DEBUG, faîtes un refresh de l'équipement et envoyez moi les logs via Community. N'oubliez pas de retirer le niveau de log DEBUG après récupération
 
 ## FAQ
 <b>Le pourcentage que me remonte le plugin n'est pas cohérent:</b>
