@@ -170,10 +170,16 @@ Ici la consommation de ma télévision qui prends bien en compte le début de l'
 ## Compatibilité des plugins
 
 Ce plugin est compatible avec le plugin Laundry.
-Si vous créé un équipement sur le plugin Laundry et qu'Electricity Cost est installé sur votre Jeedom, Laundry vous proposera de configurer votre équipement avec les mêmes paramètres que les équipements d'Electricit Cost.
+Si vous avez créé un équipement sur le plugin Laundry et qu'Electricity Cost est installé sur votre Jeedom, Laundry vous proposera de configurer votre équipement avec les mêmes paramètres que les équipements d'Electricity Cost.
 
 Voici la documentation du plugin:
 <a href="https://hbedek.github.io/Jeedom_docs/docs/Laundry/fr_FR/">ICI</a>
+
+Ce plugin est compatible avec le plugin Light Group.
+Si vous avez créé un équipement sur le plugin Light Group et qu'Electricity Cost est installé sur votre Jeedom, Light Group vous proposera de configurer votre équipement avec les mêmes paramètres que les équipements d'Electricity Cost.
+
+Voici la documentation du plugin:
+<a href="https://hbedek.github.io/Jeedom_docs/docs/LightGroup/fr_FR/">ICI</a>
 
 ## Que faire si le plugin ne renvoie pas les informations:
 1) Vérifier que la configuration de l'équipement est bien complète
