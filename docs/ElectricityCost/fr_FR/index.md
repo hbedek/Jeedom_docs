@@ -11,6 +11,12 @@ Pour pouvoir utiliser le plugin à son plein potentiel, vous devrez créer un é
 
 Il est possible de se passer de ces deux équipements mais le plugin ne calculera alors que la consommation et non les coûts associés.
 
+Voici un exemple de ce que vous pouvez obtenir en combinant le plugin avec un design Jeedom:
+
+<img src="IMGS/camembert.PNG" alt="hi" class="inline"/>
+<img src="IMGS/graphique.PNG" alt="hi" class="inline"/>
+<img src="IMGS/design_equipement.PNG" alt="hi" class="inline"/>
+
 Pour créer un équipement, cliquez sur le bouton +
 
 <img src="IMGS/eqs_plugin.PNG" alt="hi" class="inline"/>
