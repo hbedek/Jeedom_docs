@@ -1,5 +1,11 @@
 # Changelog plugin Sonarr & Radarr
 
+# 11/09/2021 [Beta]
+
+- Correction bug formattage par défaut pour les groupes d'épisodes
+- Correction bug appels aux tags récurrents
+- Complète le formattage par défaut avec 0: S03E22, S11E02, S11E22
+
 # 10/09/2021 [Beta]
 
 - Revisite de l'interface de Sonarr et Radarr
