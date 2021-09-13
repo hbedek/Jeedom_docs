@@ -1,5 +1,9 @@
 # Changelog plugin Sonarr & Radarr
 
+# 13/09/2021 [Beta]
+
+- Bug Notification HTML si aucun formattage n'est définit
+
 # 11/09/2021 [Beta]
 
 - Correction bug formattage par défaut pour les groupes d'épisodes
