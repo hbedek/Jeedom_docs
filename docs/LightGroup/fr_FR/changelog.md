@@ -1,5 +1,13 @@
 # Changelog plugin Light Group
 
+# 13/09/2021 [Beta]
+
+- Nouvelle interface de commandes
+- Ajout du filtre info / action lors de la selection d'une commandes
+- Ajout du type générique pour la luminosité INFO
+- Suppression des commandes inutiles lors de la désactivation de la luminosité ou de la couleur
+- Liaison des commandes actions aux commandes infos
+
 # 10/09/2021 [Beta]
 
 Fix configuration d'une lumière dans Electricity Cost
