@@ -2,6 +2,12 @@
 
 # 14/09/2021 [Beta]
 
+- Possibilité de faire une recherche sur Radarr
+- Possibilité de rechercher les films manquants
+- Possibilité de récupérer les tags
+- Possibilité de configurer l'ajout d'un film avec tags, profile sur Radarr
+- Possibilité de récupérer la liste des profiles sur Radarr
+- Possibilité de récupérer la liste des dossiers sur Radarr
 - Migration API Radarr vers v3
 - Ajout des commandes Raw Radarr
 - Prise en compte de la date de sortie digitale pour les films futures

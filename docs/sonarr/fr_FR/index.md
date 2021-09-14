@@ -218,6 +218,86 @@ La commande Notification fonctionne de la même manière mais fournit en plus l'
 
 La commande notification HTML est faîte pour être utilisée avec Telegram
 
+### Ajouter un nouveau film à Radarr [Beta]
+
+Pour ajouter un nouveau film à Radarr il vous faut au préalable:
+- le titre du film
+- le profile à appliquer
+- le chemin ou déposer la film
+
+Ces trois informations peuvent être retrouvés par des commandes du plugin
+
+#### Lancer une recherche
+
+Pour lancer une recherche, éxecuter la commande: 'Recherche'
+Cette commande est de type message, il faut donc passer en paramètre les types de la recherche.
+
+Cette commande action viendra mettre à jour deux commandes info:
+- Résultats de la recherche, à utiliser pour de la synthèse vocale
+- Résultats de la recherche raw, qui contient toutes les données bruts de la recherche
+
+#### Récupérer la liste des profils
+
+Pour lancer une recherche, éxecuter la commande: 'Récupération des profils'
+
+Cette commande action viendra mettre à jour deux commandes info:
+- Liste des profils, à utiliser pour de la synthèse vocale
+- Liste des profils raw, qui contient toutes les données bruts des profils
+
+#### Récupérer la liste des dossiers de téléchargements
+
+Pour lancer une recherche, éxecuter la commande: 'Récupération des dossiers'
+
+Cette commande action viendra mettre à jour deux commandes info:
+- Liste des dossiers, à utiliser pour de la synthèse vocale
+- Liste des dossiers raw, qui contient toutes les données bruts des chemins des dossiers
+
+#### Ajouter un film
+
+Une fois les trois commandes ci dessus effectuées, vous pouvez ajouter un film à Radarr via la commande: 'Ajout du film'
+
+Cette commande est de type message et prend en paramètre un JSON.
+Le JSON doit contenir le titre EXACT de la série, le nom EXACT du profil, le chemin EXACT ou déposer la série.
+
+Exemple:
+<body>
+    <pre>
+        <code>
+        $data = array('movie' => 'Batman', 'profile' => "Any", 'path' => '/films');
+        $dataJson = json_encode($data);
+        $options = array('title'=>'', 'message'=> $dataJson);
+        cmd::byString('#[Appartement][Radarr][Ajout du film]#')->execCmd($options, $cache=0);
+        </code>
+     </pre>
+</body>
+
+
+Le plugin ne prends pas encore en compte l'ajout de séries en doublons, mais si le besoin se fait sentir, je pourrais rajouter cette commande.
+
+Paramètres optionnels:
+Il est possible lorsque l'on ajoute un film de configurer:
+- les tags à ajouter
+
+
+##### Tags
+Pour récupérer les tags, éxecuter la commande: 'Récupération des tags'
+
+Cette commande action viendra mettre à jour deux commandes info:
+- Liste des tags, à utiliser pour de la synthèse vocale
+- Liste des tags raw, qui contient toutes les données bruts des tags
+
+##### Ajouter un film avec paramètres optionnels
+
+<body>
+    <pre> 
+        <code>
+        $data = array('movie' => 'Batman', 'profile' => "Any", 'path' => '/films','tags' => ['vostfr']);
+        $dataJson = json_encode($data);
+        $options = array('title'=>'', 'message'=> $dataJson);
+        cmd::byString('#[Appartement][Radarr][Ajout du film]#')->execCmd($options, $cache=0);
+        </code>
+     </pre>
+</body>
 
 # Widget
 
