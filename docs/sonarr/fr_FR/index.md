@@ -1,6 +1,17 @@
 # Plugin Sonarr & Radarr
 
-Ce plugin permet à Jeedom de récupérer des informations de Sonarr et de Radarr
+Ce plugin permet à Jeedom de récupérer des informations et d'interargir avec Sonarr et de Radarr
+Il est possible de:
+- Récupérer la liste des films / épisodes à venir.
+- Récupérer la liste des films / épisodes manquants.
+- Récupérer la liste des films / épisodes téléchargés.
+
+- Effectuer une recherche. [Beta]
+- Rechercher les films / épisodes manquants. [Beta]
+- Ajouter un film / série à votre Radarr / Sonarr. [Beta]
+- Récupérer les chemins de dossiers. [Beta]
+- Récupérer les profiles de qualité. [Beta]
+- Récupérer les tags. [Beta]
 
 Les différentes listes retournées par le plugin sont sous la forme: 
 
