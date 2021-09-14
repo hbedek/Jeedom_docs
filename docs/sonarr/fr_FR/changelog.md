@@ -1,5 +1,11 @@
 # Changelog plugin Sonarr & Radarr
 
+# 14/09/2021 [Beta]
+
+- Migration API Radarr vers v3
+- Ajout des commandes Raw Radarr
+- Prise en compte de la date de sortie digitale pour les films futures
+
 # 13/09/2021 [Beta]
 
 - Bug Notification HTML si aucun formattage n'est définit
