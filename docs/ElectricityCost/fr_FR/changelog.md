@@ -1,11 +1,14 @@
 # Changelog plugin Electricity Cost
 
+# 22/09/2021 [Beta]
+- Ajout commande coûts annuels
+- Mise à jour des commandes de Laundry et Light Group lors d'un update de Electricity Cost
+
 # 22/09/2021
 
 - Revisite de l'interface
 - Fix création commandes pour un contrat
 - Ajout d'un lien vers le market si aucune équipement de Laundry ou Light Group n'est configuré
-
 - Ajout des équipements compatibles avec Electricity Cost dans l'interface du plugin
 - La création des commandes ne s'effectue que si le type est sélectionné
 
