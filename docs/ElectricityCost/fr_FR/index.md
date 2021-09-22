@@ -72,8 +72,8 @@ SAUVEGARDEZ l'équipement pour créer les commandes
 Cet équipement vous remontera les informations suivantes:
 - Puissance
 - Consommation
-- Coût journalier (si vous avez lié un contrat)
-- Coût mensuel (si vous avez lié un contrat)
+- Coût journalier de la veille (si vous avez lié un contrat)
+- Coût mensuel du mois en cours (si vous avez lié un contrat)
 - Coût toutes périodes confondues (si vous avez lié un contrat)
 - Equipements liés (renvoie tous les équipements qui sont liés au compteurs, voir la catégorie autres équipements)
 - Le pourcentage cumulé du coût mensuel de tous les équipements liés a compteur par rapport à ce dernier
