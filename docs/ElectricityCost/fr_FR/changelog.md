@@ -1,5 +1,11 @@
 # Changelog plugin Electricity Cost
 
+# 23/09/2021 [Beta]
+- Ajout commande coûts hebdomadaire
+- Ajout pourcetage journalier
+- Ajout pourcetage hebdomadaire
+- Ajout pourcetage annuel
+
 # 22/09/2021 [Beta]
 - Ajout commande coûts annuels
 - Mise à jour des commandes de Laundry et Light Group lors d'un update de Electricity Cost
