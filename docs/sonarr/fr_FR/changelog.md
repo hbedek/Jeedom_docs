@@ -1,6 +1,6 @@
 # Changelog plugin Sonarr & Radarr
 
-# 14/09/2021 [Beta]
+# 23/09/2021
 
 - Possibilité de faire une recherche sur Radarr
 - Possibilité de rechercher les films manquants
@@ -11,29 +11,14 @@
 - Migration API Radarr vers v3
 - Ajout des commandes Raw Radarr
 - Prise en compte de la date de sortie digitale pour les films futures
-
-# 13/09/2021 [Beta]
-
 - Bug Notification HTML si aucun formattage n'est définit
-
-# 11/09/2021 [Beta]
-
 - Correction bug formattage par défaut pour les groupes d'épisodes
 - Correction bug appels aux tags récurrents
 - Complète le formattage par défaut avec 0: S03E22, S11E02, S11E22
-
-# 10/09/2021 [Beta]
-
 - Revisite de l'interface de Sonarr et Radarr
-
-# 09/09/2021 [Beta]
-
 - Possibilité de rechercher les épisodes manquants
 - Possibilité de récupérer les tags
 - Possibilité de configurer l'ajout d'une série avec tags, type de monitoring et type de série
-
-# 08/09/2021 [Beta]
-
 - Possibilité de faire une recherche sur Sonarr
 - Possibilité d'ajouter une série sur Sonarr
 - Possibilité de récupérer la liste des profiles sur Sonarr

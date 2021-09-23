@@ -6,12 +6,12 @@ Il est possible de:
 - Récupérer la liste des films / épisodes manquants.
 - Récupérer la liste des films / épisodes téléchargés.
 
-- Effectuer une recherche. [Beta]
-- Rechercher les films / épisodes manquants. [Beta]
-- Ajouter un film / série à votre Radarr / Sonarr. [Beta]
-- Récupérer les chemins de dossiers. [Beta]
-- Récupérer les profiles de qualité. [Beta]
-- Récupérer les tags. [Beta]
+- Effectuer une recherche.
+- Rechercher les films / épisodes manquants. 
+- Ajouter un film / série à votre Radarr / Sonarr. 
+- Récupérer les chemins de dossiers. 
+- Récupérer les profiles de qualité. 
+- Récupérer les tags. 
 
 Les différentes listes retournées par le plugin sont sous la forme: 
 
@@ -75,7 +75,7 @@ La commande Notification fonctionne de la même manière mais fournit en plus l'
 
 La commande notification HTML est faîte pour être utilisée avec Telegram
 
-### Ajouter une nouvelle série à Sonarr [Beta]
+### Ajouter une nouvelle série à Sonarr 
 
 Pour ajouter une nouvelle série à Sonarr il vous faut au préalable:
 - le titre de la série
@@ -229,7 +229,7 @@ La commande Notification fonctionne de la même manière mais fournit en plus l'
 
 La commande notification HTML est faîte pour être utilisée avec Telegram
 
-### Ajouter un nouveau film à Radarr [Beta]
+### Ajouter un nouveau film à Radarr 
 
 Pour ajouter un nouveau film à Radarr il vous faut au préalable:
 - le titre du film
