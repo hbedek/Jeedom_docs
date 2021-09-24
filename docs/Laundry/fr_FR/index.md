@@ -4,7 +4,11 @@ Ce plugin permet de connecter une Machine à laver / Sèche linge, lave vaissell
 
 Pour que le plugin fonctionne, il faut impérativement:
 - que la machine soit branchée sur une prise connectée remontant la puissance consommée.
-- que la porte de la machine puisse être monitorée via un capteur d'ouverture de porte.
+
+Pour utiliser pleinement le plugin il faut que la machine puisse être monitorée via un capteur d'ouverture de porte.
+
+Si vous n'avez pas de capteur d'ouverture de porte, le plugin passera en mode LITE [Beta]
+Le mode LITE avertit uniquement lorsque la machine se lance et se termine.
 
 ## Configuration de l'équipement
 
@@ -33,7 +37,7 @@ Le widget de l'équipement remonte ces 4 états sous la forme d'icônes:
 <img src="IMGS/laundry_running.png" alt="hi" class="inline" height="100px" width="auto"/>
 <img src="IMGS/laundry_finished.png" alt="hi" class="inline" height="100px" width="auto"/>
 
-## Mode ECO
+## Mode ECO (Non compatible avec le mode LITE)
 
 Le plugin est en capacité d'éteindre votre machine lorsque celle ci ne tourne pas.
 Ce mode eco vous permet d'économiser la consommation du mode veille de votre machine.

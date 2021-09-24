@@ -1,5 +1,10 @@
 # Changelog plugin Laundry
 
+# 24/09/2021 [Beta]
+
+Ajout du mode LITE sans capteur d'ouverture de porte
+Modification interface visualisation des commandes
+
 # 10/09/2021 [Beta]
 
 Ajout notifications HTML fin de cycle
