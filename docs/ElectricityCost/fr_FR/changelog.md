@@ -1,5 +1,13 @@
 # Changelog plugin Electricity Cost
 
+# 25/09/2021 [Beta]
+- Ajout du nombre de décimales pour les coûts et les pourcentages (au niveau du contrat et se répercute sur l'ensemble des équipements liés)
+- Correction Bug pourcentage hebdomadaires
+- Correction Bug coût annuel
+- Amélioration sélection des modales INFO et ACTION
+- Correction Bug création de commande puissance lorsque sélection puissance moyenne
+- Migration Interface 3.0
+
 # 23/09/2021 [Beta]
 - Ajout commande coûts hebdomadaire
 - Ajout pourcetage journalier

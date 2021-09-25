@@ -1,5 +1,9 @@
 # Changelog plugin Light Group
 
+# 25/09/2021 [Beta]
+
+- Interface 3.0
+
 # 13/09/2021 [Beta]
 
 - Nouvelle interface de commandes
