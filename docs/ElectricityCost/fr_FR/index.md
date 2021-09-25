@@ -34,6 +34,8 @@ L'équipement contrat ne possède pas de commandes mais doit tout de même être
 
 3) Suivant le contrat choisit, remplissez le début / fin des heures creuses ainsi que les prix au kWh de votre fournisseur d'électricité
 
+4) Choisissez le nombre de décimales devant être utilisées pour carrondir les coûts et pourcentages. Par défaut le plugin arrondira les coûts et pourcentages à 3 décimales après la virgule. Attention  ceci n'affecte pas le coût total qui lui reste avec toutes ces décimales. Les arrondis sont appliqués à l'ensemble des équipements liés au contrat ainsi que l'ensemble des équipements liés aux compteurs eux même liés au contrat. [Beta]
+
 Exemple:
 <img src="IMGS/ex_config_contrat.PNG" alt="hi" class="inline"/>
 
@@ -135,8 +137,8 @@ Renseignez l'unité des puissances que vous avez renseigné.
 
 Vous avez la possibilité de lier un équipement d'Electricity Cost à:
 - Aucun autre équipement, le plugin calculera alors la consommation de votre équipement par rapport aux données en sa possession
-- Un contrat, le plugin calculera les coût de votre équipement en fonction de sa consommation et des données que vous avez saisit dans votre contrat
-- Un compteur, le plugin ira récupérer le contrat de votre compteur (votre compteur doit donc être lié à un contrat) et calculera les coûts de votre équipement par rapport à ce contrat. En plus le plugin calculera le pourcentage du coût de votre équipement par rapport à celui du compteur.
+- Un contrat, le plugin calculera les coût de votre équipement en fonction de sa consommation et des données que vous avez saisit dans votre contrat. Le plugin arrondira les coûts et les pourcentages avec les données saisi dans votre contrat.
+- Un compteur, le plugin ira récupérer le contrat de votre compteur (votre compteur doit donc être lié à un contrat) et calculera les coûts de votre équipement par rapport à ce contrat. En plus le plugin calculera le pourcentage du coût de votre équipement par rapport à celui du compteur.  Le plugin arrondira les coûts et les pourcentages avec les données saisi dans le contrat lié à votre compteur.
 
 INFORMATIONS SUPPLEMENTAIRES COMPTEUR:
 En liant un équipement à un compteur, l'équipement récupère le contrat lié au compteur mais permet également d'obtenir plus d'informations:
