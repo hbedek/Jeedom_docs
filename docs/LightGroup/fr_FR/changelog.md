@@ -3,6 +3,7 @@
 # 25/09/2021 [Beta]
 
 - Interface 3.0
+- Correction bug sur la modification de l'état d'un groupe depuis une lampe avec un état numérique
 
 # 13/09/2021 [Beta]
 
