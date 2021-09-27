@@ -1,5 +1,12 @@
 # Changelog plugin Electricity Cost
 
+# 27/09/2021 [Beta]
+- Correction BUG sur l'historisation / Collect Date qui disparaît
+- Récupération et calcul des coûts pour les jours / semaines / mois / années précédentes (ne dépend plus de la date du refresh)
+- Ajout de la possibilité de ne récupérer que l'historique du mois en cours lors de l'initialisation
+- Correction BUG suppression de l'unité lors d'un update
+- AJout de l'unité de la puissance lors de la création des commandes
+
 # 25/09/2021 [Beta]
 - Ajout du nombre de décimales pour les coûts et les pourcentages (au niveau du contrat et se répercute sur l'ensemble des équipements liés)
 - Correction Bug pourcentage hebdomadaires
