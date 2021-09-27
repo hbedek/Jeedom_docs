@@ -1,5 +1,10 @@
 # Changelog plugin Light Group
 
+# 27/09/2021 [Beta]
+
+- Ajout des automatismes
+- La modification de la luminosité / couleur d'un groupe ne s'applique que sur les lumières allumées.
+
 # 25/09/2021 [Beta]
 
 - Interface 3.0
