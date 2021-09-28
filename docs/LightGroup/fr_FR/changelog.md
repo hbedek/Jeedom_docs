@@ -1,5 +1,11 @@
 # Changelog plugin Light Group
 
+# 28/09/2021 [Beta]
+
+- Ajout commandes demande de luminosité. On demande une luminosité spécifique. Si la lumière est allumée, la luminosité est appliquée, si la lumière est éteinte, la luminosité sera appliquée dès que la lumière s'allumera
+- Ajout commandes demande de couleur. On demande une couleur spécifique. Si la lumière est allumée, la couleur est appliquée, si la lumière est éteinte, la couleur sera appliquée dès que la lumière s'allumera
+- Ajout automatisme demande de couleur / luminosité à une heure précise
+
 # 27/09/2021 [Beta]
 
 - Ajout des automatismes

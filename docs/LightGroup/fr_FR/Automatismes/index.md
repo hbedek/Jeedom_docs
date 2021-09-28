@@ -27,6 +27,8 @@ La liste contient actuellement:
 
 - Lumière de veille: La lumière est conditionnée par un capteur binaire (présence) et s'allume suivant la valeur du capteur. Une fois allumée, la lumière reste allumée X minutes, passé ce temps, la lumière s'éteint.
 
+- Modification de la luminosité / couleur suivant une heure. Le plugin ira demander une couleur et / ou une luminosité à une heure précise. Si la lumière est éteinte, elle ne s'allumera pas mais prendra en compte la nouvelle luminosité / couleur la prochaine fois qu'elle sera allumée
+
 Une fois votre automatisme choisit, configurez le et sauvegardez l'équipement.
 
 
@@ -54,6 +56,19 @@ Une fois sauvegardée, vous devriez voir apparaître 3 commandes dans la liste d
 
 Vous pouvez depuis ces 3 commandes autoriser ou interdire un automatisme. Si l'automatisme est interdit, il ne s'activera plus pour cette lumière.
 
+## Combiner les automatismes
+
+Il vous est possible depuis le plugin de combiner des automatismes pour obtenir le comportement que vous souhaitez.
+Exemple: je souhaite que la lumière de mon placard s'allume lorsque j'ouvre la porte. Je souhaite également que la luminosité de la lumière soit plus faible durant la nuit.
+
+Pour cela je vais créer 3 automatismes:
+- mon automatisme lumière de placard qui ne gérera pas la luminositée
+- un automatisme pour demander une modification de la luminositée à 20% à 21h
+- un automatisme pour demander une modification de la luminosité à 100% à 8h
+
+J'affecte ces trois automatismes à ma lumière de placard.
+
+Ainsi lorsque j'ouvrirais la porte à 15h la lumière s'allumera avec une luminosité de 100 %, lorsque j'ouvrirais la porte à 22h, la lumière s'allumera avec une luminosité de 20%.
 
 ## A venir
 

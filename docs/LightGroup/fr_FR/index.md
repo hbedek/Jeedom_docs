@@ -78,6 +78,12 @@ Allumé 0 % luminosité
 Eteint
 <img src="IMGS/light_off.svg" alt="hi" class="inline" height="100px" width="100px"/>
 
+Le plugin propose égalements de "Demander une luminosité à une lumière".
+Lorsque vous demandez une luminosité, plusieurs règles s'appliquent:
+- Si la lumière est allumée, la luminosité s'applique immédiatement.
+- Si la lumière est éteinte, la luminosité s'appliquera dès la lumière s'allumera
+- Si une lumière a une demande de luminosité en cours et que vous modifiez la luminosité, la demande de luminosité est annulée.
+
 ### Couleur de la lumière
 
 Pour configurer la couleur, cochez "La couleur est-elle configurable ?"
@@ -87,6 +93,12 @@ Saisissez la commande remontant la couleur de votre lumière. La couleur doit ê
 
 Saisissez la commande permettant de modifier la couleur de votre lumière. De même le plugin interrogera votre lumière avec une couleur au format #FFFFFF
 
+Le plugin propose égalements de "Demander une couleur à une lumière".
+Lorsque vous demandez une couleur, plusieurs règles s'appliquent:
+- Si la lumière est allumée, la couleur s'applique immédiatement.
+- Si la lumière est éteinte, la couleur s'appliquera dès la lumière s'allumera
+- Si une lumière a une demande de couleur en cours et que vous modifiez la couleur, la demande de couleur est annulée.
+
 ## Configuration d'un groupe de lumières
 
 Avec le groupe de lumières, vous pouvez d'un clic:
@@ -94,6 +106,8 @@ Avec le groupe de lumières, vous pouvez d'un clic:
 - Eteindre toutes les lumières
 - Modifier la luminosité de toutes les lumières compatibles du groupe
 - Modifier la couleur de toutes les lumières compatibles du groupe
+- Demander une modification de luminosité à toutes les lumières compatibles du groupe
+- Demander une modification de couleur à toutes les lumières compatibles du groupe
 
 Pour configurer le groupe de lumière, vous devez sélectionner les lumières qui le composent
 <img src="IMGS/config_groupe_lumiere.PNG" alt="hi" class="inline"/>
