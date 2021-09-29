@@ -3,6 +3,7 @@
 # 29/09/2021 [Beta]
 
 - Multiples bug fixes
+- Ajout limitation des automatismes suivant le budget (Nécessite Electricity Cost). Si vous rajoutez cet automatisme à une lumière, le plugin ira vérifier si le budget de l'ampoule est dépassé avant d'allumer une lumière, changer la luminosité ou changer la couleur avec un automatisme. La limitation de budget n'impacte que les automatismes. SI le budget est dépassez et que vous souhaitez allumer la lumière, le plugin ne vous bloquera pas
 
 # 28/09/2021 [Beta]
 
