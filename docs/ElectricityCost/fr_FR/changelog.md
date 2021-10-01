@@ -1,11 +1,20 @@
 # Changelog plugin Electricity Cost
 
+# 01/10/2021 [Beta]
+- Ajout des commandes remontant les montants des dates antérieurs (semaine précédente, mois précédent, année précédente)
+- Ajout du bouton de réparation des données de l'historique dans la configuration de l'équipement (voir documentation)
+- Ajout de la commande coût aujourd'hui. ATTENTION, si vous utilisiez la commande coût de la veille en historique, vous devez dorénavant utiliser la commande coût d'aujourd'hui
+- Ajout des notifications journalière, hebdomadaire, mensuelle, annuelle. Les notifications sont de type HTML et doivent être utilisé avec Telegram ou un équivalent
+- Correction BUG données en doublon dans l'historique
+
+ATTENTION avec l'ajout des nouvelles commandes dont la commande coût d'aujourd'hui, le premier raffraîchissment de l'équipement peut prendre du temps
+
 # 27/09/2021 [Beta]
 - Correction BUG sur l'historisation / Collect Date qui disparaît
 - Récupération et calcul des coûts pour les jours / semaines / mois / années précédentes (ne dépend plus de la date du refresh)
 - Ajout de la possibilité de ne récupérer que l'historique du mois en cours lors de l'initialisation
 - Correction BUG suppression de l'unité lors d'un update
-- AJout de l'unité de la puissance lors de la création des commandes
+- Ajout de l'unité de la puissance lors de la création des commandes
 
 # 25/09/2021 [Beta]
 - Ajout du nombre de décimales pour les coûts et les pourcentages (au niveau du contrat et se répercute sur l'ensemble des équipements liés)
@@ -17,9 +26,9 @@
 
 # 23/09/2021 [Beta]
 - Ajout commande coûts hebdomadaire
-- Ajout pourcetage journalier
-- Ajout pourcetage hebdomadaire
-- Ajout pourcetage annuel
+- Ajout pourcentage journalier
+- Ajout pourcentage hebdomadaire
+- Ajout pourcentage annuel
 
 # 22/09/2021 [Beta]
 - Ajout commande coûts annuels

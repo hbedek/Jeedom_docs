@@ -6,6 +6,7 @@ Le plugin peut:
 - Calculer le coût d'un plugin suivant sa consommation kWh, sa puissance W ou kW, son état (Allumé-Eteint)
 - Comparer les dépenses énergétiques de vos équipement par rapport au compteur
 - Trouver les équipements les plus energivores
+- Envoyer des notifications HTML utilisable avec Telegram pour avoir un rapport sur vos équipements
 
 Pour pouvoir utiliser le plugin à son plein potentiel, vous devrez créer un équipement "Contrat" puis un équipement "Compteur".
 
@@ -21,8 +22,14 @@ Pour créer un équipement, cliquez sur le bouton +
 
 <img src="IMGS/eqs_plugin.PNG" alt="hi" class="inline"/>
 
+## Configuration des équipements
 
-## Equipement Contrat
+Vous pouvez configurer 3 types d'équipement:
+- Un contrat reprenant les coûts en électricité de votre fournisseur et le créneau d'heures creuses si vous en possédez un.
+- Un compteur remontant les information de consommation de votre logement
+- Un équipement qui définit un équipement électrique de votre logement rattaché au compteur
+
+### Equipement Contrat
 
 L'équipement contrat est le premier équipement à créer. Il représente le contrat qui vous lie à votre fournisseur. Vous pourrez par la suite lié des équipements à ce contrat pour mesurer les coûts. 
 L'équipement contrat ne possède pas de commandes mais doit tout de même être configuré.
@@ -40,12 +47,12 @@ Exemple:
 <img src="IMGS/ex_config_contrat.PNG" alt="hi" class="inline"/>
 
 
-## Equipement Compteur
+### Equipement Compteur
 
 L'équipement Compteur, représente votre compteur électrique et sa consommation.
 Pour utiliser pleinement les fonctionnalité du plugin, il faut au préalable créer un équipement Contrat
 
-### Configuration d'un compteur
+#### Configuration d'un compteur
 
 Pour configurer un compteur:
 
@@ -66,17 +73,29 @@ L'équipement est configuré mais tel quel, il ne remontera pas les coûts assoc
 
 Sélectionnez dans le champ qui apparaît en dessous le Contrat auquel le plugin doit lier cet équipement.
 
+6) Définissez un budget mensuel pour votre équimement (optionnel). L'équipement possède une commande de dépassement de budget qui passe à 1 si le budget mensuel prévu pour cet équipement est dépassé
+
+7) Définissez l'heure à laquelle l'équipement doit générer les notifications journalières, hebdomadaires, mensuelles, annuelles.
+
 SAUVEGARDEZ l'équipement pour créer les commandes
 
 
-### Informations remontées par l'équipement compteur
+#### Informations remontées par l'équipement compteur
 
 Cet équipement vous remontera les informations suivantes:
 - Puissance
 - Consommation
-- Coût journalier de la veille (si vous avez lié un contrat)
-- Coût mensuel du mois en cours (si vous avez lié un contrat)
+
+- Coût de la journée en cours (si vous avez lié un contrat)
+- Coût de la veille (si vous avez lié un contrat)
+- Coût de la semaine en cours (si vous avez lié un contrat)
+- Coût de la semaine dernière (si vous avez lié un contrat)
+- Coût du mois en cours (si vous avez lié un contrat)
+- Coût du mois dernier (si vous avez lié un contrat)
+- Coût de l'année en cours (si vous avez lié un contrat)
+- Coût de l'année dernière (si vous avez lié un contrat)
 - Coût toutes périodes confondues (si vous avez lié un contrat)
+
 - Equipements liés (renvoie tous les équipements qui sont liés au compteurs, voir la catégorie autres équipements)
 - Le pourcentage cumulé du coût mensuel de tous les équipements liés a compteur par rapport à ce dernier
 - Le dépassement d'un budget pré-définit
@@ -85,8 +104,12 @@ Cet équipement vous remontera les informations suivantes:
 
 La commande pourcentage cumulé vous permet de mieux comprendre la consommation de votre logement.
 
+Enfin l'équipement peut vous générer des notifications HTML reprenant les données ci-dessus.
+Les données de la notification dépendent du type d'équipement (compteur ou autre).
+<img src="IMGS/Notification.PNG" alt="hi" class="inline"/>
 
-## Autres équipements
+
+### Autres équipements
 
 Cette catégorie regroupe tous les équipements en dehors du compteur pour lesquels vous souhaitez calculer la consommation.
 Le plugin peut calculer le coût d'un équipement suivant :
@@ -101,26 +124,26 @@ Dans la configuration, choisissez "Equipement" et la période de raffraîchissem
 
 Les trois types d'équipements renvoient les mêmes commandes que le Compteur.
 
-### Configuration d'un équipement suivant sa consommation cumulée kWh
+#### Configuration d'un équipement suivant sa consommation cumulée kWh
 
 Cette configuration est la plus précise.
 Choisissez la commande qui va renvoyer la consommation cumulée pour cet équipement.
 ATTENTION: cette commande doit être historisée, suivant la période de rafraîchissement sélectionnée, le plugin peut être amené à récupérer des informations historisées.
 
-### Configuration d'un équipement suivant sa puissance instantanée
+#### Configuration d'un équipement suivant sa puissance instantanée
 
 Choisissez la commande qui va renvoyer la puissance  instantanée pour cet équipement.
 ATTENTION: cette commande doit être historisée, suivant la période de rafraîchissement sélectionnée, le plugin peut être amené à récupérer des informations historisées.
 
 Choisissez ensuite l'unité de la puissance renvoyée par la commande que vous avez saisit.
 
-### Configuration d'un équipement suivant sa puissance moyenne
+#### Configuration d'un équipement suivant sa puissance moyenne
 
 Cette configuration diffère de la puissance instanée, ici la commande que vous allez saisir renvoie une moyenne de puissance sur une plage de temps. Le compteur électrique du plugin ENEDIS par exemple renvoie la puissance moyenne par demi heure.
 ATTENTION: cette commande doit être historisée, suivant la période de rafraîchissement sélectionnée, le plugin peut être amené à récupérer des informations historisées.
 
 
-### Configuration d'un équipement suivant son état
+#### Configuration d'un équipement suivant son état
 
 Cette configuration est la moins précise mais permet cependant d'avoir une estimation du coût des équipements ne remontant qu'un état comme une lampe, une télévision, un amplificateur etc
 <img src="IMGS/config_eq_2.PNG" alt="hi" class="inline"/>
@@ -132,8 +155,7 @@ Renseignez la puissance que consomme cet équipement allumé et la puissance que
 
 Renseignez l'unité des puissances que vous avez renseigné.
 
-
-## Lier un équipement à un contrat ou un compteur
+### Lier un équipement à un contrat ou un compteur
 
 Vous avez la possibilité de lier un équipement d'Electricity Cost à:
 - Aucun autre équipement, le plugin calculera alors la consommation de votre équipement par rapport aux données en sa possession
@@ -147,6 +169,38 @@ En liant un équipement à un compteur, l'équipement récupère le contrat lié
 - Le compteur vous renverra le cumul du pourcentage de tous les équipements liés (Permet d'investiguer des éventuels problèmes de consommation électrique dans votre foyer).
 
 ATTENTION: Le pourcentage se basant sur le coût mensuel, les pourcentages ne sont vraiment exploitable que passé un mois.
+
+
+### Réparer un équipement
+
+Dans le cas ou l'historique d'une des commandes de l'équipement est corrompue, vous avez la possibilité de le réparer.
+Pour réparer l'historique d'un équipement, sélectionnez ce dernier et cliquez sur "Réparer"
+<img src="IMGS/repare_button.PNG" alt="hi" class="inline"/>
+
+Lorsque vous lancez la réparation de l'équipement, le plugin va supprimer l'historique de toute ses commandes et relancer un raffraîchissement. 
+Attention, suivant les historiques initiaux, le raffraîchissement peut durer plus ou moins longtemps (environ 3 minutes pour 1 an d'historique à analyser).
+
+### Gestion des notifications
+
+Le plugin peut générer des notifications prenant la forme de rapports que vous pouvez utiliser pour vous notifier via le plugin Telegram ou autre plugin de notification (permettant d'envoyer de l'HTML).
+Les données du rapport diffèrent suivant le type de l'équipement.
+Il existe un type de notification pour chaque période de temps et vous pouvez définir dans la configuration l'heure à laquelle vous souhaitez que le plugin créer la notification:
+<img src="IMGS/Notification_config.PNG" alt="hi" class="inline"/>
+
+Le plugin génère mais n'envoie pas de notifications. Si vous souhaitez envoyer la notification, vous devrez de votre côté créer un scénario:
+<img src="IMGS/scenario_config.PNG" alt="hi" class="inline"/>
+
+<body>
+    <pre> 
+        <code>
+        $_options['message'] = "messageNotification";
+        $_options['title'] = "parse_mode=HTML";
+  	    cmd::byString("#[Appartement][Telegram][hbedek]#")->execCmd($_options, $cache=0);
+        </code>
+     </pre>
+</body>
+
+
 
 ## Calcul du coût pour les équipements Etat / Puissance instantanée
 
@@ -202,4 +256,10 @@ Voici la documentation du plugin:
 <b>Le pourcentage que me remonte le plugin n'est pas cohérent:</b>
 <br>
 -> Le pourcentage calculé par le plugin dépend des données d'historisation des commandes. Si vous venez d'ajouter l'historisation à vos commandes, le pourcentage ne deviendra cohérent qu'au mois suivant
+<br>
+<br>
+<b>L'historique des données est incohérent / corrompue:</b>
+<br>
+-> Le plugin calcule l'ensemble des coûts par rapport aux données que vous lui transmettez. Vérifiez les données de l'historique de la commande d'état / puissance ou consommation que vous avez mis dans la configuration. Une fois que vous avez trouvé / corrigé l'erreur dans cet historique, lancez la réparation de l'équipement dans le plugin Electricity Cost.
+
 
