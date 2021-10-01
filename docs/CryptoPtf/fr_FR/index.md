@@ -13,6 +13,13 @@ Les différentes plateformes ainsi que les informations remontées sont décrite
 
 Il est également possible de combiner les informations de tous les autres équipements en un seul si vous souhaitez avoir un seul portefeuille de visible. Il faut pour cela choisir l'option Wallet Aggregator dans la liste
 
+Voici un exemple de ce que vous pouvez obtenir en combinant le plugin avec un design Jeedom:
+<img src="IMGS/example_design" alt="hi" class="inline"/>
+
+Pour créer un équipement cliquez sur le +
+<img src="IMGS/example_config.PNG" alt="hi" class="inline"/>
+
+
 ## JustMining
 
 Un équipement JustMining vous permet de récupérer les informations:
