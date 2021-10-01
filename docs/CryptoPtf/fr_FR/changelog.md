@@ -1,8 +1,9 @@
 # Changelog plugin Crypto Portfolio
 
-# 11/09/2021 [Beta]
+# 01/10/2021
 Nouvelle interface de visualisation des commandes
 Correction notification journalière
+Correction BUG portefeuille Just Mining. Le total des rewards n'est plus prit en compte dans le calcul du portefeuille.
 
 # 07/09/2021 [Beta]
 Ajout de notification journalière HTML
