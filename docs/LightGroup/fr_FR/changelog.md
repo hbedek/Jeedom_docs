@@ -1,5 +1,10 @@
 # Changelog plugin Light Group
 
+
+# 01/10/2021 [Beta]
+
+- Ajout des commandes info et action pour gérer la température du lumière en °K
+
 # 29/09/2021 [Beta]
 
 - Multiples bug fixes

@@ -99,6 +99,21 @@ Lorsque vous demandez une couleur, plusieurs règles s'appliquent:
 - Si la lumière est éteinte, la couleur s'appliquera dès la lumière s'allumera
 - Si une lumière a une demande de couleur en cours et que vous modifiez la couleur, la demande de couleur est annulée.
 
+### Température de la lumière
+
+Pour configurer la température, cochez "La température est-elle configurable ?"
+<img src="IMGS/config_lumiere_temp.PNG" alt="hi" class="inline"/>
+
+Saisissez la commande remontant la température de votre lumière. La couleur doit être au format numérique et en Kelvin °K
+
+Saisissez la commande permettant de modifier la température de votre lumière. De même le plugin interrogera votre lumière avec une température au format numérique °K
+
+Le plugin propose égalements de "Demander une température à une lumière".
+Lorsque vous demandez une température, plusieurs règles s'appliquent:
+- Si la lumière est allumée, la température s'applique immédiatement.
+- Si la lumière est éteinte, la température s'appliquera dès la lumière s'allumera
+- Si une lumière a une demande de température en cours et que vous modifiez la température, la demande de température est annulée.
+
 ## Configuration d'un groupe de lumières
 
 Avec le groupe de lumières, vous pouvez d'un clic:
