@@ -1,5 +1,11 @@
 # Changelog plugin Electricity Cost
 
+# 02/10/2021 [Beta]
+- Ajout possibilité de ne récupérer aucun historique lors de la configuration d'un équipement
+- Lorsque le plugin n'aura aucune information pour une date antérieure, il considérera que le coût est égal à 0
+
+ATTENTION avec l'ajout des nouvelles commandes dont la commande coût d'aujourd'hui, le premier raffraîchissement de l'équipement peut prendre du temps
+
 # 01/10/2021 [Beta]
 - Ajout des commandes remontant les montants des dates antérieurs (semaine précédente, mois précédent, année précédente)
 - Ajout du bouton de réparation des données de l'historique dans la configuration de l'équipement (voir documentation)
