@@ -1,5 +1,9 @@
 # Changelog plugin Laundry
 
+# 02/10/2021 [Beta]
+
+Ajout possibilité de réparer un équipement depuis Electricity Cost
+
 # 25/09/2021 [Beta]
 
 Interface 3.0
