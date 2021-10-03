@@ -1,25 +1,12 @@
 # Changelog plugin Laundry
 
-# 02/10/2021 [Beta]
+# 03/10/2021
 
 Ajout possibilité de réparer un équipement depuis Electricity Cost
-
-# 25/09/2021 [Beta]
-
-Interface 3.0
 Amélioration modales INFO et ACTION
-
-# 24/09/2021 [Beta]
-
 Ajout du mode LITE sans capteur d'ouverture de porte
 Modification interface visualisation des commandes
-
-# 10/09/2021 [Beta]
-
 Ajout notifications HTML fin de cycle
-
-# 30/08/2021 [Beta]
-
 Retirer information présence mode ECO sur interface du plugin
 Fix modification interface Electricity Cost
 

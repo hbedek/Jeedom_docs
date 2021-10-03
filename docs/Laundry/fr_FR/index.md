@@ -7,7 +7,7 @@ Pour que le plugin fonctionne, il faut impérativement:
 
 Pour utiliser pleinement le plugin il faut que la machine puisse être monitorée via un capteur d'ouverture de porte.
 
-Si vous n'avez pas de capteur d'ouverture de porte, le plugin passera en mode LITE [Beta]
+Si vous n'avez pas de capteur d'ouverture de porte, le plugin passera en mode LITE
 Le mode LITE avertit uniquement lorsque la machine se lance et se termine.
 
 ## Configuration de l'équipement

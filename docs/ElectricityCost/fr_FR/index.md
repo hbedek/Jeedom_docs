@@ -41,7 +41,7 @@ L'équipement contrat ne possède pas de commandes mais doit tout de même être
 
 3) Suivant le contrat choisit, remplissez le début / fin des heures creuses ainsi que les prix au kWh de votre fournisseur d'électricité
 
-4) Choisissez le nombre de décimales devant être utilisées pour carrondir les coûts et pourcentages. Par défaut le plugin arrondira les coûts et pourcentages à 3 décimales après la virgule. Attention  ceci n'affecte pas le coût total qui lui reste avec toutes ces décimales. Les arrondis sont appliqués à l'ensemble des équipements liés au contrat ainsi que l'ensemble des équipements liés aux compteurs eux même liés au contrat. [Beta]
+4) Choisissez le nombre de décimales devant être utilisées pour carrondir les coûts et pourcentages. Par défaut le plugin arrondira les coûts et pourcentages à 3 décimales après la virgule. Attention  ceci n'affecte pas le coût total qui lui reste avec toutes ces décimales. Les arrondis sont appliqués à l'ensemble des équipements liés au contrat ainsi que l'ensemble des équipements liés aux compteurs eux même liés au contrat.
 
 Exemple:
 <img src="IMGS/ex_config_contrat.PNG" alt="hi" class="inline"/>
