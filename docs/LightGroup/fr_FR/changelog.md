@@ -1,5 +1,10 @@
 # Changelog plugin Light Group
 
+# 03/10/2021 [Beta]
+
+- Correction bug sur le temps d'allumage de l'automatisme veilleuse
+- Ajout lien vers community
+
 
 # 01/10/2021 [Beta]
 
