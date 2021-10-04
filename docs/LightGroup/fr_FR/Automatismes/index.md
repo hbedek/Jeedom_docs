@@ -3,6 +3,9 @@
 Cette sous section regroupe les informations concernant les automatismes du plugin de Light Group.
 Les automatismes sont de petits algorithmes pour vos lumières que vous pouvez créer comme des équipements puis les affecter à vos lumières ou vos groupes de lumières.
 
+Lorsqu'une lumière est actuellement conditionée par un automatisme, elle prend le symbole suivant:
+<img src="IMGS/automatisme_icon.PNG" alt="hi" class="inline"/>
+
 Voici la liste des automatismes disponibles:
 
 - Lumière de placard: La lumière est conditionnée par un capteur binaire (ouverture de porte) et s'allume puis s'éteint suivant la valeur du capteur. Si la porte reste ouverte plus de X minutes, la lumière s'éteint.
@@ -12,6 +15,10 @@ Voici la liste des automatismes disponibles:
 - Modification de la luminosité / couleur suivant une heure. Le plugin ira demander une couleur et / ou une luminosité à une heure précise. Si la lumière est éteinte, elle ne s'allumera pas mais prendra en compte la nouvelle luminosité / couleur la prochaine fois qu'elle sera allumée
 
 - Restriction des automatismes en fonction du budget. Cet automatisme nécessite que le plugin Electricity Cost soit installée et que les lumières dont vous voulez restreindre les automatismes soient paramétrées sur Electricity Cost. Lorsque le budget mensuel alloué à une lumière est dépassé, le plugin restreindra l'ensemble des automatismes affectés à cette lumière. Les automatismes ne pourront plus allumer la lumière, modifier la luminosité, modifer la couleur.
+
+Les automatismes s'éxecutent comme des tâches. Prenons un petit exemple:
+J'utilise l'automatisme de placard et ma lumière s'allume lorsque j'ouvre la porte. Si la porte reste ouverte trop longtemps, la lumière s'éteint.
+Lorsque j'ouvre la porte, le plugin créer une première instante de l'automatisme. Je ferme puis j'ouvre de nouveau la porte, le plugin créer une nouvelle instance qui vient remplacer l'ancienne. Ma lumière n'est ainsi conditionée que par la nouvelle instance.
 
 ## Consulter les automatismes
 
