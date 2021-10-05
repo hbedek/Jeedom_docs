@@ -62,8 +62,9 @@ Pour configurer un compteur:
 2) Choisissez une période de raffraîchissement pour cet équipement. Le plugin ne va pas récupérer les informations en temps réel et son raffraîchissement n'aura lieu que si vous remplissez cette commande.
 
 3) Sélectionnez l'information que le plugin va utiliser pour calculer la consommationen kWh cumulée. 
-    - Si votre compteur est un compteur ENEDIS, je vous conseille de prendre la puissance moyenne horaire de votre compteur (appelée consommation horaire sur le plugin ENEDIS)
-    - Si votre compteur est de type téléinfo, alors je vous conseille de la consommation cumulée avec la commande index de BASE (téléinfo) qui remonte votre consommation en kWh
+- Si votre compteur est un compteur ENEDIS, je vous conseille de prendre la puissance moyenne horaire de votre compteur (appelée consommation horaire sur le plugin ENEDIS
+- Si votre compteur est de type téléinfo, alors je vous conseille de la consommation cumulée avec la commande index de BASE (téléinfo) qui remonte votre consommation en kWh
+
 <img src="IMGS/config_compteur.PNG" alt="hi" class="inline"/>
 
 4) Sélectionnez la commande remontant la puissance horaire ou la consommation cumulée du compteur. Dans le cas de la puissance, saisissez également l'unité.
