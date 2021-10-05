@@ -66,9 +66,8 @@ Pour configurer un compteur:
     - Si votre compteur est de type téléinfo, alors je vous conseille de la consommation cumulée avec la commande index de BASE (téléinfo) qui remonte votre consommation en kWh
 <img src="IMGS/config_compteur.PNG" alt="hi" class="inline"/>
 
-4) Sélectionnez la commande remontant la puissance horaire du compteur
+4) Sélectionnez la commande remontant la puissance horaire ou la consommation cumulée du compteur. Dans le cas de la puissance, saisissez également l'unité.
 
-5) Sélectionnez l'unité de la puissance (ENEDIS: kW)
 
 L'équipement est configuré mais tel quel, il ne remontera pas les coûts associés. Pour cela vous devez lier cet équipement à un contrat:
 <img src="IMGS/config_linked_contract.PNG" alt="hi" class="inline"/>
