@@ -1,5 +1,9 @@
 # Changelog plugin Electricity Cost
 
+# 05/10/2021 [Beta]
+
+- Ajout du type de contrat multiples heures creuses. Vous pouvez définir un tarifs au kWh par défaut et autant de créneaux d'heures creuses que vous oushaitez. Un créneau d'heure creuse est définit par un jour de la semaine, une heure de début, une heure de fin et un prix du kWh
+
 # 03/10/2021
 - Ajout possibilité de ne récupérer aucun historique ou l'historique du dernier mois lors de la configuration d'un équipement
 - Lorsque le plugin n'aura aucune information pour une date antérieure, il considérera que le coût est égal à 0

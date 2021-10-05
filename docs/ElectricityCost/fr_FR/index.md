@@ -37,11 +37,24 @@ L'équipement contrat ne possède pas de commandes mais doit tout de même être
 1) Sélectionnez Contrat dans le champ ci dessous:
 <img src="IMGS/dropdown_contrat.PNG" alt="hi" class="inline"/>
 
-2) Choisissez votre type de contrat. Soit heures pleines / heures creuses, soit tout simplement heures pleines.
+2) Choisissez votre type de contrat:
+- heures pleines si vous avez un tarif unique
+- heures pleines heures creuses si vous avez un seul créneau d'heures creuses
+- multiples créneaux si vous avez plus d'un créneau d'heure creuse [Beta]
 
-3) Suivant le contrat choisit, remplissez le début / fin des heures creuses ainsi que les prix au kWh de votre fournisseur d'électricité
+#### Contrat avec plusieurs créneaux [Beta]
 
-4) Choisissez le nombre de décimales devant être utilisées pour carrondir les coûts et pourcentages. Par défaut le plugin arrondira les coûts et pourcentages à 3 décimales après la virgule. Attention  ceci n'affecte pas le coût total qui lui reste avec toutes ces décimales. Les arrondis sont appliqués à l'ensemble des équipements liés au contrat ainsi que l'ensemble des équipements liés aux compteurs eux même liés au contrat.
+Vous allez pouvoir définir plusieurs créneaux d'heures creuses avec pour chaqun des créneau un jour de la semaine, une heure de début, une heure de fin et un prix au kWh.
+
+1) Définissez un prix du kWh par défaut. lorsqu'une des mesures ne sera pas dans un des créneaux que vous avez définit, c'est ce tarif qui s'appliquera.
+
+2) Ajoutez les différents créneaux dans la table
+<img src="IMGS/multiples_creneaux.PNG" alt="hi" class="inline"/>
+
+####
+
+
+Enfin choisissez le nombre de décimales devant être utilisées pour carrondir les coûts et pourcentages. Par défaut le plugin arrondira les coûts et pourcentages à 3 décimales après la virgule. Attention  ceci n'affecte pas le coût total qui lui reste avec toutes ces décimales. Les arrondis sont appliqués à l'ensemble des équipements liés au contrat ainsi que l'ensemble des équipements liés aux compteurs eux même liés au contrat.
 
 Exemple:
 <img src="IMGS/ex_config_contrat.PNG" alt="hi" class="inline"/>
