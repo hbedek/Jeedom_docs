@@ -8,6 +8,8 @@ Lorsqu'une lumière est actuellement conditionée par un automatisme, elle prend
 
 Voici la liste des automatismes disponibles:
 
+- Lumière de pièce: La lumière est conditionnée par autant de capteurs de présences que vous le souhaitez. La lumière est également conditionnée par une luminosité. Il suffit que l'un des capteurs détecte une présence ou une luminosité suffisante et l'automatisme se déclenche.
+
 - Lumière de placard: La lumière est conditionnée par un capteur binaire (ouverture de porte) et s'allume puis s'éteint suivant la valeur du capteur. Si la porte reste ouverte plus de X minutes, la lumière s'éteint.
 
 - Lumière de veille: La lumière est conditionnée par un capteur binaire (présence) et s'allume suivant la valeur du capteur. Une fois allumée, la lumière reste allumée X minutes, passé ce temps, la lumière s'éteint.

@@ -1,10 +1,16 @@
 # Changelog plugin Light Group
 
+# 06/10/2021 [Beta]
+
+- Ajout de l'automatisme pièce de vie pouvant prendre de multiples capteurs de présence et de luminosité
+- Modification configuration automatisme de veille
+
+
 # 03/10/2021 [Beta]
 
 - Ajout de la gestion des automatismes en tâches. Lors du lancement d'un automatisme pour une lumière, si le même automatisme est en cours d'éxecution, la nouvelle instance vient remplacer l'ancienne
 - Ajout d'un marqueur sur le widget lorsque qu'une lumière ou groupe de lumière est en cours d'automatisme
-- Il est désormais possible de définir un temps tampon pour l'automatisme placard pour lequel la lumière restera allumée même si le capteur passe à 0. Au dela de ce temps la lumière s'éteint (si l'instance de l'automatisme est toujorus en cours).
+- Il est désormais possible de définir un temps tampon pour l'automatisme placard pour lequel la lumière restera allumée même si le capteur passe à 0. Au dela de ce temps la lumière s'éteint (si l'instance de l'automatisme est toujours en cours).
 
 # 03/10/2021 [Beta]
 
