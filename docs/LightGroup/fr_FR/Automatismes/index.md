@@ -4,7 +4,7 @@ Cette sous section regroupe les informations concernant les automatismes du plug
 Les automatismes sont de petits algorithmes pour vos lumières que vous pouvez créer comme des équipements puis les affecter à vos lumières ou vos groupes de lumières.
 
 Lorsqu'une lumière est actuellement conditionée par un automatisme, elle prend le symbole suivant:
-<img src="IMGS/automatisme_icon.PNG" alt="hi" class="inline"/>
+<img src="IMGS/automatisme_icon.png" alt="hi" class="inline"/>
 
 Voici la liste des automatismes disponibles:
 
@@ -33,18 +33,18 @@ Cette documentation explique:
 
 Les automatismes créés sont regroupés dans la page de configuration du plugin dans la sous-section automatismes:
 
-<img src="IMGS/list_automatismes_config.PNG" alt="hi" class="inline"/>
+<img src="IMGS/list_automatismes_config.png" alt="hi" class="inline"/>
 
 
 # 2) Créer un automatisme
 
 Pour créer un automatisme, cliquez sur le bouton + dans la page de configuration:
 
-<img src="IMGS/button_create_autom.PNG" alt="hi" class="inline"/>
+<img src="IMGS/button_create_autom.png" alt="hi" class="inline"/>
 
 Depuis la page de configuration de l'équipement, choisissez:
 
-<img src="IMGS/automatisme_type.PNG" alt="hi" class="inline"/>
+<img src="IMGS/automatisme_type.png" alt="hi" class="inline"/>
 
 Une nouvelle liste apparaît. Vous pouvez choisir dans cette liste les automatismes que vous souhaitez configurer.
 
@@ -53,10 +53,10 @@ L'automatisme le plus complet est l'automatisme "Pièce". Vous pouvez depuis cet
 ## 2.1) Affecter des capteurs à un automatisme
 
 Pour affecter des capteurs à un automatisme, sélectionnez l'onglet "Capteurs":
-<img src="IMGS/sensorTab.PNG" alt="hi" class="inline"/>
+<img src="IMGS/sensorTab.png" alt="hi" class="inline"/>
 
 Dans cet onglet vous pouvez ajouter autant de capteurs de présence et de capteurs de luminosités que vous le souhaitez:
-<img src="IMGS/sensorTables.PNG" alt="hi" class="inline"/>
+<img src="IMGS/sensorTables.png" alt="hi" class="inline"/>
 
 L'automatisme sera activé si: une présence est détectée ET la luminosité est insuffisante.
 Il est possible de ne saisir aucun capteurs de présence ou aucun capteurs de luminosité. Dans ce cas une présence détectée ou une luminosité suffisante suffit pour déclencher l'automatisme.
@@ -74,7 +74,7 @@ L'autommatisme peut s'arrêter si la luminosité de tous les capteurs devient su
 ## 2.2) Définir les temps tampons
 
 Revenons sur l'onglet principal de configuration de l'automatisme. Vous avez la possibilité ici de définir plusieurs temps tampon:
-<img src="IMGS/timeTampon.PNG" alt="hi" class="inline"/>
+<img src="IMGS/timeTampon.png" alt="hi" class="inline"/>
 
 ### 2.2.1) Temps maximum d'automatisation
 
@@ -87,10 +87,10 @@ Lorsque les capteurs de présences ne détectent plus de mouvement ou bien que l
 ## 2.3) Paramétrer les lumières
 
 L'automatisme lorsqu'il sera déclenché allumera les lumières. Il est possible en plus de cela de faire modifier la luminosité, la couleur ou la température des lumières compatibles. Pour ces 3 paramètres, il est possible de définir une valeur:
-<img src="IMGS/lumen.PNG" alt="hi" class="inline"/>
+<img src="IMGS/lumen.png" alt="hi" class="inline"/>
 
 Il vous est également possible de récupérer la valeur d'une commande à appliquer sur les lumières de l'automatisme. Il vous faut pour cela cocher la bonne case:
-<img src="IMGS/lumenCmd.PNG" alt="hi" class="inline"/>
+<img src="IMGS/lumenCmd.png" alt="hi" class="inline"/>
 
 ## 2.4) Programmer les automatismes
 
@@ -98,10 +98,10 @@ Vous pouvez définir des plages temporelles pour lequel l'automatisme peut ou no
 Par défaut aucune plage n'est définit et l'automatisme peut s'activer n'importe quand.
 
 Si vous souhaitez définir des plages horaires spécifiques, cochez:
-<img src="IMGS/tickProgrammation.PNG" alt="hi" class="inline"/>
+<img src="IMGS/tickProgrammation.png" alt="hi" class="inline"/>
 
 Un nouvel onglet "Programmation" apparaît alors. Cliquez dessus pour la suite de la configuration.
-<img src="IMGS/programmationTable.PNG" alt="hi" class="inline"/>
+<img src="IMGS/programmationTable.png" alt="hi" class="inline"/>
 
 Cliquez sur le bouton pour ajouter une plage de programmation.
 - Vous pouvez sélectionner les jours pour lequelles l'automatisme peut s'activer. Ce champ est multi sélectionnable.
@@ -120,22 +120,22 @@ Pour qu'un automatisme puisse agir sur une lumière, nous devons affecter l'auto
 Choisissez une lumière ou un groupe de lumière et allez dans la page de configuration de l'équipement.
 Cliquez sur la section automatisme:
 
-<img src="IMGS/automatisme_section.PNG" alt="hi" class="inline"/>
+<img src="IMGS/automatisme_section.png" alt="hi" class="inline"/>
 
 Une table apparaît. Vous pouvez depuis cette table, affecter et retirer un automatisme.
 
-<img src="IMGS/empty_automatisme_table.PNG" alt="hi" class="inline"/>
+<img src="IMGS/empty_automatisme_table.png" alt="hi" class="inline"/>
 
 Cliquez sur le bouton ajouter un automatisme et choisissez votre automatisme dans la vue qui apparaît.
 Enfin validez la vue.
 
 Vous devriez voir apparaître votre automatisme dans la table comme cela:
 
-<img src="IMGS/new_automatisme_table.PNG" alt="hi" class="inline"/>
+<img src="IMGS/new_automatisme_table.png" alt="hi" class="inline"/>
 
 Si cet automatisme vous convient, sauvegardez la lumière.
 Une fois sauvegardée, vous devriez voir apparaître 3 commandes dans la liste des commandes pour votre lumière:
-<img src="IMGS/command_list_automatisme.PNG" alt="hi" class="inline"/>
+<img src="IMGS/command_list_automatisme.png" alt="hi" class="inline"/>
 
 Vous pouvez depuis ces 3 commandes autoriser ou interdire un automatisme. Si l'automatisme est interdit, il ne s'activera plus pour cette lumière.
 
@@ -150,7 +150,7 @@ Il existe 2 possibilités pour activer et désactiver un automatisme:
 ## 4.1) Agir au niveau de l'automatisme
 
 L'automatisme possède 3 commandes:
-<img src="IMGS/cmds_autom.PNG" alt="hi" class="inline"/>
+<img src="IMGS/cmds_autom.png" alt="hi" class="inline"/>
 
 Lorsque vous activez et désactiver l'automatisme depuis ces commandes, l'automatisme est désactivez pour l'ensemble des lumières qui le possèdent. Si vous souhaitez agir lumière par lumière alors consultez le point ci dessous.
 
