@@ -33,18 +33,18 @@ Cette documentation explique:
 
 Les automatismes créés sont regroupés dans la page de configuration du plugin dans la sous-section automatismes:
 
-<img src="IMGS/list_automatismes_config.png" alt="hi" class="inline"/>
+<img src="IMGS/list_automatismes_config.PNG" alt="hi" class="inline"/>
 
 
 # 2) Créer un automatisme
 
 Pour créer un automatisme, cliquez sur le bouton + dans la page de configuration:
 
-<img src="IMGS/button_create_autom.png" alt="hi" class="inline"/>
+<img src="IMGS/button_create_autom.PNG" alt="hi" class="inline"/>
 
 Depuis la page de configuration de l'équipement, choisissez:
 
-<img src="IMGS/automatisme_type.png" alt="hi" class="inline"/>
+<img src="IMGS/automatisme_type.PNG" alt="hi" class="inline"/>
 
 Une nouvelle liste apparaît. Vous pouvez choisir dans cette liste les automatismes que vous souhaitez configurer.
 
@@ -120,22 +120,22 @@ Pour qu'un automatisme puisse agir sur une lumière, nous devons affecter l'auto
 Choisissez une lumière ou un groupe de lumière et allez dans la page de configuration de l'équipement.
 Cliquez sur la section automatisme:
 
-<img src="IMGS/automatisme_section.png" alt="hi" class="inline"/>
+<img src="IMGS/automatisme_section.PNG" alt="hi" class="inline"/>
 
 Une table apparaît. Vous pouvez depuis cette table, affecter et retirer un automatisme.
 
-<img src="IMGS/empty_automatisme_table.png" alt="hi" class="inline"/>
+<img src="IMGS/empty_automatisme_table.PNG" alt="hi" class="inline"/>
 
 Cliquez sur le bouton ajouter un automatisme et choisissez votre automatisme dans la vue qui apparaît.
 Enfin validez la vue.
 
 Vous devriez voir apparaître votre automatisme dans la table comme cela:
 
-<img src="IMGS/new_automatisme_table.png" alt="hi" class="inline"/>
+<img src="IMGS/new_automatisme_table.PNG" alt="hi" class="inline"/>
 
 Si cet automatisme vous convient, sauvegardez la lumière.
 Une fois sauvegardée, vous devriez voir apparaître 3 commandes dans la liste des commandes pour votre lumière:
-<img src="IMGS/command_list_automatisme.png" alt="hi" class="inline"/>
+<img src="IMGS/command_list_automatisme.PNG" alt="hi" class="inline"/>
 
 Vous pouvez depuis ces 3 commandes autoriser ou interdire un automatisme. Si l'automatisme est interdit, il ne s'activera plus pour cette lumière.
 
