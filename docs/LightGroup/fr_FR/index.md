@@ -5,6 +5,7 @@ Le plugin permet d'uniformiser toutes vos lumières dans un seul et unique forma
 
 [Beta uniquement] Le plugin intègre des automatismes pré définit que vous pouvez affecter à vos lumières / groupes. Les automatismes font l'objet d'une documentation dédiée: <a href="https://hbedek.github.io/Jeedom_docs/docs/LightGroup/fr_FR/Automatismes/">ICI</a>
 
+
 # Configuration de l'équipement
 
 Il est possible de configurer deux types de lumières différentes:
@@ -16,12 +17,12 @@ Avant de commencer à regrouper vos lumière dans un groupe, vous devez au préa
 Choisissez dans la sélection le type de lumière que vous souhaitez créer:
 <img src="IMGS/type_lumieres.PNG" alt="hi" class="inline"/>
 
-## Configuration d'une lumière seule
+## 1) Configuration d'une lumière seule
 
 Une lumière est composé au minimum d'un état Allumé / Eteint.
 Vous pouvez également configurer la luminosité et la couleur.
 
-### Etat de la lumière
+### 1.1) Etat de la lumière
 
 <img src="IMGS/config_lumiere_etat.PNG" alt="hi" class="inline"/>
 
@@ -41,7 +42,7 @@ Eteint
 <img src="IMGS/light_off.svg" alt="hi" class="inline" height="100px" width="100px"/>
 
 
-### Luminosité de la lumière
+### 1.2) Luminosité de la lumière
 
 Pour configurer la luminosité, cochez "La luminosité est-elle configurable ?"
 <img src="IMGS/config_lumiere_lumen.PNG" alt="hi" class="inline"/>
@@ -84,7 +85,7 @@ Lorsque vous demandez une luminosité, plusieurs règles s'appliquent:
 - Si la lumière est éteinte, la luminosité s'appliquera dès la lumière s'allumera
 - Si une lumière a une demande de luminosité en cours et que vous modifiez la luminosité, la demande de luminosité est annulée.
 
-### Couleur de la lumière
+### 1.3) Couleur de la lumière
 
 Pour configurer la couleur, cochez "La couleur est-elle configurable ?"
 <img src="IMGS/config_lumiere_couleur.PNG" alt="hi" class="inline"/>
@@ -99,7 +100,7 @@ Lorsque vous demandez une couleur, plusieurs règles s'appliquent:
 - Si la lumière est éteinte, la couleur s'appliquera dès la lumière s'allumera
 - Si une lumière a une demande de couleur en cours et que vous modifiez la couleur, la demande de couleur est annulée.
 
-### Température de la lumière
+### 1.4) Température de la lumière
 
 Pour configurer la température, cochez "La température est-elle configurable ?"
 <img src="IMGS/config_lumiere_temp.PNG" alt="hi" class="inline"/>
@@ -114,7 +115,7 @@ Lorsque vous demandez une température, plusieurs règles s'appliquent:
 - Si la lumière est éteinte, la température s'appliquera dès la lumière s'allumera
 - Si une lumière a une demande de température en cours et que vous modifiez la température, la demande de température est annulée.
 
-## Configuration d'un groupe de lumières
+## 2) Configuration d'un groupe de lumières
 
 Avec le groupe de lumières, vous pouvez d'un clic:
 - Allumer toutes les lumières
@@ -133,6 +134,17 @@ Une lumière éteinte compte pour 0%
 
 Le groupe de lumière est représenté sour forme de widget de la même manière que la lumière seule mais possède 3 ampoules:
 <img src="IMGS/light_group_on_100.svg" alt="hi" class="inline" height="100px" width="100px"/>
+
+
+## 3) Automatismes [Beta]
+
+Vous venez de définir des lumières et des groupes de lumière sur le plugin.
+La prochaine étape consiste à les automatiser complétement:
+- Allumer et éteindre la lumière en fonction de mouvement et luminosité
+- Modifier la luminosité / couleur / température en fonction de certains critères
+
+Les automatismes font l'objet d'une documentation dédiée: <a href="https://hbedek.github.io/Jeedom_docs/docs/LightGroup/fr_FR/Automatismes/">ICI</a>
+
 
 ## Compatibilité Electricity Cost
 

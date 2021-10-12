@@ -22,14 +22,21 @@ Les automatismes s'éxecutent comme des tâches. Prenons un petit exemple:
 J'utilise l'automatisme de placard et ma lumière s'allume lorsque j'ouvre la porte. Si la porte reste ouverte trop longtemps, la lumière s'éteint.
 Lorsque j'ouvre la porte, le plugin créer une première instante de l'automatisme. Je ferme puis j'ouvre de nouveau la porte, le plugin créer une nouvelle instance qui vient remplacer l'ancienne. Ma lumière n'est ainsi conditionée que par la nouvelle instance.
 
-## Consulter les automatismes
+Cette documentation explique:
+- Comment créer un automatisme
+- Comment affecter un automatisme à une lumière
+- Comment activer et désactiver un automatisme
+- Comment combiner les automatismes entre eux
+
+
+# 1) Consulter les automatismes
 
 Les automatismes créés sont regroupés dans la page de configuration du plugin dans la sous-section automatismes:
 
 <img src="IMGS/list_automatismes_config.PNG" alt="hi" class="inline"/>
 
 
-## Créer un automatisme
+# 2) Créer un automatisme
 
 Pour créer un automatisme, cliquez sur le bouton + dans la page de configuration:
 
@@ -41,10 +48,74 @@ Depuis la page de configuration de l'équipement, choisissez:
 
 Une nouvelle liste apparaît. Vous pouvez choisir dans cette liste les automatismes que vous souhaitez configurer.
 
-Une fois votre automatisme choisit, configurez le et sauvegardez l'équipement.
+L'automatisme le plus complet est l'automatisme "Pièce". Vous pouvez depuis cet automatisme définir de multiples capteurs de présence ou de luminosité.
+
+## 2.1) Affecter des capteurs à un automatisme
+
+Pour affecter des capteurs à un automatisme, sélectionnez l'onglet "Capteurs":
+<img src="IMGS/sensorTab.PNG" alt="hi" class="inline"/>
+
+Dans cet onglet vous pouvez ajouter autant de capteurs de présence et de capteurs de luminosités que vous le souhaitez:
+<img src="IMGS/sensorTables.PNG" alt="hi" class="inline"/>
+
+L'automatisme sera activé si: une présence est détectée ET la luminosité est insuffisante.
+Il est possible de ne saisir aucun capteurs de présence ou aucun capteurs de luminosité. Dans ce cas une présence détectée ou une luminosité suffisante suffit pour déclencher l'automatisme.
+
+### 2.1.1) Les capteurs de présence
+
+L'automatisme peut s'activer si au moins un capteur de présence renvoie une présence.
+L'automatisme peut s'arrêté si tous les capteurs ne renvoient plus de présence.
+
+### 2.1.2) Les capteurs de luminosité
+
+Vous pouvez définir pour chaque capteur une luminosité minimale. Si au moins un des capteurs renvoie une luminosité insuffisante alors l'automatisme peut s'activer.
+L'autommatisme peut s'arrêter si la luminosité de tous les capteurs devient suffisante.
+
+## 2.2) Définir les temps tampons
+
+Revenons sur l'onglet principal de configuration de l'automatisme. Vous avez la possibilité ici de définir plusieurs temps tampon:
+<img src="IMGS/timeTampon.PNG" alt="hi" class="inline"/>
+
+### 2.2.1) Temps maximum d'automatisation
+
+Le premier temps que vous pouvez définir est le temps maximum pour lequel l'automatisme sera enclenché. Passé ce temps, l'automatisme sera arrêté et les lumières s'éteindront. Si vous ne définissez aucun temps alors les lumières ne seront conditionnées que par les capteurs de présence et de luminosité
+
+### 2.2.2) Temps tampon
+
+Lorsque les capteurs de présences ne détectent plus de mouvement ou bien que la luminosité est suffisante, l'automatisme va s'arrêter et les lumières vont s'éteindre. Il est possible de définir un temps tampon avant que les lumières ne s'éteignent. Si pendans ce temps tampon, un mouvement est détecté et que la luminosité redevient insuffisante, les lumière ne s'éteindront pas et un nouveau cycle est lancé
+
+## 2.3) Paramétrer les lumières
+
+L'automatisme lorsqu'il sera déclenché allumera les lumières. Il est possible en plus de cela de faire modifier la luminosité, la couleur ou la température des lumières compatibles. Pour ces 3 paramètres, il est possible de définir une valeur:
+<img src="IMGS/lumen.PNG" alt="hi" class="inline"/>
+
+Il vous est également possible de récupérer la valeur d'une commande à appliquer sur les lumières de l'automatisme. Il vous faut pour cela cocher la bonne case:
+<img src="IMGS/lumenCmd.PNG" alt="hi" class="inline"/>
+
+## 2.4) Programmer les automatismes
+
+Vous pouvez définir des plages temporelles pour lequel l'automatisme peut ou non se déclencher.
+Par défaut aucune plage n'est définit et l'automatisme peut s'activer n'importe quand.
+
+Si vous souhaitez définir des plages horaires spécifiques, cochez:
+<img src="IMGS/tickProgrammation.PNG" alt="hi" class="inline"/>
+
+Un nouvel onglet "Programmation" apparaît alors. Cliquez dessus pour la suite de la configuration.
+<img src="IMGS/programmationTable.PNG" alt="hi" class="inline"/>
+
+Cliquez sur le bouton pour ajouter une plage de programmation.
+- Vous pouvez sélectionner les jours pour lequelles l'automatisme peut s'activer. Ce champ est multi sélectionnable.
+- Vous pouvez définir l'heure de début et l'heure de fin de la programmation. Si l'heure de début est plus tard que l'heure de fin, le plugin considéra que vous avez sélectionnez le créneau heure de début -> minuit minuit -> heure de fin.
+- Vous pouvez cocher "Jour enter" qui annule la plage définit est rend l'automatisme activable pour le jour entier.
 
 
-## Affecter un automatisme
+SAUVEGARDER pour créer les différentes commandes.
+
+Nous pouvons maintenant affecter cet automatisme à différentes lumières.
+
+# 3) Affecter un automatisme
+
+Pour qu'un automatisme puisse agir sur une lumière, nous devons affecter l'automatisme sur cette dernière.
 
 Choisissez une lumière ou un groupe de lumière et allez dans la page de configuration de l'équipement.
 Cliquez sur la section automatisme:
@@ -68,7 +139,27 @@ Une fois sauvegardée, vous devriez voir apparaître 3 commandes dans la liste d
 
 Vous pouvez depuis ces 3 commandes autoriser ou interdire un automatisme. Si l'automatisme est interdit, il ne s'activera plus pour cette lumière.
 
-## Combiner les automatismes
+# 4) Activer et Désactiver un automatisme
+
+Il possible d'activer et de désactiver un automatisme. Lorsque qu'un automatisme est désactivé, il ne pourra plus se déclencher et n'aura donc plus d'impact sur les lumières concernés que ce soit pour allumer ou éteindre une lumière.
+
+Il existe 2 possibilités pour activer et désactiver un automatisme:
+- Désactiver l'automtatisme
+- Désactiver l'instance d'un automatisme
+
+## 4.1) Agir au niveau de l'automatisme
+
+L'automatisme possède 3 commandes:
+<img src="IMGS/cmds_autom.PNG" alt="hi" class="inline"/>
+
+Lorsque vous activez et désactiver l'automatisme depuis ces commandes, l'automatisme est désactivez pour l'ensemble des lumières qui le possèdent. Si vous souhaitez agir lumière par lumière alors consultez le point ci dessous.
+
+## 4.2) Agir au niveau d'une lumière
+
+Il est possible d'activer et de désactiver un automatisme pour uniquement une lumière. 
+Chacune des lumières possédant l'automatisme possède 3 commandes permettant cela
+
+# 5) Combiner les automatismes
 
 Il vous est possible depuis le plugin de combiner des automatismes pour obtenir le comportement que vous souhaitez.
 Exemple: je souhaite que la lumière de mon placard s'allume lorsque j'ouvre la porte. Je souhaite également que la luminosité de la lumière soit plus faible durant la nuit.
@@ -85,6 +176,5 @@ Ainsi lorsque j'ouvrirais la porte à 15h la lumière s'allumera avec une lumino
 ## A venir
 
 Plusieurs automatismes vont être rajoutés graduellement sur le plugin.
-La possibilité d'ajouter plusieurs capteurs sera également proposée.
-Enfin il sera possible de prioriser les automatismes entre eux pour une lumière / groupe de lumière
+Il sera possible de prioriser les automatismes entre eux pour une lumière / groupe de lumière
 Vous pouvez suivre les avancées depuis le board: <a href="https://github.com/users/hbedek/projects/5">ICI</a>

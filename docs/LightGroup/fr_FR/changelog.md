@@ -1,5 +1,14 @@
 # Changelog plugin Light Group
 
+# 12/10/2021 [Beta]
+- Ajout d'un onglet programmation horaire pour l'ensemble des automatismes
+- Il est maintenant possible définir la luminosité / couleur / température d'un automatisme depuis une commande info
+- Ajout de la température dans les automatismes
+- Ajout d'une condition binaire permettant d'activer et de désactiver un automatisme -> MODE
+- Correction du bug d'affichage de la sélection des éléments d'un groupe de lumière
+
+ATTENTION: Pour cette nouvelle version l'ensemble des automatismes est programmable. L'automatisme de veille qui auparavant était le seul à être programmable doit être reconfigurer depuis l'onglet de programmation. 
+
 # 06/10/2021 [Beta]
 
 - Ajout de l'automatisme pièce de vie pouvant prendre de multiples capteurs de présence et de luminosité
