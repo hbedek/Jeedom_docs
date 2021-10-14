@@ -1,5 +1,12 @@
 # Changelog plugin Light Group
 
+# 14/10/2021 [Beta]
+- Correction du bug de programmation pour date de début supérieure à une date de fin
+- Correction du bug de calcul de luminosité d'un groupe
+- Correction automatisme modification horaire
+
+ATTENTION: La mise à jour de cette version intègre une migration de la configuration de vos automatismes ainf que la gestion de la luminosité / couleur et température soit géré via un onglet dédié. Vérifiez bien que ces données soient bien à jour pour ces automatismes.
+
 # 13/10/2021 [Beta]
 - Correction du bug d'affichage de la sélection des éléments d'un groupe de lumière
 - Correction du bug de programmation pour date de début supérieure à une date de fin
