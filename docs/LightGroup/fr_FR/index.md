@@ -59,10 +59,10 @@ Pas de bol, les deux lumières de ma cuisine ne renvoient pas les mêmes états.
 Une fois que j'aurais définit mes deux lumières, elles me renverront toutes les deux les mêmes informations: Etat de 0 ou 1.
 
 La lumière de mon plafond:
-<img src="IMGS/cuisineExLumPlafondEtat.png" alt="hi" class="inline" height="100px" width="100px"/>
+<img src="IMGS/cuisineExLumPlafondEtat.png" alt="hi" class="inline"/>
 
 La lumière de mon plan de travail:
-<img src="IMGS/cuisineExLumPDTEtat.png" alt="hi" class="inline" height="100px" width="100px"/>
+<img src="IMGS/cuisineExLumPDTEtat.png" alt="hi" class="inline"/>
 
 
 ### 1.2) Luminosité de la lumière
@@ -115,10 +115,10 @@ Encore pas de bol, les deux lumières de ma cuisine ne renvoient pas les mêmes 
 Une fois que j'aurais définit mes deux lumières, elles me renverront toutes les deux les mêmes informations: Luminosité entre 0 et 100%.
 
 La lumière de mon plafond:
-<img src="IMGS/cuisineExLumPlafondLumen.png" alt="hi" class="inline" height="100px" width="100px"/>
+<img src="IMGS/cuisineExLumPlafondLumen.png" alt="hi" class="inline"/>
 
 La lumière de mon plan de travail:
-<img src="IMGS/cuisineExLumPDTLumen.png" alt="hi" class="inline" height="100px" width="100px"/>
+<img src="IMGS/cuisineExLumPDTLumen.png" alt="hi" class="inline"/>
 
 ### 1.3) Couleur de la lumière
 
@@ -174,7 +174,7 @@ Le groupe de lumière est représenté sour forme de widget de la même manière
 + Reprenons l'exemple de ma cuisine:
 ```
 Nous avons définit mes deux lumières. Nous allons maintenant créer un groupe avec ces deux lumières. Ce groupe me permettra d'allumer / éteindre et modifier la luminosité de mes lumières en 1 seul clic.
-<img src="IMGS/cuisineExGroupe.png" alt="hi" class="inline" height="100px" width="100px"/>
+<img src="IMGS/cuisineExGroupe.png" alt="hi" class="inline"/>
 
 ## 3) Automatismes [Beta]
 
