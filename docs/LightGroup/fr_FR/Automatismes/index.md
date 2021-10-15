@@ -29,6 +29,18 @@ Cette documentation explique:
 - Comment combiner les automatismes entre eux
 
 
+Nous allons pour la suite de la documentation prendre un exemple concret. Je souhaite automatismer les lumières dans ma cuisine et que l'éclairage de mes lumières réponde aux conditions suivantes:
+- La lumière ne peut s'allumer que lorsque je suis chez moi.
+- La lumière ne peut s'allumer que lorsque l'un des capteurs de présence dans ma cuisine détecte un mouvement (ma cuisine en possède 2).
+- La lumière ne peut s'allumer que lorsque la luminosité dans ma cuisine est insuffisante.
+- La lumière ne doit pas s'éteindre immédiatement lorsqu'il n'y a plus de mouvement ou bien que la luminosité est faible. La lumière doit attendre 10 minutes pour voir si les conditions d'allumage sont de nouveaux réalisées.
+- La lumière ne doit pas s'allumer entre 23h et 5h du matins (seulement en semaine).
+
+L'exemple est à suivre dans la documentation avec le tag: 
+```diff
++ Reprenons l'exemple de ma cuisine:
+```
+
 # 1) Consulter les automatismes
 
 Les automatismes créés sont regroupés dans la page de configuration du plugin dans la sous-section automatismes:
@@ -50,26 +62,70 @@ Une nouvelle liste apparaît. Vous pouvez choisir dans cette liste les automatis
 
 L'automatisme le plus complet est l'automatisme "Pièce". Vous pouvez depuis cet automatisme définir de multiples capteurs de présence ou de luminosité.
 
+```diff
++ Reprenons l'exemple de ma cuisine:
+```
+Ici j'ai besoin de détecter du mouvement, de la luminosité et d'ajouter des conditions. Je vais prendre l'automatisme pièce de vie.
+
+
 ## 2.1) Affecter des capteurs à un automatisme
 
 Pour affecter des capteurs à un automatisme, sélectionnez l'onglet "Capteurs":
 <img src="IMGS/sensorTab.png" alt="hi" class="inline"/>
 
-Dans cet onglet vous pouvez ajouter autant de capteurs de présence et de capteurs de luminosités que vous le souhaitez:
+Dans cet onglet vous pouvez ajouter autant de conditions, capteurs de présence et de capteurs de luminosités que vous le souhaitez:
 <img src="IMGS/sensorTables.png" alt="hi" class="inline"/>
 
 L'automatisme sera activé si: une présence est détectée ET la luminosité est insuffisante.
 Il est possible de ne saisir aucun capteurs de présence ou aucun capteurs de luminosité. Dans ce cas une présence détectée ou une luminosité suffisante suffit pour déclencher l'automatisme.
 
-### 2.1.1) Les capteurs de présence
+### 2.1.1) Les conditions
 
-L'automatisme peut s'activer si au moins un capteur de présence renvoie une présence.
-L'automatisme peut s'arrêté si tous les capteurs ne renvoient plus de présence.
+Il est possible d'affecter des conditions à la réalisation de l'automatisme. Tant que toutes ces conditions ne seront pas réalisées, l'automatisme ne pourra pas se déclencher.
+<img src="IMGS/conditionTable.png" alt="hi" class="inline"/>
 
-### 2.1.2) Les capteurs de luminosité
+Les conditions doivent être déclarées sous forme de "code".
+Vous devez déclarez les équipements sous la forme #[Pièce][Equipement][Commande Info]#
+Vous pouvez utilisez les conditions ET -> &&, OU -> ||, EGALE -> ==, ainsi que toutes les autres.
 
-Vous pouvez définir pour chaque capteur une luminosité minimale. Si au moins un des capteurs renvoie une luminosité insuffisante alors l'automatisme peut s'activer.
-L'autommatisme peut s'arrêter si la luminosité de tous les capteurs devient suffisante.
+```diff
++ Reprenons l'exemple de ma cuisine:
+```
+Je ne souhaite déclencher l'automatisme que si je suis chez moi. Je vais donc appliquer la condition:
+#[Appartement][Presence][Presence globale]# == 1
+
+<img src="IMGS/cuisineExCondition.png" alt="hi" class="inline"/>
+
+### 2.1.2) Les capteurs de présence
+
+Si vous ne renseignez aucun capteurs de présence, la présence est validée par défaut.
+Si vous renseignez plusieurs capteurs de présences, la présence sera validée dès qu'un des capteurs détecte une présence.
+
+Il vous est possible de rendre un ou plusieurs capteurs restrictifs. Dans ce cas la, la présence de ce capteur est nécessaire pour déclencher l'automatisme.
+
+```diff
++ Reprenons l'exemple de ma cuisine:
+```
+Je possède 2 capteurs de présences, je vais donc les déclarer ici. Si un seul des capteurs détecte une présence cela me suffit.
+<img src="IMGS/cuisineExPresence.png" alt="hi" class="inline"/>
+
+A noter que si j'avais voulu que les deux capteurs remontent tous les deux une présence avant de déclencher l'automatisme, j'aurais pu rendre les deux capteurs restrictifs. Dans mon cas un seul capteur suffit.
+
+### 2.1.3) Les capteurs de luminosité
+
+Si vous ne renseignez aucun capteurs de luminosité, la luminosité est faible par défaut.
+Vous pouvez définir pour chaque capteur une luminosité minimale. La luminosité sera considérée comme faible dès lors qu'un seul des capteurs détecte une luminosité faible.
+
+Il vous est possible de rendre un ou plusieurs capteurs restrictifs. Dans ce cas la, tant que la luminosité n'est pas faible pour ce capteur, l'automatisme ne se déclenche pas.
+
+```diff
++ Reprenons l'exemple de ma cuisine:
+```
+Je possède 1 capteurs de luminosité et j'estime que je n'ai pas besoin d'allumer la lumière lorsque la luminosité dépasse 50 LUX.
+<img src="IMGS/cuisineExLumen.png" alt="hi" class="inline"/>
+
+Nous avons définit les conditions pour les automatismes. Il reste un problème: Dès que tous les capteurs détecte une absence de présence, la lumière s'éteint et se rallume dès que j'effectue un mouvement. Pour résoudre ce problème, nous allons voir comment affecter des temps tampon.
+
 
 ## 2.2) Définir les temps tampons
 
@@ -82,7 +138,15 @@ Le premier temps que vous pouvez définir est le temps maximum pour lequel l'aut
 
 ### 2.2.2) Temps tampon
 
-Lorsque les capteurs de présences ne détectent plus de mouvement ou bien que la luminosité est suffisante, l'automatisme va s'arrêter et les lumières vont s'éteindre. Il est possible de définir un temps tampon avant que les lumières ne s'éteignent. Si pendans ce temps tampon, un mouvement est détecté et que la luminosité redevient insuffisante, les lumière ne s'éteindront pas et un nouveau cycle est lancé
+Lorsque les capteurs de présences ne détectent plus de mouvement ou bien que la luminosité est suffisante, l'automatisme va s'arrêter et les lumières vont s'éteindre. Il est possible de définir un temps tampon avant que les lumières ne s'éteignent. Si pendans ce temps tampon, un mouvement est détecté et que la luminosité redevient insuffisante, les lumière ne s'éteindront pas et un nouveau cycle est lancé.
+
+```diff
++ Reprenons l'exemple de ma cuisine:
+```
+C'est une pièce ou il y a souvent du mouvement mais il arrive que nous restions statique quelque temps. Je vais ici définir un temps tampon de 10 minutes.
+<img src="IMGS/cuisineExTpsTampon.png" alt="hi" class="inline"/>
+
+Lorsque l'automatisme ne détecte plus de présence ou que la luminosité est trop haute, l'automatisme attends 10 minutes pour voir si les conditions de déclenchement se réalise de nouveau. Si ce n'est pas le cas, ma lumière s'éteint.
 
 ## 2.3) Paramétrer les lumières
 
@@ -108,10 +172,15 @@ Cliquez sur le bouton pour ajouter une plage de programmation.
 - Vous pouvez définir l'heure de début et l'heure de fin de la programmation. Si l'heure de début est plus tard que l'heure de fin, le plugin considéra que vous avez sélectionnez le créneau heure de début -> minuit minuit -> heure de fin.
 - Vous pouvez cocher "Jour enter" qui annule la plage définit est rend l'automatisme activable pour le jour entier.
 
+```diff
++ Reprenons l'exemple de ma cuisine:
+```
+Comme précisé je souhaite que la lumière puisse s'allumer qu'entre 5h et 23h mais uniquement en semaine. En Week End je ne veux aucunes restrictions.
+Voici comment  j'ai réalisé ma programmation:
+<img src="IMGS/cuisineExProgrammation.png" alt="hi" class="inline"/>
+
 
 SAUVEGARDER pour créer les différentes commandes.
-
-Nous pouvons maintenant affecter cet automatisme à différentes lumières.
 
 # 3) Affecter un automatisme
 

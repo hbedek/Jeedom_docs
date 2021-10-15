@@ -1,5 +1,9 @@
 # Changelog plugin Light Group
 
+# 15/10/2021 [Beta]
+- Ajout possibilité de rajouter des conditions dans l'automatisme "pièce". L'automatisme ne se déclenche pas tant que les conditions ne sont pas résolus. A terme les conditions pourrait être appliquées sur l'ensemble des automatismes
+- Ajout possibilité de rendre certains capteurs restrictifs. Lorsqu'un capteur est restrictif, l'automatisme ne se déclenchera pas tant que ce dernier ne passera pas à 1.
+
 # 14/10/2021 [Beta]
 - Correction du bug de programmation pour date de début supérieure à une date de fin
 - Correction du bug de calcul de luminosité d'un groupe

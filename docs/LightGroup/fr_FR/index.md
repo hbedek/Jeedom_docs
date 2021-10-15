@@ -5,7 +5,13 @@ Le plugin permet d'uniformiser toutes vos lumières dans un seul et unique forma
 
 [Beta uniquement] Le plugin intègre des automatismes pré définit que vous pouvez affecter à vos lumières / groupes. Les automatismes font l'objet d'une documentation dédiée: <a href="https://hbedek.github.io/Jeedom_docs/docs/LightGroup/fr_FR/Automatismes/">ICI</a>
 
-
+Cette documentation est associée à un petit tutoriel:
+Je souhaite grouper les deux lumières de ma cuisine et dans un deuxième temps je souhaite automatiser ma cuisine.
+Dans cette partie de la documentation nous allon configurer les lumières de ma cuisine.
+L'exemple est à suivre avec le TAG: 
+```diff
++ Reprenons l'exemple de ma cuisine:
+```
 # Configuration de l'équipement
 
 Il est possible de configurer deux types de lumières différentes:
@@ -21,6 +27,11 @@ Choisissez dans la sélection le type de lumière que vous souhaitez créer:
 
 Une lumière est composé au minimum d'un état Allumé / Eteint.
 Vous pouvez également configurer la luminosité et la couleur.
+
+```diff
++ Reprenons l'exemple de ma cuisine:
+```
+Je possède deux lumières dans ma cuisine, je vais donc toutes les deux les définir une à une.
 
 ### 1.1) Etat de la lumière
 
@@ -40,6 +51,18 @@ Allumé
 <img src="IMGS/light_on_100.svg" alt="hi" class="inline" height="100px" width="100px"/>
 Eteint
 <img src="IMGS/light_off.svg" alt="hi" class="inline" height="100px" width="100px"/>
+
+```diff
++ Reprenons l'exemple de ma cuisine:
+```
+Pas de bol, les deux lumières de ma cuisine ne renvoient pas les mêmes états. La lumière de mon plafond me renvoie un état entre 1 et 100 et la lumière de mon plan de travail me renvoie un état entre 0 et 1.
+Une fois que j'aurais définit mes deux lumières, elles me renverront toutes les deux les mêmes informations: Etat de 0 ou 1.
+
+La lumière de mon plafond:
+<img src="IMGS/cuisineExLumPlafondEtat.png" alt="hi" class="inline" height="100px" width="100px"/>
+
+La lumière de mon plan de travail:
+<img src="IMGS/cuisineExLumPDTEtat.png" alt="hi" class="inline" height="100px" width="100px"/>
 
 
 ### 1.2) Luminosité de la lumière
@@ -84,6 +107,18 @@ Lorsque vous demandez une luminosité, plusieurs règles s'appliquent:
 - Si la lumière est allumée, la luminosité s'applique immédiatement.
 - Si la lumière est éteinte, la luminosité s'appliquera dès la lumière s'allumera
 - Si une lumière a une demande de luminosité en cours et que vous modifiez la luminosité, la demande de luminosité est annulée.
+
+```diff
++ Reprenons l'exemple de ma cuisine:
+```
+Encore pas de bol, les deux lumières de ma cuisine ne renvoient pas les mêmes luminosité. La lumière de mon plafond me renvoie une luminosité entre 0 et 100 et la lumière de mon plan de travail me renvoie une luminosité entre 0 et 254.
+Une fois que j'aurais définit mes deux lumières, elles me renverront toutes les deux les mêmes informations: Luminosité entre 0 et 100%.
+
+La lumière de mon plafond:
+<img src="IMGS/cuisineExLumPlafondLumen.png" alt="hi" class="inline" height="100px" width="100px"/>
+
+La lumière de mon plan de travail:
+<img src="IMGS/cuisineExLumPDTLumen.png" alt="hi" class="inline" height="100px" width="100px"/>
 
 ### 1.3) Couleur de la lumière
 
@@ -135,6 +170,11 @@ Une lumière éteinte compte pour 0%
 Le groupe de lumière est représenté sour forme de widget de la même manière que la lumière seule mais possède 3 ampoules:
 <img src="IMGS/light_group_on_100.svg" alt="hi" class="inline" height="100px" width="100px"/>
 
+```diff
++ Reprenons l'exemple de ma cuisine:
+```
+Nous avons définit mes deux lumières. Nous allons maintenant créer un groupe avec ces deux lumières. Ce groupe me permettra d'allumer / éteindre et modifier la luminosité de mes lumières en 1 seul clic.
+<img src="IMGS/cuisineExGroupe.png" alt="hi" class="inline" height="100px" width="100px"/>
 
 ## 3) Automatismes [Beta]
 
@@ -145,6 +185,9 @@ La prochaine étape consiste à les automatiser complétement:
 
 Les automatismes font l'objet d'une documentation dédiée: <a href="https://hbedek.github.io/Jeedom_docs/docs/LightGroup/fr_FR/Automatismes/">ICI</a>
 
+```diff
++ L'exemple de ma cuisine continue dans la partie automatisme. L'objectif est de rendre la lumière complétement autonome.
+```
 
 ## Compatibilité Electricity Cost
 
