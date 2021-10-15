@@ -67,6 +67,9 @@ L'automatisme le plus complet est l'automatisme "Pièce". Vous pouvez depuis cet
 ```
 Ici j'ai besoin de détecter du mouvement, de la luminosité et d'ajouter des conditions. Je vais prendre l'automatisme pièce de vie.
 
+```diff
++ Fin exemple cuisine:
+```
 
 ## 2.1) Affecter des capteurs à un automatisme
 
@@ -96,6 +99,10 @@ Je ne souhaite déclencher l'automatisme que si je suis chez moi. Je vais donc a
 
 <img src="IMGS/cuisineExCondition.png" alt="hi" class="inline"/>
 
+```diff
++ Fin exemple cuisine:
+```
+
 ### 2.1.2) Les capteurs de présence
 
 Si vous ne renseignez aucun capteurs de présence, la présence est validée par défaut.
@@ -110,6 +117,10 @@ Je possède 2 capteurs de présences, je vais donc les déclarer ici. Si un seul
 <img src="IMGS/cuisineExPresence.png" alt="hi" class="inline"/>
 
 A noter que si j'avais voulu que les deux capteurs remontent tous les deux une présence avant de déclencher l'automatisme, j'aurais pu rendre les deux capteurs restrictifs. Dans mon cas un seul capteur suffit.
+
+```diff
++ Fin exemple cuisine:
+```
 
 ### 2.1.3) Les capteurs de luminosité
 
@@ -126,6 +137,9 @@ Je possède 1 capteurs de luminosité et j'estime que je n'ai pas besoin d'allum
 
 Nous avons définit les conditions pour les automatismes. Il reste un problème: Dès que tous les capteurs détecte une absence de présence, la lumière s'éteint et se rallume dès que j'effectue un mouvement. Pour résoudre ce problème, nous allons voir comment affecter des temps tampon.
 
+```diff
++ Fin exemple cuisine:
+```
 
 ## 2.2) Définir les temps tampons
 
@@ -147,6 +161,10 @@ C'est une pièce ou il y a souvent du mouvement mais il arrive que nous restions
 <img src="IMGS/cuisineExTpsTampon.png" alt="hi" class="inline"/>
 
 Lorsque l'automatisme ne détecte plus de présence ou que la luminosité est trop haute, l'automatisme attends 10 minutes pour voir si les conditions de déclenchement se réalise de nouveau. Si ce n'est pas le cas, ma lumière s'éteint.
+
+```diff
++ Fin exemple cuisine:
+```
 
 ## 2.3) Paramétrer les lumières
 
@@ -179,6 +197,9 @@ Comme précisé je souhaite que la lumière puisse s'allumer qu'entre 5h et 23h 
 Voici comment  j'ai réalisé ma programmation:
 <img src="IMGS/cuisineExProgrammation.png" alt="hi" class="inline"/>
 
+```diff
++ Fin exemple cuisine:
+```
 
 SAUVEGARDER pour créer les différentes commandes.
 

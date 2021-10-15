@@ -9,6 +9,7 @@ Cette documentation est associée à un petit tutoriel:
 Je souhaite grouper les deux lumières de ma cuisine et dans un deuxième temps je souhaite automatiser ma cuisine.
 Dans cette partie de la documentation nous allon configurer les lumières de ma cuisine.
 L'exemple est à suivre avec le TAG: 
+
 ```diff
 + Reprenons l'exemple de ma cuisine:
 ```
@@ -63,6 +64,10 @@ La lumière de mon plafond:
 
 La lumière de mon plan de travail:
 <img src="IMGS/cuisineExLumPDTEtat.png" alt="hi" class="inline"/>
+
+```diff
++ Fin exemple cuisine:
+```
 
 
 ### 1.2) Luminosité de la lumière
@@ -120,6 +125,10 @@ La lumière de mon plafond:
 La lumière de mon plan de travail:
 <img src="IMGS/cuisineExLumPDTLumen.png" alt="hi" class="inline"/>
 
+```diff
++ Fin exemple cuisine:
+```
+
 ### 1.3) Couleur de la lumière
 
 Pour configurer la couleur, cochez "La couleur est-elle configurable ?"
@@ -175,6 +184,10 @@ Le groupe de lumière est représenté sour forme de widget de la même manière
 ```
 Nous avons définit mes deux lumières. Nous allons maintenant créer un groupe avec ces deux lumières. Ce groupe me permettra d'allumer / éteindre et modifier la luminosité de mes lumières en 1 seul clic.
 <img src="IMGS/cuisineExGroupe.png" alt="hi" class="inline"/>
+
+```diff
++ Fin exemple cuisine:
+```
 
 ## 3) Automatismes [Beta]
 
