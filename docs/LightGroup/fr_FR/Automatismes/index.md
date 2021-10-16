@@ -122,10 +122,15 @@ A noter que si j'avais voulu que les deux capteurs remontent tous les deux une p
 + Fin exemple cuisine:
 ```
 
-### 2.1.3) Les capteurs de luminosité
+### 2.1.3) Les indicateurs de luminosité
 
-Si vous ne renseignez aucun capteurs de luminosité, la luminosité est faible par défaut.
-Vous pouvez définir pour chaque capteur une luminosité minimale. La luminosité sera considérée comme faible dès lors qu'un seul des capteurs détecte une luminosité faible.
+Si vous ne renseignez aucun indicateurs de luminosité, la luminosité est faible par défaut.
+
+Il existe plusieurs types d'indicateurs de luminosités. Plus vous en mettrez plus votre automatisme sera précis.
+
+### 2.1.3.1) L'intensité lumineuse
+
+Vous pouvez définir des capteurs de luminosité. Pour chque capteur, vous devez définir une luminosité minimale. Dès lors qu'un seul des capteurs détecte une luminosité faible.
 
 Il vous est possible de rendre un ou plusieurs capteurs restrictifs. Dans ce cas la, tant que la luminosité n'est pas faible pour ce capteur, l'automatisme ne se déclenche pas.
 
@@ -135,7 +140,24 @@ Il vous est possible de rendre un ou plusieurs capteurs restrictifs. Dans ce cas
 Je possède 1 capteurs de luminosité et j'estime que je n'ai pas besoin d'allumer la lumière lorsque la luminosité dépasse 50 LUX.
 <img src="IMGS/cuisineExLumen.png" alt="hi" class="inline"/>
 
-Nous avons définit les conditions pour les automatismes. Il reste un problème: Dès que tous les capteurs détecte une absence de présence, la lumière s'éteint et se rallume dès que j'effectue un mouvement. Pour résoudre ce problème, nous allons voir comment affecter des temps tampon.
+J'ai pu définir une luminosité minimale dans ma cuisine. Tel quel l'automatisme fonctionne bien mais je souhaiterais le rendre encore plus puissant en prenant en compte la position de mes volets.
+
+```diff
++ Fin exemple cuisine:
+```
+
+### 2.1.3.2) La position des volets roulants
+
+Vous pouvez ici déclarer la position de vos volets roulants. Vous pouvez pour chaque volet définir une position minimale en dessous de laquel vous considérez que la luminosité est faible dans votre pièce. L'automatisme considère que la luminosité est faible dans votre pièce que si l'ensemble des volets roulants déclarés possèdent une ouverture faible.
+Il vous est possible de rendre un ou plusieurs de vos volets roulants restrictifs. Dans ce cas la, tant que le volet ne sera pas en dessous de son ouverture minimale, l'automatisme ne se déclenchera pas.
+
+```diff
++ Reprenons l'exemple de ma cuisine:
+```
+Je possède un volet roulant dans ma cuisine et j'estime que j'ai besoin d'allumer la lumière lorsque mon volet est en dessous de 10% d'ouverture
+<img src="IMGS/cuisineExVolet.png" alt="hi" class="inline"/>
+
+J'ai pu définir la luminosité minimum pour laquelle je souhaite allumer la lumière. Maintenant il reste un problème. Dès qu'il n'y aura plus de mouvement, la lumière s'éteindra. Je vais pour cela définir un temps tampon. Dans l'intervalle de ca temps si il y a de nouveau du mouvement un nouveau cycle d'automatisme se lance. Si au bout de ce temps tampon les conditions ne sont toujours pas réunies, la lumière s'éteint.
 
 ```diff
 + Fin exemple cuisine:
