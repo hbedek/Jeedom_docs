@@ -1,5 +1,8 @@
 # Changelog plugin Light Group
 
+# 16/10/2021 [Beta]
+- Ajout possibilité de compléter les indicateurs de luminosité de l'automatisme pièce avec la position des volets roulants.
+
 # 15/10/2021 [Beta]
 - Ajout possibilité de rajouter des conditions dans l'automatisme "pièce". L'automatisme ne se déclenche pas tant que les conditions ne sont pas résolus. A terme les conditions pourrait être appliquées sur l'ensemble des automatismes
 - Ajout possibilité de rendre certains capteurs restrictifs. Lorsqu'un capteur est restrictif, l'automatisme ne se déclenchera pas tant que ce dernier ne passera pas à 1.
