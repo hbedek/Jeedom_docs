@@ -1,5 +1,11 @@
 # Changelog plugin Light Group
 
+# 17/10/2021 [Beta]
+- Correction bug déclenchement de la lumière si absence de volets roulants
+- Correction bug restrictivité non prise en compte
+- Correction bug suppression volets roulants
+
+
 # 16/10/2021 [Beta]
 - Ajout possibilité de compléter les indicateurs de luminosité de l'automatisme pièce avec la position des volets roulants.
 
