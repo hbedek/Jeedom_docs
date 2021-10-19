@@ -1,5 +1,23 @@
 # Changelog plugin Light Group
 
+# 19/10/2021 [Beta]
+- Ajout de la position du soleil en tant qu'indicateur de luminosité
+- Ajout de la posibilité d'affecter un automatisme directement depuis la configuration d'un automatisme
+- Un automatisme ne peut maintenant éteindre une lumière que si il l'avait lui même allumé
+- REFONTE totale du système d'affectation d'un automatisme
+
+ATTENTION: Cette nouvelle version contient une migration de configuration.
+Pour plus de stabilité et faire un premier pas vers la priorisation des automatismes, l'ensemble du système d'affectation a été remodelé.
+Cette version contient donc un code s'éxecutant à l'installation du plugin qui migrera votre ancienne configuration des automatismes affectés vers la nouvelle.
+Vérifiez après installation du plugin que vos lumières soient toujours affectées à vos automatismes.
+Si jamais vous avez un problème:
+- Remapper vos automatismes vers vos lumières
+- Contactez moi
+
+Enfin les commandes pour activer et désactiver les automatismes au niveau des LUMIERES (et non des automatismes), ont été modifiées. Si vous les utilisiez pour des scénarios, vous allez devoir utiliser les nouvelle.
+
+Cette migration est normalement la dernière.
+
 # 17/10/2021 [Beta]
 - Correction bug déclenchement de la lumière si absence de volets roulants
 - Correction bug restrictivité non prise en compte

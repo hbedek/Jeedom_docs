@@ -128,7 +128,7 @@ Si vous ne renseignez aucun indicateurs de luminosité, la luminosité est faibl
 
 Il existe plusieurs types d'indicateurs de luminosités. Plus vous en mettrez plus votre automatisme sera précis.
 
-### 2.1.3.1) L'intensité lumineuse
+#### 2.1.3.1) L'intensité lumineuse
 
 Vous pouvez définir des capteurs de luminosité. Pour chque capteur, vous devez définir une luminosité minimale. Dès lors qu'un seul des capteurs détecte une luminosité faible.
 
@@ -146,7 +146,7 @@ J'ai pu définir une luminosité minimale dans ma cuisine. Tel quel l'automatism
 + Fin exemple cuisine:
 ```
 
-### 2.1.3.2) La position des volets roulants
+#### 2.1.3.2) La position des volets roulants
 
 Vous pouvez ici déclarer la position de vos volets roulants. Vous pouvez pour chaque volet définir une position minimale en dessous de laquel vous considérez que la luminosité est faible dans votre pièce. L'automatisme considère que la luminosité est faible dans votre pièce que si l'ensemble des volets roulants déclarés possèdent une ouverture faible.
 Il vous est possible de rendre un ou plusieurs de vos volets roulants restrictifs. Dans ce cas la, tant que le volet ne sera pas en dessous de son ouverture minimale, l'automatisme ne se déclenchera pas.
@@ -156,6 +156,25 @@ Il vous est possible de rendre un ou plusieurs de vos volets roulants restrictif
 ```
 Je possède un volet roulant dans ma cuisine et j'estime que j'ai besoin d'allumer la lumière lorsque mon volet est en dessous de 10% d'ouverture
 <img src="IMGS/cuisineExVolet.png" alt="hi" class="inline"/>
+
+Tel quel l'automatisme fonctionne très bien. Pour accroître encore plus la précision je vais demander à mon automatisme de vérifier si le soleil est couché ou levé.
+
+```diff
++ Fin exemple cuisine:
+```
+
+#### 2.1.3.3) La position du soleil
+
+Vous pouvez ici déclarer l'heure de lever et de coucher du soleil. Si jamais l'heure actuelle est après le coucher du soleil ou avant le lever du soleil, l'automatisme considérera que la luminosité est faible.
+Il vous est possible de rendre le coucher / lever du soleil restrictif. Dans ce cas la, tant que le soleil n'est pas couché, l'automatisme ne se déclenchera pas.
+
+Les commandes de lever et de coucher du soleil se basent sur celle du plugin Héliotrope.
+
+```diff
++ Reprenons l'exemple de ma cuisine:
+```
+Je souhaite améliorer encore plus la précision de mon automatisme et je saisis l'heure de lever et de coucher du soleil
+<img src="IMGS/cuisineExSun.png" alt="hi" class="inline"/>
 
 J'ai pu définir la luminosité minimum pour laquelle je souhaite allumer la lumière. Maintenant il reste un problème. Dès qu'il n'y aura plus de mouvement, la lumière s'éteindra. Je vais pour cela définir un temps tampon. Dans l'intervalle de ca temps si il y a de nouveau du mouvement un nouveau cycle d'automatisme se lance. Si au bout de ce temps tampon les conditions ne sont toujours pas réunies, la lumière s'éteint.
 
@@ -228,6 +247,25 @@ SAUVEGARDER pour créer les différentes commandes.
 # 3) Affecter un automatisme
 
 Pour qu'un automatisme puisse agir sur une lumière, nous devons affecter l'automatisme sur cette dernière.
+Vous pouvez affecter un automatisme à une lumière depuis deux endroits:
+- depuis la page de configuration d'un automatisme.
+- depuis la page de configuration d'une lumière.
+
+## 3.1) Affectation depuis un automatisme
+
+Vous pouvez accéder à cette page dans la configuration d'un automatisme en cliquant sur l'onglet:
+<img src="IMGS/tabAffectation.PNG" alt="hi" class="inline"/>
+
+Depuis cet onglet vous pouvez affecter votre automatisme aux lumières / groupe de lumière que vous souhaitez.
+Il n'est pas possible depuis cet onglet d'influer sur la priorisation des automatismes les uns par rapport aux autres.
+<img src="IMGS/affectationTable.PNG" alt="hi" class="inline"/>
+
+Pour valider les affectations, cliquez sur:
+<img src="IMGS/saveAffectButton.PNG" alt="hi" class="inline"/>
+
+ATTENTION: Cliquer sur le bouton sauvegarder de l'équipement ne validera pas vos affectations.
+
+## 3.1) Affectation depuis une lumière
 
 Choisissez une lumière ou un groupe de lumière et allez dans la page de configuration de l'équipement.
 Cliquez sur la section automatisme:
