@@ -254,14 +254,14 @@ Vous pouvez affecter un automatisme à une lumière depuis deux endroits:
 ## 3.1) Affectation depuis un automatisme
 
 Vous pouvez accéder à cette page dans la configuration d'un automatisme en cliquant sur l'onglet:
-<img src="IMGS/tabAffectation.PNG" alt="hi" class="inline"/>
+<img src="IMGS/tabAffectation.png" alt="hi" class="inline"/>
 
 Depuis cet onglet vous pouvez affecter votre automatisme aux lumières / groupe de lumière que vous souhaitez.
 Il n'est pas possible depuis cet onglet d'influer sur la priorisation des automatismes les uns par rapport aux autres.
-<img src="IMGS/affectationTable.PNG" alt="hi" class="inline"/>
+<img src="IMGS/affectationTable.png" alt="hi" class="inline"/>
 
 Pour valider les affectations, cliquez sur:
-<img src="IMGS/saveAffectButton.PNG" alt="hi" class="inline"/>
+<img src="IMGS/saveAffectButton.png" alt="hi" class="inline"/>
 
 ATTENTION: Cliquer sur le bouton sauvegarder de l'équipement ne validera pas vos affectations.
 
