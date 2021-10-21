@@ -116,6 +116,8 @@ Cet équipement vous remontera les informations suivantes:
 - Le dépassement d'un budget pré-définit
 - Le pourcentage de consommation en heures creuses
 - L'économie réalisée si l'équipement fonctionnait uniquement en heures creuses
+- Si l'équipement est actuellement en heures creuses
+- Temps restant avant le prochain créneau d'heures creuses
 
 La commande pourcentage cumulé vous permet de mieux comprendre la consommation de votre logement.
 

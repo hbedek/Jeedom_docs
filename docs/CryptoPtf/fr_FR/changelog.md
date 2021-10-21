@@ -1,5 +1,8 @@
 # Changelog plugin Crypto Portfolio
 
+# 21/10/2021
+Correction bug coût d'achat null
+
 # 01/10/2021
 Nouvelle interface de visualisation des commandes
 Correction BUG portefeuille Just Mining. Le total des rewards n'est plus prit en compte dans le calcul du portefeuille.
