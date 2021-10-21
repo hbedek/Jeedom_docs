@@ -1,5 +1,8 @@
 # Changelog plugin Light Group
 
+# 21/10/2021 [Beta]
+- Correction bug affectation d'un automatisme depuis une lumière
+
 # 19/10/2021 [Beta]
 - Ajout de la position du soleil en tant qu'indicateur de luminosité
 - Ajout de la posibilité d'affecter un automatisme directement depuis la configuration d'un automatisme
