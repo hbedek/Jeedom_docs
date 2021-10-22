@@ -154,8 +154,12 @@ Il existe plusieurs types d'indicateurs de luminosités. Plus vous en mettrez pl
 
 Vous pouvez définir des capteurs de luminosité. Pour chque capteur, vous devez définir une luminosité minimale. Dès lors qu'un seul des capteurs détecte une luminosité faible.
 Il vous est possible de rendre un ou plusieurs capteurs restrictifs. Dans ce cas la, tant que la luminosité n'est pas faible pour ce capteur, l'automatisme ne se déclenche pas.
+
+Une luminosité est considérée comme faible lorsqu'elle est comprise entre les bornes MIN et MAX.
+
 Pour éviter un clignotement de vos lumières lorsque la luminosité passe en dessous du seuil, vous pouvez définir une marge.
-La marge n'est prise en compte que lorsque l'automatisme cherche à éteindre la lumière, il ira alors vérifier si la luminosité est comprise entre luminosité MIN - marge et luminosité MAX + Marge. Si c'ets le cas il n'éteindra pas la lumière.
+
+La marge n'est prise en compte que lorsque l'automatisme cherche à éteindre la lumière, il ira alors vérifier si la luminosité est comprise entre luminosité MIN - marge et luminosité MAX + Marge. Si c'est le cas il n'éteindra pas la lumière.
 
 
 ```diff
