@@ -103,12 +103,16 @@ Je ne souhaite déclencher l'automatisme que si je suis chez moi. Je vais donc a
 + Fin exemple cuisine:
 ```
 
-### 2.1.2) Les capteurs de présence
+### 2.1.2) Les indicateurs de présence
 
-Si vous ne renseignez aucun capteurs de présence, la présence est validée par défaut.
-Si vous renseignez plusieurs capteurs de présences, la présence sera validée dès qu'un des capteurs détecte une présence.
+Si vous ne renseignez aucun indicateurs de présence, la présence est validée par défaut.
+Si vous renseignez plusieurs indicateurs de présences, la présence sera validée dès qu'un des indicateurs détecte une présence.
 
-Il vous est possible de rendre un ou plusieurs capteurs restrictifs. Dans ce cas la, la présence de ce capteur est nécessaire pour déclencher l'automatisme.
+Il existe plusieurs types d'indicateurs de présence. Plus vous en mettrez plus votre automatisme sera précis.
+
+#### 2.1.2.1) Capteurs de présence
+
+Ici vous pouvez ajouter des capteurs de présence. La commande information renseignée doit être binaire et renvoyer 1 si il y a de la présence et 0 si il n'y a pas de présence
 
 ```diff
 + Reprenons l'exemple de ma cuisine:
@@ -117,6 +121,24 @@ Je possède 2 capteurs de présences, je vais donc les déclarer ici. Si un seul
 <img src="IMGS/cuisineExPresence.png" alt="hi" class="inline"/>
 
 A noter que si j'avais voulu que les deux capteurs remontent tous les deux une présence avant de déclencher l'automatisme, j'aurais pu rendre les deux capteurs restrictifs. Dans mon cas un seul capteur suffit.
+
+```diff
++ Fin exemple cuisine:
+```
+
+#### 2.1.2.2) Les interactions
+
+Vous pouvez lister des interactions que vous pouvez faire avec vos objets du quotidient. Le plugin comptera chaque interaction comme une présence. 
+Vous pouvez définir un temps maximum pour l'interaction. Passé ce temps, l'interaction ne sera plus prise en compte dans la recherche de présence.
+L'interaction doit être une commande information binaire avec 1 une interaction et 0 aucune interactions. Une interaction peut être une prise, une porte, un interrupteur etc ...
+
+```diff
++ Reprenons l'exemple de ma cuisine:
+```
+Nous avons déjà listé les capteurs de présences, cependant je souhaite considérer que je suis dans ma cuisine dès que j'allume ma cafetière et que j'ouvre la porte de la cuisine.
+<img src="IMGS/cuisineExInter.png" alt="hi" class="inline"/>
+
+Pour ma porte je ne veux pas que l'automatisme compte une présence tant qu'elle est ouverte. lorsque l'on ouvre la porte, passé 3 minutes je souhaite que les capteurs de présence prenne le relais et la porte ouverte ne doit plus compter comme une présence.
 
 ```diff
 + Fin exemple cuisine:
@@ -131,8 +153,10 @@ Il existe plusieurs types d'indicateurs de luminosités. Plus vous en mettrez pl
 #### 2.1.3.1) L'intensité lumineuse
 
 Vous pouvez définir des capteurs de luminosité. Pour chque capteur, vous devez définir une luminosité minimale. Dès lors qu'un seul des capteurs détecte une luminosité faible.
-
 Il vous est possible de rendre un ou plusieurs capteurs restrictifs. Dans ce cas la, tant que la luminosité n'est pas faible pour ce capteur, l'automatisme ne se déclenche pas.
+Pour éviter un clignotement de vos lumières lorsque la luminosité passe en dessous du seuil, vous pouvez définir une marge.
+La marge n'est prise en compte que lorsque l'automatisme cherche à éteindre la lumière, il ira alors vérifier si la luminosité est comprise entre luminosité MIN - marge et luminosité MAX + Marge. Si c'ets le cas il n'éteindra pas la lumière.
+
 
 ```diff
 + Reprenons l'exemple de ma cuisine:
@@ -140,6 +164,7 @@ Il vous est possible de rendre un ou plusieurs capteurs restrictifs. Dans ce cas
 Je possède 1 capteurs de luminosité et j'estime que je n'ai pas besoin d'allumer la lumière lorsque la luminosité dépasse 50 LUX.
 <img src="IMGS/cuisineExLumen.png" alt="hi" class="inline"/>
 
+Je souhaite éviter que la lumière ne s'éteigne tout de suite si la luminosité passe au dessus du seuil que j'ai définis. Je définis donc une marge
 J'ai pu définir une luminosité minimale dans ma cuisine. Tel quel l'automatisme fonctionne bien mais je souhaiterais le rendre encore plus puissant en prenant en compte la position de mes volets.
 
 ```diff
