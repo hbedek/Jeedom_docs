@@ -1,5 +1,16 @@
 # Changelog plugin Light Group
 
+# 22/10/2021 [Beta]
+- Ajout de plage de luminosité pour les capteurs de luminosité
+- Ajout d'une marge de luminosité. Si la lumière est allumée, elle ne s'éteindra que si la luminosité repaasse au dessus de la luminosité MAX + marge. Mettre une marge permet d'éviter que la lumière "clignote" lorsque la luminosité passe constamment au dessus / en dessous de la luminosité de seuil.
+- Ajout d'une plage d'ouverture pour les volets roulant
+- Ajout d'indicateurs de présence (porte / prise ... etc). Il est possible de conditionner cette présence avec un temps -> ma porte ouverte ne remonte une présence que les 3 premières minutes d'ouverture
+- Ajout des liens vers le tutoriel / documentation
+
+Amusez-vous bien avec ces nouvelles fonctionnalités. 
+Si vous souhaitez que je rajoute des conditions supplémentaires aux automatismes, n'hésitez pas à me le faire savoir.
+La prochaine étape est de mettre en place dans le plugin un automatisme de gestion de luminosité que vous pourrez combiner avec l'automatisme pièce afin que le plugin gère l'allumage de vos lumières et leur luminosité.
+
 # 21/10/2021 [Beta]
 - Correction bug affectation d'un automatisme depuis une lumière
 
