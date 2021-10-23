@@ -1,5 +1,12 @@
 # Changelog plugin Laundry
 
+# 23/10/2021 [Beta]
+
+Ajout du mode PROGRAMMATION. Ce mode nécessite le plugin Electricity Cost.
+Lorsque vous lancez une machine, le plugin ira vérifier quel est le créneau d'heures creuses le plus proche. Si le créneau est à une distance temporelle inférieure à X minutes (A définir en configuration), la machine ne se lancera qu'une fois le créneau atteint. Laundry utilise les créneaux creuses du contrat ELectriciy Cost lié à votre machine (ou du contrat du compteur lié à votre machine).
+
+N'hésitez pas à em faire un retour, je suis ouvert aux propositions d'améliorations.
+
 # 03/10/2021
 
 Ajout possibilité de réparer un équipement depuis Electricity Cost
