@@ -9,6 +9,9 @@ Lorsqu'une lumière est actuellement conditionée par un automatisme, elle prend
 Voici la liste des automatismes disponibles:
 
 - Lumière de pièce: La lumière est conditionnée par autant de capteurs de présences que vous le souhaitez. La lumière est également conditionnée par une luminosité. Il suffit que l'un des capteurs détecte une présence ou une luminosité suffisante et l'automatisme se déclenche.
+Tutoriel expliquant pour cet automatisme: <a href="https://community.jeedom.com/t/tutoriel-comment-automatiser-les-lumieres-dune-piece-avec-de-multiples-conditions-presence-luminosite-volets-soleil/69768">ICI</a>
+
+- Gestion de la luminosité / couleur / température: les paramètres de la lumière sont conditionnés par différents capteurs. Dès que l'un des capteurs s'enclenche, la luminosité est demandée à la lumière. Si la lumière est allumée, la luminosité s'applique immédiatement, sinon la luminosité s'appliquera dès que la lumière s'allumera.<a href="https://community.jeedom.com/t/tutoriel-comment-automatiser-la-luminosite-couleur-et-temperature-de-vos-lumieres/70024?u=hbe">ICI</a>
 
 - Lumière de placard: La lumière est conditionnée par un capteur binaire (ouverture de porte) et s'allume puis s'éteint suivant la valeur du capteur. Si la porte reste ouverte plus de X minutes, la lumière s'éteint.
 
@@ -28,18 +31,6 @@ Cette documentation explique:
 - Comment activer et désactiver un automatisme
 - Comment combiner les automatismes entre eux
 
-
-Nous allons pour la suite de la documentation prendre un exemple concret. Je souhaite automatismer les lumières dans ma cuisine et que l'éclairage de mes lumières réponde aux conditions suivantes:
-- La lumière ne peut s'allumer que lorsque je suis chez moi.
-- La lumière ne peut s'allumer que lorsque l'un des capteurs de présence dans ma cuisine détecte un mouvement (ma cuisine en possède 2).
-- La lumière ne peut s'allumer que lorsque la luminosité dans ma cuisine est insuffisante.
-- La lumière ne doit pas s'éteindre immédiatement lorsqu'il n'y a plus de mouvement ou bien que la luminosité est faible. La lumière doit attendre 10 minutes pour voir si les conditions d'allumage sont de nouveaux réalisées.
-- La lumière ne doit pas s'allumer entre 23h et 5h du matins (seulement en semaine).
-
-L'exemple est à suivre dans la documentation avec le tag: 
-```diff
-+ Reprenons l'exemple de ma cuisine:
-```
 
 # 1) Consulter les automatismes
 
@@ -62,14 +53,6 @@ Une nouvelle liste apparaît. Vous pouvez choisir dans cette liste les automatis
 
 L'automatisme le plus complet est l'automatisme "Pièce". Vous pouvez depuis cet automatisme définir de multiples capteurs de présence ou de luminosité.
 
-```diff
-+ Reprenons l'exemple de ma cuisine:
-```
-Ici j'ai besoin de détecter du mouvement, de la luminosité et d'ajouter des conditions. Je vais prendre l'automatisme pièce de vie.
-
-```diff
-+ Fin exemple cuisine:
-```
 
 ## 2.1) Affecter des capteurs à un automatisme
 
@@ -91,17 +74,7 @@ Les conditions doivent être déclarées sous forme de "code".
 Vous devez déclarez les équipements sous la forme #[Pièce][Equipement][Commande Info]#
 Vous pouvez utilisez les conditions ET -> &&, OU -> ||, EGALE -> ==, ainsi que toutes les autres.
 
-```diff
-+ Reprenons l'exemple de ma cuisine:
-```
-Je ne souhaite déclencher l'automatisme que si je suis chez moi. Je vais donc appliquer la condition:
-#[Appartement][Presence][Presence globale]# == 1
-
 <img src="IMGS/cuisineExCondition.png" alt="hi" class="inline"/>
-
-```diff
-+ Fin exemple cuisine:
-```
 
 ### 2.1.2) Les indicateurs de présence
 
@@ -113,36 +86,21 @@ Il existe plusieurs types d'indicateurs de présence. Plus vous en mettrez plus 
 #### 2.1.2.1) Capteurs de présence
 
 Ici vous pouvez ajouter des capteurs de présence. La commande information renseignée doit être binaire et renvoyer 1 si il y a de la présence et 0 si il n'y a pas de présence
-
-```diff
-+ Reprenons l'exemple de ma cuisine:
-```
-Je possède 2 capteurs de présences, je vais donc les déclarer ici. Si un seul des capteurs détecte une présence cela me suffit.
 <img src="IMGS/cuisineExPresence.png" alt="hi" class="inline"/>
-
-A noter que si j'avais voulu que les deux capteurs remontent tous les deux une présence avant de déclencher l'automatisme, j'aurais pu rendre les deux capteurs restrictifs. Dans mon cas un seul capteur suffit.
-
-```diff
-+ Fin exemple cuisine:
-```
 
 #### 2.1.2.2) Les interactions
 
-Vous pouvez lister des interactions que vous pouvez faire avec vos objets du quotidient. Le plugin comptera chaque interaction comme une présence. 
+Vous pouvez lister des interactions que vous pouvez faire avec vos objets du quotidien. Le plugin comptera chaque interaction comme une présence. 
 Vous pouvez définir un temps maximum pour l'interaction. Passé ce temps, l'interaction ne sera plus prise en compte dans la recherche de présence.
 L'interaction doit être une commande information binaire avec 1 une interaction et 0 aucune interactions. Une interaction peut être une prise, une porte, un interrupteur etc ...
 
-```diff
-+ Reprenons l'exemple de ma cuisine:
-```
-Nous avons déjà listé les capteurs de présences, cependant je souhaite considérer que je suis dans ma cuisine dès que j'allume ma cafetière et que j'ouvre la porte de la cuisine.
 <img src="IMGS/cuisineExInter.png" alt="hi" class="inline"/>
 
-Pour ma porte je ne veux pas que l'automatisme compte une présence tant qu'elle est ouverte. lorsque l'on ouvre la porte, passé 3 minutes je souhaite que les capteurs de présence prenne le relais et la porte ouverte ne doit plus compter comme une présence.
+#### 2.1.2.3) Les interactions horaires
 
-```diff
-+ Fin exemple cuisine:
-```
+Vous pouvez donner des créneaux horaires pour lesquels l'automatisme doit comptabiliser une présence. 
+Si vous ne renseignez qu'une heure de début, la présence ne sera considérée que la minute précisée par l'heure de début.
+<img src="IMGS/cuisineExTimeCron.png" alt="hi" class="inline"/>
 
 ### 2.1.3) Les indicateurs de luminosité
 
@@ -161,36 +119,14 @@ Pour éviter un clignotement de vos lumières lorsque la luminosité passe en de
 
 La marge n'est prise en compte que lorsque l'automatisme cherche à éteindre la lumière, il ira alors vérifier si la luminosité est comprise entre luminosité MIN - marge et luminosité MAX + Marge. Si c'est le cas il n'éteindra pas la lumière.
 
-
-```diff
-+ Reprenons l'exemple de ma cuisine:
-```
-Je possède 1 capteurs de luminosité et j'estime que je n'ai pas besoin d'allumer la lumière lorsque la luminosité dépasse 50 LUX.
 <img src="IMGS/cuisineExLumen.png" alt="hi" class="inline"/>
-
-Je souhaite éviter que la lumière ne s'éteigne tout de suite si la luminosité passe au dessus du seuil que j'ai définis. Je définis donc une marge
-J'ai pu définir une luminosité minimale dans ma cuisine. Tel quel l'automatisme fonctionne bien mais je souhaiterais le rendre encore plus puissant en prenant en compte la position de mes volets.
-
-```diff
-+ Fin exemple cuisine:
-```
 
 #### 2.1.3.2) La position des volets roulants
 
 Vous pouvez ici déclarer la position de vos volets roulants. Vous pouvez pour chaque volet définir une position minimale en dessous de laquel vous considérez que la luminosité est faible dans votre pièce. L'automatisme considère que la luminosité est faible dans votre pièce que si l'ensemble des volets roulants déclarés possèdent une ouverture faible.
 Il vous est possible de rendre un ou plusieurs de vos volets roulants restrictifs. Dans ce cas la, tant que le volet ne sera pas en dessous de son ouverture minimale, l'automatisme ne se déclenchera pas.
-
-```diff
-+ Reprenons l'exemple de ma cuisine:
-```
-Je possède un volet roulant dans ma cuisine et j'estime que j'ai besoin d'allumer la lumière lorsque mon volet est en dessous de 10% d'ouverture
 <img src="IMGS/cuisineExVolet.png" alt="hi" class="inline"/>
 
-Tel quel l'automatisme fonctionne très bien. Pour accroître encore plus la précision je vais demander à mon automatisme de vérifier si le soleil est couché ou levé.
-
-```diff
-+ Fin exemple cuisine:
-```
 
 #### 2.1.3.3) La position du soleil
 
@@ -199,17 +135,8 @@ Il vous est possible de rendre le coucher / lever du soleil restrictif. Dans ce 
 
 Les commandes de lever et de coucher du soleil se basent sur celle du plugin Héliotrope.
 
-```diff
-+ Reprenons l'exemple de ma cuisine:
-```
-Je souhaite améliorer encore plus la précision de mon automatisme et je saisis l'heure de lever et de coucher du soleil
 <img src="IMGS/cuisineExSun.png" alt="hi" class="inline"/>
 
-J'ai pu définir la luminosité minimum pour laquelle je souhaite allumer la lumière. Maintenant il reste un problème. Dès qu'il n'y aura plus de mouvement, la lumière s'éteindra. Je vais pour cela définir un temps tampon. Dans l'intervalle de ca temps si il y a de nouveau du mouvement un nouveau cycle d'automatisme se lance. Si au bout de ce temps tampon les conditions ne sont toujours pas réunies, la lumière s'éteint.
-
-```diff
-+ Fin exemple cuisine:
-```
 
 ## 2.2) Définir les temps tampons
 
@@ -224,17 +151,8 @@ Le premier temps que vous pouvez définir est le temps maximum pour lequel l'aut
 
 Lorsque les capteurs de présences ne détectent plus de mouvement ou bien que la luminosité est suffisante, l'automatisme va s'arrêter et les lumières vont s'éteindre. Il est possible de définir un temps tampon avant que les lumières ne s'éteignent. Si pendans ce temps tampon, un mouvement est détecté et que la luminosité redevient insuffisante, les lumière ne s'éteindront pas et un nouveau cycle est lancé.
 
-```diff
-+ Reprenons l'exemple de ma cuisine:
-```
-C'est une pièce ou il y a souvent du mouvement mais il arrive que nous restions statique quelque temps. Je vais ici définir un temps tampon de 10 minutes.
 <img src="IMGS/cuisineExTpsTampon.png" alt="hi" class="inline"/>
 
-Lorsque l'automatisme ne détecte plus de présence ou que la luminosité est trop haute, l'automatisme attends 10 minutes pour voir si les conditions de déclenchement se réalise de nouveau. Si ce n'est pas le cas, ma lumière s'éteint.
-
-```diff
-+ Fin exemple cuisine:
-```
 
 ## 2.3) Paramétrer les lumières
 
@@ -260,16 +178,9 @@ Cliquez sur le bouton pour ajouter une plage de programmation.
 - Vous pouvez définir l'heure de début et l'heure de fin de la programmation. Si l'heure de début est plus tard que l'heure de fin, le plugin considéra que vous avez sélectionnez le créneau heure de début -> minuit minuit -> heure de fin.
 - Vous pouvez cocher "Jour enter" qui annule la plage définit est rend l'automatisme activable pour le jour entier.
 
-```diff
-+ Reprenons l'exemple de ma cuisine:
-```
-Comme précisé je souhaite que la lumière puisse s'allumer qu'entre 5h et 23h mais uniquement en semaine. En Week End je ne veux aucunes restrictions.
-Voici comment  j'ai réalisé ma programmation:
 <img src="IMGS/cuisineExProgrammation.png" alt="hi" class="inline"/>
 
-```diff
-+ Fin exemple cuisine:
-```
+
 
 SAUVEGARDER pour créer les différentes commandes.
 

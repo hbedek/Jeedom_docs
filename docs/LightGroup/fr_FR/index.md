@@ -208,3 +208,6 @@ Ce plugin est compatible avec Electricity Cost.
 Vous pourrez ainsi profiter de toutes les fonctionalités d'Electricity Cost sans avoir à créer de nouvel équipement.
 Voici la documentation du plugin: 
 <a href="https://hbedek.github.io/Jeedom_docs/docs/ElectricityCost/fr_FR/">ICI</a>
+
+Si L'équipement est configuré sur Electricity Cost et que le budget alloué à cet équipement est dépassé, le widget vous le signalera de la manière suivante:
+<img src="IMGS/overBudget.PNG" alt="hi" class="inline"/>
