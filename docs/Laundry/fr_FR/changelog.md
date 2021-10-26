@@ -1,5 +1,9 @@
 # Changelog plugin Laundry
 
+# 26/10/2021 [Beta]
+
+Ajout d'un badget de dépassement de budget sur le widget (uniquement si Electricity Cost est installé / configuré).
+
 # 23/10/2021 [Beta]
 
 Ajout du mode PROGRAMMATION. Ce mode nécessite le plugin Electricity Cost.
