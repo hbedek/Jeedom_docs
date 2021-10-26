@@ -40,9 +40,9 @@ L'équipement contrat ne possède pas de commandes mais doit tout de même être
 2) Choisissez votre type de contrat:
 - heures pleines si vous avez un tarif unique
 - heures pleines heures creuses si vous avez un seul créneau d'heures creuses
-- multiples créneaux si vous avez plus d'un créneau d'heure creuse [Beta]
+- multiples créneaux si vous avez plus d'un créneau d'heure creuse
 
-#### Contrat avec plusieurs créneaux [Beta]
+#### Contrat avec plusieurs créneaux
 
 Vous allez pouvoir définir plusieurs créneaux d'heures creuses avec pour chaqun des créneau un jour de la semaine, une heure de début, une heure de fin et un prix au kWh.
 

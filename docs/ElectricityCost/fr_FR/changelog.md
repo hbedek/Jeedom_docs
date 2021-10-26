@@ -1,12 +1,9 @@
 # Changelog plugin Electricity Cost
 
-# 21/10/2021 [Beta]
+# 26/10/2021
 
 - Ajout de la commande état de l'heure creuse pour le contrat / compteur / équipement. Renvoie 1 si actuellement en heures creuses
 - Ajout de la commande temps restant avant heures creuses en minutes pour le contrat / compteur / équipement. Renvoie le nombre de minutes restant avant le prochain créneau d'heures creuses
-
-# 05/10/2021 [Beta]
-
 - Ajout du type de contrat multiples heures creuses. Vous pouvez définir un tarifs au kWh par défaut et autant de créneaux d'heures creuses que vous oushaitez. Un créneau d'heure creuse est définit par un jour de la semaine, une heure de début, une heure de fin et un prix du kWh
 
 # 03/10/2021
