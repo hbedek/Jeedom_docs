@@ -1,5 +1,14 @@
 # Changelog plugin Light Group
 
+# 27/10/2021 [Beta]
+- Ajout de l'automatisme de gestion de luminosité
+- Ajout de l'interaction horaire pour l'automatisme de pièce 
+- Amélioration du système de demande de luminosité afin que la lumière se mette directement à la bonne luminosité lors de l'allumage
+- Ajout d'un badge sur le widget lorsque le budget est dépassé
+- Correction du BUG sur le temps maximum pour l'automatisme pièce
+- Correction du BUG de suppression des commandes lors d'une désaffectation d'un automatisme à une lumière
+- Ajout de widget par défaut pour les automatismes
+
 # 22/10/2021 [Beta]
 - Ajout de plage de luminosité pour les capteurs de luminosité
 - Ajout d'une marge de luminosité. Si la lumière est allumée, elle ne s'éteindra que si la luminosité repaasse au dessus de la luminosité MAX + marge. Mettre une marge permet d'éviter que la lumière "clignote" lorsque la luminosité passe constamment au dessus / en dessous de la luminosité de seuil.
