@@ -1,5 +1,11 @@
 # Changelog plugin Laundry
 
+# 27/10/2021 [Beta]
+
+Ajout des icônes en SVG
+Correction BUG la machine ne passe pas en ECO FINISHED
+Ajout: rallume la prise suite à une programmation
+
 # 26/10/2021 [Beta]
 
 Ajout d'un badget de dépassement de budget sur le widget (uniquement si Electricity Cost est installé / configuré).
