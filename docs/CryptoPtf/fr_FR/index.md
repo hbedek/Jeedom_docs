@@ -6,6 +6,9 @@ Actuellement le plugin peut récupérer des informations sur les plateformes sui
 - Binance
 - Wallet Ethereum
 
+Il vous est également possible de remplir le nombre de tokens et la devise manuellement.
+Pour cela vous devez utiliser le type de portefeuille "Manuel".
+
 Pour les plateformes ci-dessus, un équipement représente une devise de cryptomonnaie.
 Il vous faudra donc créer autant d'équipements que vous possédez de devises différentes
 
@@ -177,6 +180,12 @@ Vous pouvez également choisir le nombre de décimales pour lequel le plugin arr
 <img src="IMGS/config_justmining_configopt.PNG" alt="hi" class="inline"/>
 
 SAUVEGARDER pour créer les commandes
+
+
+## Portefeuille Manuel
+
+Ce portefeuille calculera comme les autres les différentes données de performances et rentabilité.
+Pour utiliser ce portefeuille, vous devez remplir à la main le nombre de token et la devise du token.
 
 ## Aggrégation des équipements
 Vous pouvez aggréger les données de vos équipements Crypto Portfolio via Wallet Aggregator.
