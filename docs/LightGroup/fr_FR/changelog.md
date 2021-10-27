@@ -8,6 +8,7 @@
 - Correction du BUG sur le temps maximum pour l'automatisme pièce
 - Correction du BUG de suppression des commandes lors d'une désaffectation d'un automatisme à une lumière
 - Ajout de widget par défaut pour les automatismes
+- Correction BUG affichage des jours enregistrés
 
 # 22/10/2021 [Beta]
 - Ajout de plage de luminosité pour les capteurs de luminosité
