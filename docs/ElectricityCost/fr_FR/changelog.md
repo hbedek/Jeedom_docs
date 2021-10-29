@@ -1,5 +1,16 @@
 # Changelog plugin Electricity Cost
 
+# 29/10/2021 [Beta]
+
+- Amélioration: possibilité de lier plusieurs jours pour les contrats à multiples créneaux HC
+- Amélioration: possibilité de choisir entre Wh et kWh lorsque l'on lie une commande de consommation cumulée
+- Correction BUG: Problème génération des commandes isHC pour le contrat
+- Correction BUG: Les commandes isHC et nextHC ne doivent se créer que si le contrat contient des heures creuses
+- Correction BUG: Les commandes de notifications ne doivent pas se créer si aucun contrat / compteur n'est lié
+
+ATTENTION: pour les utilisateurs de contrat à multiples créneaux HC, le calcul des heures creuses a été modifié. J'ai effectué plusieurs tests de mon côté et tout semble fonctionner correctement. Cependant je vous conseille également de vérifier de votre côté. Pour cela vous pouvez utilisez la commande "Etat heures creuses" de l'équipement contrat qui vous remonte si l'on est actuellement en heures creuses et la commande "Prochain créneau heures creuses (minutes)" qui vous remonte le nombre de minutes avant le prochain créneau d'heures creuses.
+
+
 # 26/10/2021
 
 - Ajout de la commande état de l'heure creuse pour le contrat / compteur / équipement. Renvoie 1 si actuellement en heures creuses
