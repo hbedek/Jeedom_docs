@@ -1,5 +1,9 @@
 # Changelog plugin Light Group
 
+# 29/10/2021 [Beta]
+- Amélioration du niveau de log INFO, moins d'informations, plus à l'essentiel
+- Correction BUG ajout des créneaux d'interactions horaires
+
 # 27/10/2021 [Beta]
 - Ajout de l'automatisme de gestion de luminosité
 - Ajout de l'interaction horaire pour l'automatisme de pièce 
