@@ -1,5 +1,11 @@
 # Changelog plugin Light Group
 
+# 31/10/2021 [Beta]
+Ajout des prises. Les prises possèdent leur propre icône et il vous est possible de choisir entre 3 icônes dans la configuration.
+Le widget des prises possède les mêmes badges que les autres widget du plugin (badge budget dépassé et badge en cours d'automatisme).
+Il est possible d'affecter des automatismes à une prise comme pour une lumière. Attention il n'est pas possible pour l'instant de grouper les prises ni de les ajouter au groupe de lumières. Je cherche un moyen d'intégrer cela proprement au plugin afin de ne pas créer la confusion. Si jamais vous avez des idées n'hésitez pas à m'en faire part sur Community.
+
+
 # 29/10/2021 [Beta]
 - Amélioration du niveau de log INFO, moins d'informations, plus à l'essentiel
 - Correction BUG ajout des créneaux d'interactions horaires
