@@ -1,5 +1,8 @@
 # Changelog plugin Light Group
 
+# 01/11/2021 [Beta]
+Ajout d'ids uniques dans les logs d'automatismes pour isoler les tâches
+
 # 31/10/2021 [Beta]
 Ajout des prises. Les prises possèdent leur propre icône et il vous est possible de choisir entre 3 icônes dans la configuration.
 Le widget des prises possède les mêmes badges que les autres widget du plugin (badge budget dépassé et badge en cours d'automatisme).
