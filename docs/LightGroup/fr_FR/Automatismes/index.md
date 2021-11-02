@@ -137,6 +137,12 @@ Les commandes de lever et de coucher du soleil se basent sur celle du plugin Hé
 
 <img src="IMGS/cuisineExSun.png" alt="hi" class="inline"/>
 
+Les commandes doivent retourner une valeur au format Hi. Par exemple 730 pour 7h30 et 1415 pour 14h15.
+Il vous est possible pour le début du créneau et la fin du créneau de mettre en place des conditions si vous souhaitez temporiser le lever du soleil ou le coucher du soleil.
+
+Ex: #[CMD LEVER DU SOLEIL]# + 30
+Si le lever du soleil est à 6h30, la condition ci dessus donne 700 (630 + 30).
+
 
 ## 2.2) Définir les temps tampons
 

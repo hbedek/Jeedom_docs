@@ -1,5 +1,10 @@
 # Changelog plugin Light Group
 
+# 02/11/2021 [Beta]
+- Les automatismes ne peuvent allumer que les lumières allumées et ne peuvent éteindre que les lumières allumées (optimisation)
+- Il est dorénavant possible de rajouter les prises aux groupes
+- Vous pouvez maintenant définir des expressions pour le lever et le coucher du soleil
+
 # 01/11/2021 [Beta]
 Ajout d'ids uniques dans les logs d'automatismes pour isoler les tâches
 
