@@ -1,5 +1,11 @@
 # Changelog plugin Laundry
 
+# 05/11/2021 [Beta]
+
+Correction BUG la machine ne passe pas en ECO FINISHED
+Préparation STABLE
+
+
 # 27/10/2021 [Beta]
 
 Ajout des icônes en SVG
