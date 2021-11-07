@@ -1,6 +1,6 @@
 # Changelog plugin Sonarr & Radarr
 
-# 04/10/2021 [Beta]
+# 07/11/2021
 
 - Correction bug refresh du widget Sonarr et Radarr
 
