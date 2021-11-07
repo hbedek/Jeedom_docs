@@ -1,27 +1,11 @@
 # Changelog plugin Laundry
 
-# 05/11/2021 [Beta]
+# 07/11/2021
 
-Correction BUG la machine ne passe pas en ECO FINISHED
-Préparation STABLE
-
-
-# 27/10/2021 [Beta]
-
-Ajout des icônes en SVG
-Correction BUG la machine ne passe pas en ECO FINISHED
-Ajout: rallume la prise suite à une programmation
-
-# 26/10/2021 [Beta]
-
-Ajout d'un badget de dépassement de budget sur le widget (uniquement si Electricity Cost est installé / configuré).
-
-# 23/10/2021 [Beta]
-
-Ajout du mode PROGRAMMATION. Ce mode nécessite le plugin Electricity Cost.
-Lorsque vous lancez une machine, le plugin ira vérifier quel est le créneau d'heures creuses le plus proche. Si le créneau est à une distance temporelle inférieure à X minutes (A définir en configuration), la machine ne se lancera qu'une fois le créneau atteint. Laundry utilise les créneaux creuses du contrat ELectriciy Cost lié à votre machine (ou du contrat du compteur lié à votre machine).
-
-N'hésitez pas à em faire un retour, je suis ouvert aux propositions d'améliorations.
+- Ajout des icônes en SVG
+- Ajout: rallume la prise suite à une programmation
+- Ajout d'un badget de dépassement de budget sur le widget (uniquement si Electricity Cost est installé / configuré).
+- Ajout du mode PROGRAMMATION. Ce mode nécessite le plugin Electricity Cost. Lorsque vous lancez une machine, le plugin ira vérifier quel est le créneau d'heures creuses le plus proche. Si le créneau est à une distance temporelle inférieure à X minutes (A définir en configuration), la machine ne se lancera qu'une fois le créneau atteint. Laundry utilise les créneaux creuses du contrat ELectriciy Cost lié à votre machine (ou du contrat du compteur lié à votre machine).
 
 # 03/10/2021
 

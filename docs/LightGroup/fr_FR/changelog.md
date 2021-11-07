@@ -1,5 +1,14 @@
 # Changelog plugin Light Group
 
+# 07/11/2021 [Beta]
+- Ajout priorisation des automatismes. Il vous est possible de prioriser les automatismes entre eux. Si un automatisme est déjà en cours sur une lumière, le plugin ira vérifier la priorité du nouvel automatisme avatn de l'appliquer. Un tutoriel suivra pour expliquer ce concept.
+- Ajout de 2 nouvelles commandes: "Heure extinction" qui renvoie l'heure d'extinction prévue pour une lumière, "Extinction automatisme" qui renvoie MOV si la lumière vient de percevoir et un mouvement et renvoie un timestamp si la lumière a prévue une extinction.
+- Ajout du widget statut_autom. Ce widget renvoie les informations de la commande "Extinction automatisme" mais formattées.
+- Ajout d'un widget statut_light qui renvoie uniquement l'état de la lumière.
+
+Il s'agit d'une grosse mise jour sur laquelle je travaille depuis de nombreuses heures. J'espère que le nouveau widget statut_autom vous conviendra.
+
+
 # 02/11/2021 [Beta]
 - Les automatismes ne peuvent allumer que les lumières allumées et ne peuvent éteindre que les lumières allumées (optimisation)
 - Il est dorénavant possible de rajouter les prises aux groupes
