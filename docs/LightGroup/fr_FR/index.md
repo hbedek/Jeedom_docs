@@ -3,11 +3,11 @@
 Ce plugin permet de créer des groupes de lumières et de controler l'état, la luminosité et la couleur d'une lumière ou d'un groupe de lumière.
 Le plugin permet d'uniformiser toutes vos lumières dans un seul et unique format.
 
-[Beta uniquement] Le plugin intègre des automatismes pré définit que vous pouvez affecter à vos lumières / groupes. Les automatismes font l'objet d'une documentation dédiée: <a href="https://hbedek.github.io/Jeedom_docs/docs/LightGroup/fr_FR/Automatismes/">ICI</a>
+[Beta uniquement] Le plugin intègre des automatismes pré définis que vous pouvez affecter à vos lumières / groupes. Les automatismes font l'objet d'une documentation dédiée: <a href="https://hbedek.github.io/Jeedom_docs/docs/LightGroup/fr_FR/Automatismes/">ICI</a>
 
 Cette documentation est associée à un petit tutoriel:
 Je souhaite grouper les deux lumières de ma cuisine et dans un deuxième temps je souhaite automatiser ma cuisine.
-Dans cette partie de la documentation nous allon configurer les lumières de ma cuisine.
+Dans cette partie de la documentation nous allons configurer les lumières de ma cuisine.
 L'exemple est à suivre avec le TAG: 
 
 ```diff
@@ -17,7 +17,7 @@ L'exemple est à suivre avec le TAG:
 
 Il est possible de configurer deux types de lumières différentes:
 - une lumière seule
-- un groupe de lumière
+- un groupe de lumières
 
 Avant de commencer à regrouper vos lumière dans un groupe, vous devez au préalable créer ces dernières dans le plugin.
 
@@ -26,13 +26,13 @@ Choisissez dans la sélection le type de lumière que vous souhaitez créer:
 
 ## 1) Configuration d'une lumière seule
 
-Une lumière est composé au minimum d'un état Allumé / Eteint.
+Une lumière est composée au minimum d'un état Allumé / Eteint.
 Vous pouvez également configurer la luminosité et la couleur.
 
 ```diff
 + Reprenons l'exemple de ma cuisine:
 ```
-Je possède deux lumières dans ma cuisine, je vais donc toutes les deux les définir une à une.
+Je possède deux lumières dans ma cuisine, je vais donc les définir une à une.
 
 ### 1.1) Etat de la lumière
 
@@ -40,13 +40,13 @@ Je possède deux lumières dans ma cuisine, je vais donc toutes les deux les dé
 
 Pour configurer l'état d'une lumière vous devez:
 
-Sélectionnez la commande remontant l'état de la lumière. Deux type de valeur sont possible: binaire et numérique. Si la commande que vous venez de saisir remonte 0 ou 1 choisissez binaire dans sélection. Si jamais la commande une valeur numérique autre que 0 et 1 (une plage de luminosité par exemple) choisissez numérique dans la sélection. Dans le cas d'une valeur d'état numérique, le plugin considérera la valeur 0 comme éteint et toute autre valeur comme allumé.
+Sélectionnez la commande remontant l'état de la lumière. Deux types de valeur sont possibles: binaire et numérique. Si la commande que vous venez de saisir remonte 0 ou 1 choisissez binaire dans la sélection. Si jamais la commande renvoie une valeur numérique autre que 0 et 1 (une plage de luminosité par exemple) choisissez numérique dans la sélection. Dans le cas d'une valeur d'état numérique, le plugin considérera la valeur 0 comme éteint et toute autre valeur comme allumé.
 
 Sélectionnez les commandes permettant d'allumer et d'éteindre l'ampoule.
 
-Vous venez de configurer une lumière seule. Vous pouvez soit la grouper dans un groupe de lumière soit configurer la luminosité et la couleur.
+Vous venez de configurer une lumière seule. Vous pouvez soit la grouper dans un groupe de lumières soit configurer la luminosité et la couleur.
 
-Le plugin vous remontera les informations suivante dans le widget:
+Le plugin vous remontera les informations suivantes dans le widget:
 
 Allumé
 <img src="IMGS/light_on_100.svg" alt="hi" class="inline" height="100px" width="100px"/>
@@ -57,7 +57,7 @@ Eteint
 + Reprenons l'exemple de ma cuisine:
 ```
 Pas de bol, les deux lumières de ma cuisine ne renvoient pas les mêmes états. La lumière de mon plafond me renvoie un état entre 1 et 100 et la lumière de mon plan de travail me renvoie un état entre 0 et 1.
-Une fois que j'aurais définit mes deux lumières, elles me renverront toutes les deux les mêmes informations: Etat de 0 ou 1.
+Une fois que j'aurais défini mes deux lumières, elles me renverront toutes les deux les mêmes informations: Etat de 0 ou 1.
 
 La lumière de mon plafond:
 <img src="IMGS/cuisineExLumPlafondEtat.png" alt="hi" class="inline"/>
@@ -107,17 +107,17 @@ Allumé 0 % luminosité
 Eteint
 <img src="IMGS/light_off.svg" alt="hi" class="inline" height="100px" width="100px"/>
 
-Le plugin propose égalements de "Demander une luminosité à une lumière".
+Le plugin propose également de "Demander une luminosité à une lumière".
 Lorsque vous demandez une luminosité, plusieurs règles s'appliquent:
 - Si la lumière est allumée, la luminosité s'applique immédiatement.
-- Si la lumière est éteinte, la luminosité s'appliquera dès la lumière s'allumera
+- Si la lumière est éteinte, la luminosité s'appliquera dès que la lumière s'allumera
 - Si une lumière a une demande de luminosité en cours et que vous modifiez la luminosité, la demande de luminosité est annulée.
 
 ```diff
 + Reprenons l'exemple de ma cuisine:
 ```
-Encore pas de bol, les deux lumières de ma cuisine ne renvoient pas les mêmes luminosité. La lumière de mon plafond me renvoie une luminosité entre 0 et 100 et la lumière de mon plan de travail me renvoie une luminosité entre 0 et 254.
-Une fois que j'aurais définit mes deux lumières, elles me renverront toutes les deux les mêmes informations: Luminosité entre 0 et 100%.
+Encore pas de bol, les deux lumières de ma cuisine ne renvoient pas la même luminosité. La lumière de mon plafond me renvoie une luminosité entre 0 et 100 et la lumière de mon plan de travail me renvoie une luminosité entre 0 et 254.
+Une fois que j'aurais défini mes deux lumières, elles me renverront toutes les deux les mêmes informations: Luminosité entre 0 et 100%.
 
 La lumière de mon plafond:
 <img src="IMGS/cuisineExLumPlafondLumen.png" alt="hi" class="inline"/>
@@ -138,10 +138,10 @@ Saisissez la commande remontant la couleur de votre lumière. La couleur doit ê
 
 Saisissez la commande permettant de modifier la couleur de votre lumière. De même le plugin interrogera votre lumière avec une couleur au format #FFFFFF
 
-Le plugin propose égalements de "Demander une couleur à une lumière".
+Le plugin propose également de "Demander une couleur à une lumière".
 Lorsque vous demandez une couleur, plusieurs règles s'appliquent:
 - Si la lumière est allumée, la couleur s'applique immédiatement.
-- Si la lumière est éteinte, la couleur s'appliquera dès la lumière s'allumera
+- Si la lumière est éteinte, la couleur s'appliquera dès que la lumière s'allumera
 - Si une lumière a une demande de couleur en cours et que vous modifiez la couleur, la demande de couleur est annulée.
 
 ### 1.4) Température de la lumière
@@ -153,10 +153,10 @@ Saisissez la commande remontant la température de votre lumière. La couleur do
 
 Saisissez la commande permettant de modifier la température de votre lumière. De même le plugin interrogera votre lumière avec une température au format numérique °K
 
-Le plugin propose égalements de "Demander une température à une lumière".
+Le plugin propose également de "Demander une température à une lumière".
 Lorsque vous demandez une température, plusieurs règles s'appliquent:
 - Si la lumière est allumée, la température s'applique immédiatement.
-- Si la lumière est éteinte, la température s'appliquera dès la lumière s'allumera
+- Si la lumière est éteinte, la température s'appliquera dès que la lumière s'allumera
 - Si une lumière a une demande de température en cours et que vous modifiez la température, la demande de température est annulée.
 
 ## 2) Configuration d'un groupe de lumières
@@ -169,20 +169,20 @@ Avec le groupe de lumières, vous pouvez d'un clic:
 - Demander une modification de luminosité à toutes les lumières compatibles du groupe
 - Demander une modification de couleur à toutes les lumières compatibles du groupe
 
-Pour configurer le groupe de lumière, vous devez sélectionner les lumières qui le composent
+Pour configurer le groupe de lumières, vous devez sélectionner les lumières qui le composent
 <img src="IMGS/config_groupe_lumiere.PNG" alt="hi" class="inline"/>
 
 Un groupe de lumières est considéré comme allumé dès lors qu'une seule lumière du groupe est allumée.
-La luminosité d'un groupe représente la luminosité moyenne de toutes les lumière du groupe. Une lumière sans luminosité mais allumé compte pour 100 % de luminosité.
+La luminosité d'un groupe représente la luminosité moyenne de toutes les lumière du groupe. Une lumière sans luminosité mais allumée compte pour 100 % de luminosité.
 Une lumière éteinte compte pour 0%
 
-Le groupe de lumière est représenté sour forme de widget de la même manière que la lumière seule mais possède 3 ampoules:
+Le groupe de lumières est représenté sour forme de widget de la même manière que la lumière seule mais possède 3 ampoules:
 <img src="IMGS/light_group_on_100.svg" alt="hi" class="inline" height="100px" width="100px"/>
 
 ```diff
 + Reprenons l'exemple de ma cuisine:
 ```
-Nous avons définit mes deux lumières. Nous allons maintenant créer un groupe avec ces deux lumières. Ce groupe me permettra d'allumer / éteindre et modifier la luminosité de mes lumières en 1 seul clic.
+Nous avons défini mes deux lumières. Nous allons maintenant créer un groupe avec ces deux lumières. Ce groupe me permettra d'allumer / éteindre et modifier la luminosité de mes lumières en 1 seul clic.
 <img src="IMGS/cuisineExGroupe.png" alt="hi" class="inline"/>
 
 ```diff
@@ -191,7 +191,7 @@ Nous avons définit mes deux lumières. Nous allons maintenant créer un groupe 
 
 ## 3) Automatismes [Beta]
 
-Vous venez de définir des lumières et des groupes de lumière sur le plugin.
+Vous venez de définir des lumières et des groupes de lumières sur le plugin.
 La prochaine étape consiste à les automatiser complétement:
 - Allumer et éteindre la lumière en fonction de mouvement et luminosité
 - Modifier la luminosité / couleur / température en fonction de certains critères
@@ -201,6 +201,14 @@ Les automatismes font l'objet d'une documentation dédiée: <a href="https://hbe
 ```diff
 + L'exemple de ma cuisine continue dans la partie automatisme. L'objectif est de rendre la lumière complétement autonome.
 ```
+
+## 4) Widgets
+
+Le plugin possède 3 widgets différents:
+- LightGroup::status -> Widget le plus détaillé, s'applique sur l'état de l'équipement et affiche l'état de la lumière, l'état du budget et si un automatisme est en cours
+- LightGroup::status_light -> N'affiche que l'état de la lumière
+- LightGroup::status_autom -> En complément des deux autres widgets, s'applique sur l'état de l'automatisme.
+
 
 ## Compatibilité Electricity Cost
 

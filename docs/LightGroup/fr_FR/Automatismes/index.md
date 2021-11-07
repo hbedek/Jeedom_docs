@@ -8,28 +8,33 @@ Lorsqu'une lumière est actuellement conditionée par un automatisme, elle prend
 
 Voici la liste des automatismes disponibles:
 
-- Lumière de pièce: La lumière est conditionnée par autant de capteurs de présences que vous le souhaitez. La lumière est également conditionnée par une luminosité. Il suffit que l'un des capteurs détecte une présence ou une luminosité suffisante et l'automatisme se déclenche.
+- Lumière de pièce: La lumière est conditionnée par autant de capteurs de présence que vous le souhaitez. La lumière est également conditionnée par une luminosité. Il suffit que l'un des capteurs détecte une présence ou une luminosité suffisante pour que l'automatisme se déclenche.
 Tutoriel expliquant pour cet automatisme: <a href="https://community.jeedom.com/t/tutoriel-comment-automatiser-les-lumieres-dune-piece-avec-de-multiples-conditions-presence-luminosite-volets-soleil/69768">ICI</a>
 
-- Gestion de la luminosité / couleur / température: les paramètres de la lumière sont conditionnés par différents capteurs. Dès que l'un des capteurs s'enclenche, la luminosité est demandée à la lumière. Si la lumière est allumée, la luminosité s'applique immédiatement, sinon la luminosité s'appliquera dès que la lumière s'allumera.<a href="https://community.jeedom.com/t/tutoriel-comment-automatiser-la-luminosite-couleur-et-temperature-de-vos-lumieres/70024?u=hbe">ICI</a>
+- Gestion de la luminosité / couleur / température: les paramètres de la lumière sont conditionnés par différents capteurs. Dès que l'un des capteurs s'enclenche, la luminosité est demandée à la lumière. Si la lumière est allumée, la luminosité s'applique immédiatement, sinon la luminosité s'appliquera dès que la lumière s'allumera.Tutoriel expliquant pour cet automatisme: <a href="https://community.jeedom.com/t/tutoriel-comment-automatiser-la-luminosite-couleur-et-temperature-de-vos-lumieres/70024?u=hbe">ICI</a>
 
-- Lumière de placard: La lumière est conditionnée par un capteur binaire (ouverture de porte) et s'allume puis s'éteint suivant la valeur du capteur. Si la porte reste ouverte plus de X minutes, la lumière s'éteint.
 
-- Lumière de veille: La lumière est conditionnée par un capteur binaire (présence) et s'allume suivant la valeur du capteur. Une fois allumée, la lumière reste allumée X minutes, passé ce temps, la lumière s'éteint.
 
-- Modification de la luminosité / couleur suivant une heure. Le plugin ira demander une couleur et / ou une luminosité à une heure précise. Si la lumière est éteinte, elle ne s'allumera pas mais prendra en compte la nouvelle luminosité / couleur la prochaine fois qu'elle sera allumée
-
-- Restriction des automatismes en fonction du budget. Cet automatisme nécessite que le plugin Electricity Cost soit installée et que les lumières dont vous voulez restreindre les automatismes soient paramétrées sur Electricity Cost. Lorsque le budget mensuel alloué à une lumière est dépassé, le plugin restreindra l'ensemble des automatismes affectés à cette lumière. Les automatismes ne pourront plus allumer la lumière, modifier la luminosité, modifer la couleur.
+- Restriction des automatismes en fonction du budget. Cet automatisme nécessite que le plugin Electricity Cost soit installé et que les lumières dont vous voulez restreindre les automatismes soient paramétrées sur Electricity Cost. Lorsque le budget mensuel alloué à une lumière est dépassé, le plugin restreindra l'ensemble des automatismes affectés à cette lumière. Les automatismes ne pourront plus allumer la lumière, modifier la luminosité et modifier la couleur.
+Tutoriel expliquant pour cet automatisme: <a href="https://community.jeedom.com/t/tutoriel-comment-reduire-controler-le-cout-de-ses-automatismes-de-lumiere/70105?u=hbe">ICI</a>
 
 Les automatismes s'éxecutent comme des tâches. Prenons un petit exemple:
 J'utilise l'automatisme de placard et ma lumière s'allume lorsque j'ouvre la porte. Si la porte reste ouverte trop longtemps, la lumière s'éteint.
-Lorsque j'ouvre la porte, le plugin créer une première instante de l'automatisme. Je ferme puis j'ouvre de nouveau la porte, le plugin créer une nouvelle instance qui vient remplacer l'ancienne. Ma lumière n'est ainsi conditionée que par la nouvelle instance.
+Lorsque j'ouvre la porte, le plugin crée une première instance de l'automatisme. Je ferme puis j'ouvre de nouveau la porte, le plugin crée une nouvelle instance qui vient remplacer l'ancienne. Ma lumière n'est ainsi conditionée que par la nouvelle instance.
 
 Cette documentation explique:
 - Comment créer un automatisme
 - Comment affecter un automatisme à une lumière
 - Comment activer et désactiver un automatisme
 - Comment combiner les automatismes entre eux
+
+L'activation d'un automatisme est représentée de la manière suivante:
+- un badge est ajouté sur la lumière lorsqu'un automatisme est en cours d'execution.
+- une icône mouvement est ajoutée lorsque l'automatisme détecte un mouvement
+- un chronomètre se lance lorsque la lumière prévoit une extinction
+<img src="IMGS/light_mov.PNG" alt="hi" class="inline"/>
+<img src="IMGS/light_extinc.PNG" alt="hi" class="inline"/>
+
 
 
 # 1) Consulter les automatismes
@@ -59,11 +64,11 @@ L'automatisme le plus complet est l'automatisme "Pièce". Vous pouvez depuis cet
 Pour affecter des capteurs à un automatisme, sélectionnez l'onglet "Capteurs":
 <img src="IMGS/sensorTab.png" alt="hi" class="inline"/>
 
-Dans cet onglet vous pouvez ajouter autant de conditions, capteurs de présence et de capteurs de luminosités que vous le souhaitez:
+Dans cet onglet vous pouvez ajouter autant de conditions, capteurs de présence et de capteurs de luminosité que vous le souhaitez:
 <img src="IMGS/sensorTables.png" alt="hi" class="inline"/>
 
 L'automatisme sera activé si: une présence est détectée ET la luminosité est insuffisante.
-Il est possible de ne saisir aucun capteurs de présence ou aucun capteurs de luminosité. Dans ce cas une présence détectée ou une luminosité suffisante suffit pour déclencher l'automatisme.
+Il est possible de ne saisir aucun capteur de présence ou aucun capteur  de luminosité. Dans ce cas une présence détectée ou une luminosité suffisante suffit pour déclencher l'automatisme.
 
 ### 2.1.1) Les conditions
 
@@ -78,8 +83,8 @@ Vous pouvez utilisez les conditions ET -> &&, OU -> ||, EGALE -> ==, ainsi que t
 
 ### 2.1.2) Les indicateurs de présence
 
-Si vous ne renseignez aucun indicateurs de présence, la présence est validée par défaut.
-Si vous renseignez plusieurs indicateurs de présences, la présence sera validée dès qu'un des indicateurs détecte une présence.
+Si vous ne renseignez aucun indicateur de présence, la présence est validée par défaut.
+Si vous renseignez plusieurs indicateurs de présence, la présence sera validée dès qu'un des indicateurs détecte une présence.
 
 Il existe plusieurs types d'indicateurs de présence. Plus vous en mettrez plus votre automatisme sera précis.
 
@@ -92,26 +97,26 @@ Ici vous pouvez ajouter des capteurs de présence. La commande information rense
 
 Vous pouvez lister des interactions que vous pouvez faire avec vos objets du quotidien. Le plugin comptera chaque interaction comme une présence. 
 Vous pouvez définir un temps maximum pour l'interaction. Passé ce temps, l'interaction ne sera plus prise en compte dans la recherche de présence.
-L'interaction doit être une commande information binaire avec 1 une interaction et 0 aucune interactions. Une interaction peut être une prise, une porte, un interrupteur etc ...
+L'interaction doit être une commande information binaire avec 1 une interaction et 0 aucune interaction. Une interaction peut être une prise, une porte, un interrupteur etc ...
 
 <img src="IMGS/cuisineExInter.png" alt="hi" class="inline"/>
 
 #### 2.1.2.3) Les interactions horaires
 
 Vous pouvez donner des créneaux horaires pour lesquels l'automatisme doit comptabiliser une présence. 
-Si vous ne renseignez qu'une heure de début, la présence ne sera considérée que la minute précisée par l'heure de début.
+Si vous ne renseignez qu'une heure de début, l'automatisme ne prendra alors pas en compte un "créneau" de présence mais uniquement une "minute" de présence.
 <img src="IMGS/cuisineExTimeCron.png" alt="hi" class="inline"/>
 
 ### 2.1.3) Les indicateurs de luminosité
 
-Si vous ne renseignez aucun indicateurs de luminosité, la luminosité est faible par défaut.
+Si vous ne renseignez aucun indicateur de luminosité, la luminosité est faible par défaut.
 
-Il existe plusieurs types d'indicateurs de luminosités. Plus vous en mettrez plus votre automatisme sera précis.
+Il existe plusieurs types d'indicateur de luminosités. Plus vous en mettrez plus votre automatisme sera précis.
 
 #### 2.1.3.1) L'intensité lumineuse
 
-Vous pouvez définir des capteurs de luminosité. Pour chque capteur, vous devez définir une luminosité minimale. Dès lors qu'un seul des capteurs détecte une luminosité faible.
-Il vous est possible de rendre un ou plusieurs capteurs restrictifs. Dans ce cas la, tant que la luminosité n'est pas faible pour ce capteur, l'automatisme ne se déclenche pas.
+Vous pouvez définir des capteurs de luminosité. Pour chaque capteur, vous devez définir une luminosité minimale.
+Il vous est possible de rendre un ou plusieurs capteurs restrictifs. Dans ce cas là, tant que la luminosité n'est pas faible pour ce capteur, l'automatisme ne se déclenche pas.
 
 Une luminosité est considérée comme faible lorsqu'elle est comprise entre les bornes MIN et MAX.
 
@@ -123,7 +128,7 @@ La marge n'est prise en compte que lorsque l'automatisme cherche à éteindre la
 
 #### 2.1.3.2) La position des volets roulants
 
-Vous pouvez ici déclarer la position de vos volets roulants. Vous pouvez pour chaque volet définir une position minimale en dessous de laquel vous considérez que la luminosité est faible dans votre pièce. L'automatisme considère que la luminosité est faible dans votre pièce que si l'ensemble des volets roulants déclarés possèdent une ouverture faible.
+Vous pouvez ici déclarer la position de vos volets roulants. Vous pouvez pour chaque volet définir une position minimale en dessous de laquelle vous considérez que la luminosité est faible dans votre pièce. L'automatisme considère que la luminosité est faible dans votre pièce que si l'ensemble des volets roulants déclarés possèdent une ouverture faible.
 Il vous est possible de rendre un ou plusieurs de vos volets roulants restrictifs. Dans ce cas la, tant que le volet ne sera pas en dessous de son ouverture minimale, l'automatisme ne se déclenchera pas.
 <img src="IMGS/cuisineExVolet.png" alt="hi" class="inline"/>
 
@@ -138,7 +143,7 @@ Les commandes de lever et de coucher du soleil se basent sur celle du plugin Hé
 <img src="IMGS/cuisineExSun.png" alt="hi" class="inline"/>
 
 Les commandes doivent retourner une valeur au format Hi. Par exemple 730 pour 7h30 et 1415 pour 14h15.
-Il vous est possible pour le début du créneau et la fin du créneau de mettre en place des conditions si vous souhaitez temporiser le lever du soleil ou le coucher du soleil.
+Il vous est possible au début du créneau et la fin du créneau de mettre en place des conditions si vous souhaitez temporiser le lever du soleil ou le coucher du soleil.
 
 Ex: #[CMD LEVER DU SOLEIL]# + 30
 Si le lever du soleil est à 6h30, la condition ci dessus donne 700 (630 + 30).
@@ -155,7 +160,7 @@ Le premier temps que vous pouvez définir est le temps maximum pour lequel l'aut
 
 ### 2.2.2) Temps tampon
 
-Lorsque les capteurs de présences ne détectent plus de mouvement ou bien que la luminosité est suffisante, l'automatisme va s'arrêter et les lumières vont s'éteindre. Il est possible de définir un temps tampon avant que les lumières ne s'éteignent. Si pendans ce temps tampon, un mouvement est détecté et que la luminosité redevient insuffisante, les lumière ne s'éteindront pas et un nouveau cycle est lancé.
+Lorsque les capteurs de présences ne détectent plus de mouvement ou bien que la luminosité est suffisante, l'automatisme va s'arrêter et les lumières vont s'éteindre. Il est possible de définir un temps tampon avant que les lumières ne s'éteignent. Si, pendant ce temps tampon, un mouvement est détecté et que la luminosité redevient insuffisante, les lumière ne s'éteindront pas et un nouveau cycle est lancé.
 
 <img src="IMGS/cuisineExTpsTampon.png" alt="hi" class="inline"/>
 
@@ -170,8 +175,8 @@ Il vous est également possible de récupérer la valeur d'une commande à appli
 
 ## 2.4) Programmer les automatismes
 
-Vous pouvez définir des plages temporelles pour lequel l'automatisme peut ou non se déclencher.
-Par défaut aucune plage n'est définit et l'automatisme peut s'activer n'importe quand.
+Vous pouvez définir des plages temporelles pour lesquelles l'automatisme peut ou non se déclencher.
+Par défaut aucune plage n'est définie et l'automatisme peut s'activer n'importe quand.
 
 Si vous souhaitez définir des plages horaires spécifiques, cochez:
 <img src="IMGS/tickProgrammation.png" alt="hi" class="inline"/>
@@ -180,9 +185,9 @@ Un nouvel onglet "Programmation" apparaît alors. Cliquez dessus pour la suite d
 <img src="IMGS/programmationTable.png" alt="hi" class="inline"/>
 
 Cliquez sur le bouton pour ajouter une plage de programmation.
-- Vous pouvez sélectionner les jours pour lequelles l'automatisme peut s'activer. Ce champ est multi sélectionnable.
-- Vous pouvez définir l'heure de début et l'heure de fin de la programmation. Si l'heure de début est plus tard que l'heure de fin, le plugin considéra que vous avez sélectionnez le créneau heure de début -> minuit minuit -> heure de fin.
-- Vous pouvez cocher "Jour enter" qui annule la plage définit est rend l'automatisme activable pour le jour entier.
+- Vous pouvez sélectionner les jours pour lequels l'automatisme peut s'activer. Ce champ est multi sélectionnable.
+- Vous pouvez définir l'heure de début et l'heure de fin de la programmation. Si l'heure de début est plus tard que l'heure de fin, le plugin considéra que vous avez sélectionné le créneau heure de début -> minuit minuit -> heure de fin.
+- Vous pouvez cocher "Jour entier" qui annule la plage définie et rend l'automatisme activable pour le jour entier.
 
 <img src="IMGS/cuisineExProgrammation.png" alt="hi" class="inline"/>
 
@@ -202,7 +207,7 @@ Vous pouvez affecter un automatisme à une lumière depuis deux endroits:
 Vous pouvez accéder à cette page dans la configuration d'un automatisme en cliquant sur l'onglet:
 <img src="IMGS/tabAffectation.png" alt="hi" class="inline"/>
 
-Depuis cet onglet vous pouvez affecter votre automatisme aux lumières / groupe de lumière que vous souhaitez.
+Depuis cet onglet vous pouvez affecter votre automatisme aux lumières / groupes de lumières que vous souhaitez.
 Il n'est pas possible depuis cet onglet d'influer sur la priorisation des automatismes les uns par rapport aux autres.
 <img src="IMGS/affectationTable.png" alt="hi" class="inline"/>
 
@@ -213,7 +218,7 @@ ATTENTION: Cliquer sur le bouton sauvegarder de l'équipement ne validera pas vo
 
 ## 3.1) Affectation depuis une lumière
 
-Choisissez une lumière ou un groupe de lumière et allez dans la page de configuration de l'équipement.
+Choisissez une lumière ou un groupe de lumières et allez dans la page de configuration de l'équipement.
 Cliquez sur la section automatisme:
 
 <img src="IMGS/automatisme_section.PNG" alt="hi" class="inline"/>
@@ -237,7 +242,7 @@ Vous pouvez depuis ces 3 commandes autoriser ou interdire un automatisme. Si l'a
 
 # 4) Activer et Désactiver un automatisme
 
-Il possible d'activer et de désactiver un automatisme. Lorsque qu'un automatisme est désactivé, il ne pourra plus se déclencher et n'aura donc plus d'impact sur les lumières concernés que ce soit pour allumer ou éteindre une lumière.
+Il possible d'activer et de désactiver un automatisme. Lorsque qu'un automatisme est désactivé, il ne pourra plus se déclencher et n'aura donc plus d'impact sur les lumières concernées que ce soit pour allumer ou éteindre une lumière.
 
 Il existe 2 possibilités pour activer et désactiver un automatisme:
 - Désactiver l'automtatisme
@@ -248,7 +253,7 @@ Il existe 2 possibilités pour activer et désactiver un automatisme:
 L'automatisme possède 3 commandes:
 <img src="IMGS/cmds_autom.png" alt="hi" class="inline"/>
 
-Lorsque vous activez et désactiver l'automatisme depuis ces commandes, l'automatisme est désactivez pour l'ensemble des lumières qui le possèdent. Si vous souhaitez agir lumière par lumière alors consultez le point ci dessous.
+Lorsque vous activez et désactivez l'automatisme depuis ces commandes, l'automatisme est désactivé pour l'ensemble des lumières qui le possèdent. Si vous souhaitez agir lumière par lumière alors consultez le point ci dessous.
 
 ## 4.2) Agir au niveau d'une lumière
 
@@ -257,7 +262,7 @@ Chacune des lumières possédant l'automatisme possède 3 commandes permettant c
 
 # 5) Combiner les automatismes
 
-Il vous est possible depuis le plugin de combiner des automatismes pour obtenir le comportement que vous souhaitez.
+Il vous est possible depuis le plugin de combiner des automatismes pour obtenir le comportement souhaité.
 Exemple: je souhaite que la lumière de mon placard s'allume lorsque j'ouvre la porte. Je souhaite également que la luminosité de la lumière soit plus faible durant la nuit.
 
 Pour cela je vais créer 3 automatismes:
@@ -267,10 +272,10 @@ Pour cela je vais créer 3 automatismes:
 
 J'affecte ces trois automatismes à ma lumière de placard.
 
-Ainsi lorsque j'ouvrirais la porte à 15h la lumière s'allumera avec une luminosité de 100 %, lorsque j'ouvrirais la porte à 22h, la lumière s'allumera avec une luminosité de 20%.
+Ainsi lorsque j'ouvrirai la porte à 15h la lumière s'allumera avec une luminosité de 100 %, lorsque j'ouvrirai la porte à 22h, la lumière s'allumera avec une luminosité de 20%.
 
 ## A venir
 
 Plusieurs automatismes vont être rajoutés graduellement sur le plugin.
-Il sera possible de prioriser les automatismes entre eux pour une lumière / groupe de lumière
+Il sera possible de prioriser les automatismes entre eux pour une lumière / groupe de lumières
 Vous pouvez suivre les avancées depuis le board: <a href="https://github.com/users/hbedek/projects/5">ICI</a>

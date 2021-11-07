@@ -8,6 +8,7 @@
 
 Il s'agit d'une grosse mise jour sur laquelle je travaille depuis de nombreuses heures. J'espère que le nouveau widget statut_autom vous conviendra.
 
+INFORMATION: Avec l'arrivée des priorisations et la possibilité d'autoriser / interdire un automatisme au niveau de l'automatisme en lui même, je trouve que les commandes d'autorisation / interdiction des automatismes au niveau des lumières perdent leur intêret et pollue l'affichage des commandes. Je pense donc les supprimer dans la prochaine mise à jour.
 
 # 02/11/2021 [Beta]
 - Les automatismes ne peuvent allumer que les lumières allumées et ne peuvent éteindre que les lumières allumées (optimisation)
