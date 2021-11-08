@@ -1,5 +1,8 @@
 # Changelog plugin Light Group
 
+# 08/11/2021 [Beta]
+Ajout possibilité de tester les conditions dans les automatismes
+
 # 07/11/2021 [Beta]
 - Ajout priorisation des automatismes. Il vous est possible de prioriser les automatismes entre eux. Si un automatisme est déjà en cours sur une lumière, le plugin ira vérifier la priorité du nouvel automatisme avatn de l'appliquer. Un tutoriel suivra pour expliquer ce concept.
 - Ajout de 2 nouvelles commandes: "Heure extinction" qui renvoie l'heure d'extinction prévue pour une lumière, "Extinction automatisme" qui renvoie MOV si la lumière vient de percevoir et un mouvement et renvoie un timestamp si la lumière a prévue une extinction.
