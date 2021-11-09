@@ -1,6 +1,6 @@
 # Changelog plugin Laundry
 
-# 08/11/2021
+# 09/11/2021
 
 - Correction BUG erreur commandes manquante pour le mode ECO si ECO non configuré.
 
