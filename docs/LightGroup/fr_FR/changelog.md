@@ -1,6 +1,6 @@
 # Changelog plugin Light Group
 
-# 08/11/2021 [Beta]
+# 09/11/2021 [Beta]
 Ajout possibilité de tester les conditions dans les automatismes
 
 # 07/11/2021 [Beta]
