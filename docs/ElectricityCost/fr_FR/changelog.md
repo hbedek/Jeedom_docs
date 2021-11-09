@@ -1,5 +1,10 @@
 # Changelog plugin Electricity Cost
 
+# 09/11/2021 [Beta]
+
+- Ajout possibilité de goruper des équipements. Il est possible d'affecter un groupe à un compteur. Le gorupe renverra le pourcentage de consommation par rapport à celui du compteur mais ne participera pas au pourcentage d'investigation du compteur.
+
+
 # 29/10/2021 [Beta]
 
 - Amélioration: possibilité de lier plusieurs jours pour les contrats à multiples créneaux HC

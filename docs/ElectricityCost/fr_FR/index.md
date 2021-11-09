@@ -22,14 +22,14 @@ Pour créer un équipement, cliquez sur le bouton +
 
 <img src="IMGS/eqs_plugin.PNG" alt="hi" class="inline"/>
 
-## Configuration des équipements
+# 1) Configuration des équipements
 
 Vous pouvez configurer 3 types d'équipement:
 - Un contrat reprenant les coûts en électricité de votre fournisseur et le créneau d'heures creuses si vous en possédez un.
 - Un compteur remontant les information de consommation de votre logement
 - Un équipement qui définit un équipement électrique de votre logement rattaché au compteur
 
-### Equipement Contrat
+## 1.1) Contrat
 
 L'équipement contrat est le premier équipement à créer. Il représente le contrat qui vous lie à votre fournisseur. Vous pourrez par la suite lié des équipements à ce contrat pour mesurer les coûts. 
 L'équipement contrat ne possède pas de commandes mais doit tout de même être configuré.
@@ -42,7 +42,7 @@ L'équipement contrat ne possède pas de commandes mais doit tout de même être
 - heures pleines heures creuses si vous avez un seul créneau d'heures creuses
 - multiples créneaux si vous avez plus d'un créneau d'heure creuse
 
-#### Contrat avec plusieurs créneaux
+### 1.1.1) Contrat avec plusieurs créneaux
 
 Vous allez pouvoir définir plusieurs créneaux d'heures creuses avec pour chaqun des créneau un jour de la semaine, une heure de début, une heure de fin et un prix au kWh.
 
@@ -51,8 +51,6 @@ Vous allez pouvoir définir plusieurs créneaux d'heures creuses avec pour chaqu
 2) Ajoutez les différents créneaux dans la table
 <img src="IMGS/multiples_creneaux.PNG" alt="hi" class="inline"/>
 
-####
-
 
 Enfin choisissez le nombre de décimales devant être utilisées pour carrondir les coûts et pourcentages. Par défaut le plugin arrondira les coûts et pourcentages à 3 décimales après la virgule. Attention  ceci n'affecte pas le coût total qui lui reste avec toutes ces décimales. Les arrondis sont appliqués à l'ensemble des équipements liés au contrat ainsi que l'ensemble des équipements liés aux compteurs eux même liés au contrat.
 
@@ -60,12 +58,12 @@ Exemple:
 <img src="IMGS/ex_config_contrat.PNG" alt="hi" class="inline"/>
 
 
-### Equipement Compteur
+## 1.2) Compteur
 
 L'équipement Compteur, représente votre compteur électrique et sa consommation.
 Pour utiliser pleinement les fonctionnalité du plugin, il faut au préalable créer un équipement Contrat
 
-#### Configuration d'un compteur
+### 1.2.1) Configuration d'un compteur
 
 Pour configurer un compteur:
 
@@ -95,7 +93,7 @@ Sélectionnez dans le champ qui apparaît en dessous le Contrat auquel le plugin
 SAUVEGARDEZ l'équipement pour créer les commandes
 
 
-#### Informations remontées par l'équipement compteur
+### 1.2.2) Informations remontées par l'équipement compteur
 
 Cet équipement vous remontera les informations suivantes:
 - Puissance
@@ -126,7 +124,7 @@ Les données de la notification dépendent du type d'équipement (compteur ou au
 <img src="IMGS/Notification.PNG" alt="hi" class="inline"/>
 
 
-### Autres équipements
+## 1.3) Equipements
 
 Cette catégorie regroupe tous les équipements en dehors du compteur pour lesquels vous souhaitez calculer la consommation.
 Le plugin peut calculer le coût d'un équipement suivant :
@@ -141,26 +139,26 @@ Dans la configuration, choisissez "Equipement" et la période de raffraîchissem
 
 Les trois types d'équipements renvoient les mêmes commandes que le Compteur.
 
-#### Configuration d'un équipement suivant sa consommation cumulée kWh
+### 1.3.1) Configuration d'un équipement suivant sa consommation cumulée kWh
 
 Cette configuration est la plus précise.
 Choisissez la commande qui va renvoyer la consommation cumulée pour cet équipement.
 ATTENTION: cette commande doit être historisée, suivant la période de rafraîchissement sélectionnée, le plugin peut être amené à récupérer des informations historisées.
 
-#### Configuration d'un équipement suivant sa puissance instantanée
+### 1.3.2) Configuration d'un équipement suivant sa puissance instantanée
 
 Choisissez la commande qui va renvoyer la puissance  instantanée pour cet équipement.
 ATTENTION: cette commande doit être historisée, suivant la période de rafraîchissement sélectionnée, le plugin peut être amené à récupérer des informations historisées.
 
 Choisissez ensuite l'unité de la puissance renvoyée par la commande que vous avez saisit.
 
-#### Configuration d'un équipement suivant sa puissance moyenne
+### 1.3.3) Configuration d'un équipement suivant sa puissance moyenne
 
 Cette configuration diffère de la puissance instanée, ici la commande que vous allez saisir renvoie une moyenne de puissance sur une plage de temps. Le compteur électrique du plugin ENEDIS par exemple renvoie la puissance moyenne par demi heure.
 ATTENTION: cette commande doit être historisée, suivant la période de rafraîchissement sélectionnée, le plugin peut être amené à récupérer des informations historisées.
 
 
-#### Configuration d'un équipement suivant son état
+### 1.3.4) Configuration d'un équipement suivant son état
 
 Cette configuration est la moins précise mais permet cependant d'avoir une estimation du coût des équipements ne remontant qu'un état comme une lampe, une télévision, un amplificateur etc
 <img src="IMGS/config_eq_2.PNG" alt="hi" class="inline"/>
@@ -172,7 +170,34 @@ Renseignez la puissance que consomme cet équipement allumé et la puissance que
 
 Renseignez l'unité des puissances que vous avez renseigné.
 
-### Lier un équipement à un contrat ou un compteur
+## 1.4) Groupe
+
+### 1.4.1) Configuration
+
+Pour créer un groupe choisissez "Groupe" dans la sélection:
+<img src="IMGS/dropdown_groupe.PNG" alt="hi" class="inline"/>
+
+Une fois sélectionné, un nouvel onglet apparaît. Cet onglet vous permet de choisir les équipements que vous souhaitez aggréger.
+
+Comme pour les autres équipements, vous devez également définir une période de raffraîchissement.
+
+ATTENTION: lors du raffraîchissement, le groupe ira récupérer les données actuelles des autres équipements sans se soucier de si ces derniers sont actualisés ou non.
+
+Vous pouvez également affecter le groupe à un compteur:
+- Le plugin vous remontera le pourcentage de consommation du groupe par rapport à celui du compteur
+- Le plugin n'UTILISERA PAS les données du groupe pour calculer le pourcentage d'investigation du compteur.
+
+### 1.4.2) Commandes
+
+Le groupe propose les mêmes commandes qu'un équipement. Il est donc possible de récupérer:
+- la consommation
+- les coûts journalier / hebdomadaire / mensuel / annuel
+- les coûts de périodes précédentes
+- le pourcentage d'utilisation en heures creuses
+- les économies potentielles si le groupe tournait exclusivement en heures creuses
+
+
+## 1.5) Lier un équipement à un contrat ou un compteur
 
 Vous avez la possibilité de lier un équipement d'Electricity Cost à:
 - Aucun autre équipement, le plugin calculera alors la consommation de votre équipement par rapport aux données en sa possession
@@ -188,7 +213,7 @@ En liant un équipement à un compteur, l'équipement récupère le contrat lié
 ATTENTION: Le pourcentage se basant sur le coût mensuel, les pourcentages ne sont vraiment exploitable que passé un mois.
 
 
-### Réparer un équipement
+## 1.5) Réparer un équipement
 
 Dans le cas ou l'historique d'une des commandes de l'équipement est corrompue, vous avez la possibilité de le réparer.
 Pour réparer l'historique d'un équipement, sélectionnez ce dernier et cliquez sur "Réparer"
@@ -219,7 +244,7 @@ Le plugin génère mais n'envoie pas de notifications. Si vous souhaitez envoyer
 
 
 
-## Calcul du coût pour les équipements Etat / Puissance instantanée
+# 2) Calcul du coût pour les équipements Etat / Puissance instantanée
 
 Prenons un exemple pour expliquer le fonctionnement:
 Je possède un téléviseur qui est soit allumé (état 1), soit éteint (état 0).
@@ -240,7 +265,7 @@ Ici la puissance de ma télévision en ayant décomposé début heures creuses /
 Ici la consommation de ma télévision qui prends bien en compte le début de l'heure creuse
 
 
-## Compatibilité des plugins
+# 3) Compatibilité des plugins
 
 Ce plugin est compatible avec le plugin Laundry.
 Si vous avez créé un équipement sur le plugin Laundry et qu'Electricity Cost est installé sur votre Jeedom, Laundry vous proposera de configurer votre équipement avec les mêmes paramètres que les équipements d'Electricity Cost.
@@ -254,7 +279,7 @@ Si vous avez créé un équipement sur le plugin Light Group et qu'Electricity C
 Voici la documentation du plugin:
 <a href="https://hbedek.github.io/Jeedom_docs/docs/LightGroup/fr_FR/">ICI</a>
 
-## Que faire si le plugin ne renvoie pas les informations:
+# 4) Que faire si le plugin ne renvoie pas les informations:
 1) Vérifier que la configuration de l'équipement est bien complète
 <br>
 2) Vérifier que les commandes que l'on a saisit dans la configuration de l'équipement soient bien historisés
@@ -269,7 +294,7 @@ Voici la documentation du plugin:
 <br>
 6) Basculez le niveau de log du plugin en DEBUG, faîtes un refresh de l'équipement et envoyez moi les logs via Community. N'oubliez pas de retirer le niveau de log DEBUG après récupération
 
-## FAQ
+# 5) FAQ
 <b>Le pourcentage que me remonte le plugin n'est pas cohérent:</b>
 <br>
 -> Le pourcentage calculé par le plugin dépend des données d'historisation des commandes. Si vous venez d'ajouter l'historisation à vos commandes, le pourcentage ne deviendra cohérent qu'au mois suivant
