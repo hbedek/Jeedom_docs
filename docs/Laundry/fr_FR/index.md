@@ -74,7 +74,7 @@ Le mode ECO ne peux ainsi s'activer qu'une fois entre deux cycle.
 Attention, si vous avez pour habitude de lancer vos machines avec retardateur, le mode ECO n'est peut être pas fait pour vous.
 Si vous souhaitez utiliser les deux fonctionnalités en parallèle, le mode ECO ne peut se lancer qu'une seule fois entre deux cycle
 
-# 4) Mode PROGRAMMATION [A venir]
+# 4) Mode PROGRAMMATION
 
 Le mode PROGRAMMATION permet d'arrêter un cycle de nettoyage lorsqu'un créneau d'heure creuse est proche. Lorsque le créneau d'heure creuse sera atteint, la machine se lancera d'elle même.
 
@@ -105,8 +105,16 @@ le plugin éteint alors la prise associée à votre machine. Le plugin vérifie 
 Le mode PROGRAMMATION est symbolisé par l'icône:
 <img src="IMGS/laundry_waiting_prog.png" alt="hi" class="inline" height="100px" width="auto"/>
 
+## 4.3) Arrêt d'une programmation
 
-# 4) Compatibilité Electricity Cost
+Lorsqu'une machine se mets en programmation, il est possible d'annuler cet état et de lancer directement la machine.
+Pour annuler une programmation:
+- Executer la commande: "Annuler une programmation"
+- Cliquer sur le widget lorsque la machine est en programmation et symbolisé par:
+<img src="IMGS/laundry_waiting_prog.png" alt="hi" class="inline" height="100px" width="auto"/>
+
+
+# 5) Compatibilité Electricity Cost
 
 Ce plugin est compatible avec Electricity Cost.
 Vous pourrez ainsi profiter de toutes les fonctionalités d'Electricity Cost sans avoir à créer de nouvel équipement.

@@ -1,5 +1,10 @@
 # Changelog plugin Laundry
 
+# 19/11/2021
+
+- Ajout d'une commande pour annuler une programmation
+- Possibilité d'annuler une programmation en cliquant sur le widget lorsque la machine est entrée en programmation (waiting_prog)
+
 # 09/11/2021
 
 - Correction BUG erreur commandes manquante pour le mode ECO si ECO non configuré.
