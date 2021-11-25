@@ -1,6 +1,10 @@
 # Changelog plugin Laundry
 
-# 19/11/2021
+# 24/11/2021 [BETA]
+
+- Ajout de la possibilité d'exécuter une série d'actions lorsque la machine atteint un état spécifique
+
+# 24/11/2021
 
 - Ajout d'une commande pour annuler une programmation
 - Possibilité d'annuler une programmation en cliquant sur le widget lorsque la machine est entrée en programmation (waiting_prog)

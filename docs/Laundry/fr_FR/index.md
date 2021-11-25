@@ -113,8 +113,26 @@ Pour annuler une programmation:
 - Cliquer sur le widget lorsque la machine est en programmation et symbolisé par:
 <img src="IMGS/laundry_waiting_prog.png" alt="hi" class="inline" height="100px" width="auto"/>
 
+# 5) Déclenchement d'actions complémentaires [Beta]
 
-# 5) Compatibilité Electricity Cost
+Il est possible de demander au plugin d'exécuter une série d'action lorsque la machine atteint un certain état.
+Vous pouvez vous servir de ces actions pour par exemples des notifications textuelles ou lumineuses.
+
+Les actions sont paramétrables depuis l'onglet "action" pour chaque équipement:
+<img src="IMGS/actionsTab.png" alt="hi" class="inline" height="100px" width="auto"/>
+
+Vous pouvez, pour chaque état, définir autant d'actions que vous le souhaitez.
+
+Une action est définit par une commande action et un paramètre optionnel au besoin (pour les types color, slider, select, message).
+<img src="IMGS/action.png" alt="hi" class="inline" height="100px" width="auto"/>
+
+Exemple:
+
+Je souhaite envoyer une notification lorsque j'ouvre la porte de ma machine
+<img src="IMGS/actionEx.png" alt="hi" class="inline" height="100px" width="auto"/>
+
+
+# 6) Compatibilité Electricity Cost
 
 Ce plugin est compatible avec Electricity Cost.
 Vous pourrez ainsi profiter de toutes les fonctionalités d'Electricity Cost sans avoir à créer de nouvel équipement.
