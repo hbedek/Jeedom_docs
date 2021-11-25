@@ -1,5 +1,15 @@
 # Changelog plugin Light Group
 
+# 25/11/2021 [Beta]
+Ajout des actions manuelles sur les lumières / prises / groupes de lumières.
+Vous pouvez maintenant ajouter des conditions qui une fois réalisées créeront une action manuelle. Par défaut une action manuelle a une priorité de 800 et annule les automatismes dont leur priorité est inférieure.
+Une action manuelle est symbolisée par un engrenage barrée sur le widget.
+Voir la documentation pour plus d'informations.
+
+INFORMATION 1: comme annoncée le 07/11/2021, les commandes d'autorisation / interdiction des automatismes au niveau des lumières ne sont plus utilisés. Je vous conseille de nettoyer les commandes. Dans un deuxième temps un script de nettoyage automatisera ce processus.
+
+INFORMATION 2: Le plugin venant de passer en Beta, l'objectif des 2 prochaines semaines et d'arrêter l'ajout de nouvelles fonctionnalités, stabiliser le plugin et proposer les automatismes en Stable.
+
 # 09/11/2021 [Beta]
 Ajout possibilité de tester les conditions dans les automatismes
 

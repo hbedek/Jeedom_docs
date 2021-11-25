@@ -274,6 +274,38 @@ J'affecte ces trois automatismes à ma lumière de placard.
 
 Ainsi lorsque j'ouvrirai la porte à 15h la lumière s'allumera avec une luminosité de 100 %, lorsque j'ouvrirai la porte à 22h, la lumière s'allumera avec une luminosité de 20%.
 
+
+# 6) Définir des actions manuelles
+
+Il est possible de définir des actions manuelles pour les lumières / prises / groupes de lumières.
+Une action manuelle annule les automatismes dont la priorité est inférieure.
+Par défaut un automatisme à une priorité de 500.
+Par défaut une action manuelle à une priorité de 800.
+
+## 6.1) Créer une action manuelle
+
+La création des actions manuelles se fait au niveau des lumières / prises / groupes d'automatismes.
+Il faut aller dans l'onglet automatisme.
+
+Dans cette onglet, vous pouvez accéder à la section:
+<img src="IMGS/action_manuelle_section.png" alt="hi" class="inline"/>
+
+Pour ajouter une action manuelle, cliquez sur le bouton correspondant.
+Une ligne apparaît alors.
+<img src="IMGS/actionligne.png" alt="hi" class="inline"/>
+
+Sur cette ligne, vous devez définir:
+- La condition de déclenchement (quand la condition est VRAI, le plugin considère qu'il y a action manuelle)
+- Le temps de désactivation des automatismes. Passé ce temps, l'action manuelle disparaît et les automatismes reprennent le dessus.
+- La pondération / Priorité. Par défaut elle est de 800.
+
+## 6.2) Représentation d'une action manuelle
+
+Lorsque qu'une lumière / prise / automatisme est sous le joug d'une action manuelle (peut importe sa priorité), le widget change.
+<img src="IMGS/manualActionEx.png" alt="hi" class="inline"/>
+
+
+
 ## A venir
 
 Plusieurs automatismes vont être rajoutés graduellement sur le plugin.
