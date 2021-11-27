@@ -1,5 +1,13 @@
 # Changelog plugin Light Group
 
+# 27/11/2021
+- Ajout des commandes info et action pour gérer la température du lumière en °K
+- Ajout d'un badge sur le widget lorsque le budget est dépassé
+- Ajout des prises. Les prises possèdent leur propre icône et il vous est possible de choisir entre 3 icônes dans la configuration.
+Le widget des prises possède les mêmes badges que les autres widget du plugin (badge budget dépassé et badge en cours d'automatisme).
+- Les automatismes ne peuvent allumer que les lumières allumées et ne peuvent éteindre que les lumières allumées (optimisation)
+- Il est dorénavant possible de rajouter les prises aux groupes
+
 # 25/11/2021 [Beta]
 - Ajout des actions manuelles sur les lumières / prises / groupes de lumières.
 Vous pouvez maintenant ajouter des conditions qui une fois réalisées créeront une action manuelle. Par défaut une action manuelle a une priorité de 800 et annule les automatismes dont leur priorité est inférieure.
@@ -156,12 +164,12 @@ ATTENTION: Pour cette nouvelle version l'ensemble des automatismes est programma
 
 - Ajout des automatismes
 
-# 25/09/2021 [Beta]
+# 25/09/2021
 
 - Interface 3.0
 - Correction bug sur la modification de l'état d'un groupe depuis une lampe avec un état numérique
 
-# 13/09/2021 [Beta]
+# 13/09/2021
 
 - Nouvelle interface de commandes
 - Ajout du filtre info / action lors de la selection d'une commandes
@@ -169,7 +177,7 @@ ATTENTION: Pour cette nouvelle version l'ensemble des automatismes est programma
 - Suppression des commandes inutiles lors de la désactivation de la luminosité ou de la couleur
 - Liaison des commandes actions aux commandes infos
 
-# 10/09/2021 [Beta]
+# 10/09/2021
 
 Fix configuration d'une lumière dans Electricity Cost
 
