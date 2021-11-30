@@ -113,7 +113,7 @@ Pour annuler une programmation:
 - Cliquer sur le widget lorsque la machine est en programmation et symbolisé par:
 <img src="IMGS/laundry_waiting_prog.png" alt="hi" class="inline" height="100px" width="auto"/>
 
-# 5) Déclenchement d'actions complémentaires [Beta]
+# 5) Déclenchement d'actions complémentaires
 
 Il est possible de demander au plugin d'exécuter une série d'action lorsque la machine atteint un certain état.
 Vous pouvez vous servir de ces actions pour par exemples des notifications textuelles ou lumineuses.

@@ -1,6 +1,6 @@
 # Changelog plugin Laundry
 
-# 24/11/2021 [BETA]
+# 30/11/2021
 
 - Ajout de la possibilité d'exécuter une série d'actions lorsque la machine atteint un état spécifique
 
