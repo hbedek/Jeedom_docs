@@ -1,5 +1,11 @@
 # Changelog plugin Electricity Cost
 
+# 30/11/2021 [Beta]
+
+- Ajout du pourcentage en HC pour les contrats multi HC
+- Ajout des économies potentielles en HC pour les contrats multi HC
+
+
 # 19/11/2021 
 
 - Ajout possibilité de grouper des équipements. Il est possible d'affecter un groupe à un compteur. Le gorupe renverra le pourcentage de consommation par rapport à celui du compteur mais ne participera pas au pourcentage d'investigation du compteur.
