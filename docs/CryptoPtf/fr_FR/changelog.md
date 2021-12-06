@@ -1,5 +1,8 @@
 # Changelog plugin Crypto Portfolio
 
+# 06/12/2021
+- Correction de l'affichage du texte des notifications
+
 # 07/11/2021
 - Correction bug commandes manquantes portefeuille manuel.
 - Ajout de la possibilité d'ajouter manuellement le nombre tokens sans passer par une API via le type de portefeuille "Manuel".
