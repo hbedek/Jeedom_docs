@@ -1,5 +1,12 @@
 # Changelog plugin Laundry
 
+# 08/12/2021
+
+- Modification du système d'exécution des actions
+- Ajout possibilité de démarrer un scénarion
+
+ATTENTION: Le nouveau système d'actions vous oblige à reparamétrer les actions existantes
+
 # 30/11/2021
 
 - Ajout de la possibilité d'exécuter une série d'actions lorsque la machine atteint un état spécifique
