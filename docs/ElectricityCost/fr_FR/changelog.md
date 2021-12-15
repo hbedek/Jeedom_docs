@@ -1,6 +1,6 @@
 # Changelog plugin Electricity Cost
 
-# 30/11/2021 [Beta]
+# 14/12/2021
 
 - Ajout du pourcentage en HC pour les contrats multi HC
 - Ajout des économies potentielles en HC pour les contrats multi HC
