@@ -1,5 +1,8 @@
 # Changelog plugin Light Group
 
+# 15/12/2021 [Beta]
+- Initialisation de l'état d'une lumière / prise à sa création
+
 # 09/12/2021
 - Ajout des automatismes
 - Mise à niveau de la Stable avec la Beta 
