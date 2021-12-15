@@ -1,6 +1,6 @@
 # Changelog plugin Laundry
 
-# 08/12/2021
+# 14/12/2021
 
 - Modification du système d'exécution des actions
 - Ajout possibilité de démarrer un scénarion
