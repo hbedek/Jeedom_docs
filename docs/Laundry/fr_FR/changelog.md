@@ -1,5 +1,9 @@
 # Changelog plugin Laundry
 
+# 02/01/2022
+
+- Bug Fix multiples raffraîchissement commande machine terminée
+
 # 14/12/2021
 
 - Modification du système d'exécution des actions
