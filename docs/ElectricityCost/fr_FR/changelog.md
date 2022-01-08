@@ -1,5 +1,9 @@
 # Changelog plugin Electricity Cost
 
+# 08/01/2022
+
+-  Si le budget n'est pas renseigné, l'équipement considère que le budget n'est pas dépassé par défaut
+
 # 14/12/2021
 
 - Ajout du pourcentage en HC pour les contrats multi HC
