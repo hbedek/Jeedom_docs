@@ -1,5 +1,10 @@
 # Changelog plugin Laundry
 
+# 22/01/2022
+
+- Bug Fix aucune action executée en mode LIGHT
+
+
 # 02/01/2022
 
 - Bug Fix multiples raffraîchissement commande machine terminée
