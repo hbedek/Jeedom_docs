@@ -1,5 +1,10 @@
 # Changelog plugin Light Group
 
+# 22/01/2022 [Beta]
+- Ajout d'un panel dédié à LightGroup. Le panel permet d'accéder rapidement à ses groupes, lumières, prises et automatismes.
+N'hésitez pas à me faire un retour sur ce panel.
+
+
 # 08/01/2022
 - Modifications des textes pour différents automatimes
 - Initialisation de l'état d'une lumière / prise à sa création
