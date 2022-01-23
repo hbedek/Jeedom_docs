@@ -2,6 +2,7 @@
 
 # 23/01/2022 [Beta]
 - Ajout d'un nouvel onglet Historique pour les automatismes. Cet onglet reggroupe un historique des actions d'un automatismes et vous permet d'investiguer sur un automatisme. Il vous est possible de récupérer le numéros de l'instance pour ensuite investiguer dans les logs pour plus de détails.
+- BUG: pas de cmds température sur les groupes
 
 # 22/01/2022 [Beta]
 - Ajout d'un panel dédié à LightGroup. Le panel permet d'accéder rapidement à ses groupes, lumières, prises et automatismes.
