@@ -1,5 +1,9 @@
 # Changelog plugin Electricity Cost
 
+# 25/01/2022 [Beta]
+
+- Fix bug, retour de la commande heure creuse du contrat multi HC incorrecte
+
 # 08/01/2022
 
 -  Si le budget n'est pas renseigné, l'équipement considère que le budget n'est pas dépassé par défaut
