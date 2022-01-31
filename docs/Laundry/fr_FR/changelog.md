@@ -1,5 +1,10 @@
 # Changelog plugin Laundry
 
+# 31/01/2022
+
+- Ajout icônes lave vaisselle
+- Amélioration algorithme de détection de fin de cycle
+
 # 22/01/2022
 
 - Bug Fix aucune action executée en mode LIGHT
