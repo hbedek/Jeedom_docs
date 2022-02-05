@@ -5,6 +5,10 @@ Le plugin permet d'uniformiser toutes vos lumières dans un seul et unique forma
 
 Le plugin intègre des automatismes pré définis que vous pouvez affecter à vos lumières / groupes. Les automatismes font l'objet d'une documentation dédiée: <a href="https://hbedek.github.io/Jeedom_docs/docs/LightGroup/fr_FR/Automatismes/">ICI</a>
 
+Le plugin possède un panel dédié:
+<img src="IMGS/panel.png" alt="hi" class="inline"/>
+
+
 Cette documentation est associée à un petit tutoriel:
 Je souhaite grouper les deux lumières de ma cuisine et dans un deuxième temps je souhaite automatiser ma cuisine.
 Dans cette partie de la documentation nous allons configurer les lumières de ma cuisine.
@@ -208,6 +212,13 @@ Le plugin possède 3 widgets différents:
 - LightGroup::status -> Widget le plus détaillé, s'applique sur l'état de l'équipement et affiche l'état de la lumière, l'état du budget et si un automatisme est en cours
 - LightGroup::status_light -> N'affiche que l'état de la lumière
 - LightGroup::status_autom -> En complément des deux autres widgets, s'applique sur l'état de l'automatisme.
+
+## 5) Panel
+
+Vous pouvez depuis la configuration du plugin activer la configuration du panel.
+<img src="IMGS/panel.png" alt="hi" class="inline"/>
+
+Le panel vous permet d'accéder rapidement à vos groupes, lumières, prises, automatismes.
 
 
 ## Compatibilité Electricity Cost

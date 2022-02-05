@@ -1,5 +1,10 @@
 # Changelog plugin Light Group
 
+# 05/02/2022 [Beta]
+- Ajout possibilité de configurer des unités de températures
+- Ajout possibilité de saisir uniquement le lever ou le coucher du soleil dans les conditions des automatismes. Le plugin ne considérera que la condition est active que à l'heure et la minute exacte de la condition renseignée (lever ou coucher)
+- Ajout des commandes Toggle
+
 # 30/01/2022
 - Ajout d'un nouvel onglet Historique pour les automatismes. Cet onglet reggroupe un historique des actions d'un automatismes et vous permet d'investiguer sur un automatisme. Il vous est possible de récupérer le numéros de l'instance pour ensuite investiguer dans les logs pour plus de détails.
 - Ajout d'un panel dédié à LightGroup. Le panel permet d'accéder rapidement à ses groupes, lumières, prises et automatismes.
