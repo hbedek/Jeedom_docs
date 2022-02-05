@@ -1,5 +1,9 @@
 # Changelog plugin Electricity Cost
 
+# 05/02/2022 [Beta]
+
+- Fix bug, retour de la commande etat heure creuse du contrat HCHP incorrecte
+
 # 25/01/2022 [Beta]
 
 - Fix bug, retour de la commande heure creuse du contrat multi HC incorrecte
