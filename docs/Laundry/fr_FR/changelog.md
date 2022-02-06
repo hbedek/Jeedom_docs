@@ -1,5 +1,9 @@
 # Changelog plugin Laundry
 
+# 05/02/2022
+
+- Correction widget mobile
+
 # 04/02/2022
 
 - Ajout icônes lave vaisselle
