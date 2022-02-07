@@ -1,5 +1,9 @@
 # Changelog plugin Electricity Cost
 
+# 07/02/2022 [Beta]
+
+- Configuration notifications cachées et plus prise en compte pour un contrat
+
 # 05/02/2022 [Beta]
 
 - Fix bug, retour de la commande etat heure creuse du contrat HCHP incorrecte
