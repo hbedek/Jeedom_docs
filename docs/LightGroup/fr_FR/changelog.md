@@ -1,9 +1,6 @@
 # Changelog plugin Light Group
 
-# 07/02/2022 [Beta]
-- Fix bug toggle sur les groupes
-
-# 05/02/2022 [Beta]
+# 20/02/2022
 - Ajout possibilité de configurer des unités de températures
 - Ajout possibilité de saisir uniquement le lever ou le coucher du soleil dans les conditions des automatismes. Le plugin ne considérera que la condition est active que à l'heure et la minute exacte de la condition renseignée (lever ou coucher)
 - Ajout des commandes Toggle
