@@ -1,5 +1,10 @@
 # Changelog plugin Electricity Cost
 
+
+# 20/01/2023 BETA
+- Fix bug calcul coûts sur les groupes
+- Ajout possibilité de lier un groupe à un contrat
+
 # 20/02/2022
 - Configuration notifications cachées et plus prise en compte pour un contrat
 - Fix bug, retour de la commande etat heure creuse du contrat HCHP incorrecte
