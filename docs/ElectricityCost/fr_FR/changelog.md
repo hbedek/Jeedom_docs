@@ -1,5 +1,7 @@
 # Changelog plugin Electricity Cost
 
+# 12/02/2023 BETA
+- Fix du calcul du pourcentage d'heures dans le cas des contrats multi heures creuses
 
 # 11/02/2023 BETA
 - Passage des logs en français
