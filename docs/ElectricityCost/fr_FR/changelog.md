@@ -1,5 +1,8 @@
 # Changelog plugin Electricity Cost
 
+# 28/05/2023 BETA
+- Fix création groupe lorsque le plugin LightGroup n'est pas installé
+
 # 12/02/2023 BETA
 - Fix du calcul du pourcentage d'heures dans le cas des contrats multi heures creuses
 
