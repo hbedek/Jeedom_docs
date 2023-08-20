@@ -1,5 +1,10 @@
 # Changelog plugin Sonarr & Radarr
 
+
+# BETA 20/08/2023
+
+- Correction sort des films manquants Radarr
+
 # 06/12/2021
 
 - Correction bug affichage notifications
