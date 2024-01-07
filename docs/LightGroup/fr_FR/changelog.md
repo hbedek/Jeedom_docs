@@ -1,5 +1,8 @@
 # Changelog plugin Light Group
 
+# 07/01/2024
+- Ajout possibilité d'inverser la valeur d'une commande pour un automatisme. Pour les interactions et capteur de présence uniquement.
+
 # 20/02/2022
 - Ajout possibilité de configurer des unités de températures
 - Ajout possibilité de saisir uniquement le lever ou le coucher du soleil dans les conditions des automatismes. Le plugin ne considérera que la condition est active que à l'heure et la minute exacte de la condition renseignée (lever ou coucher)
