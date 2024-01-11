@@ -1,10 +1,13 @@
 # Changelog plugin Sonarr & Radarr
 
 
-# BETA 20/08/2023
+# BETA 11/01/2024
+
+- passage des urls de l'api de sonarr en V3
+
+# 20/08/2023
 
 - Correction sort des films manquants Radarr
-
 # 06/12/2021
 
 - Correction bug affichage notifications
