@@ -1,5 +1,8 @@
 # Changelog plugin Light Group
 
+# 28/01/2024 - BETA
+- Ajout d'alertes lorsque le plugin mets trop de temps pour éxecuter une commande ou un automatisme
+
 # 07/01/2024
 - Ajout possibilité d'inverser la valeur d'une commande pour un automatisme. Pour les interactions et capteur de présence uniquement.
 
